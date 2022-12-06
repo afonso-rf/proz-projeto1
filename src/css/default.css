@@ -8,7 +8,21 @@
     --sixth-color: #e2dbda;
 }
 
-/* Estilização do Header */
+/* Reset */
+header *, footer * {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Fonte de texto padrão */
+header *, footer * {
+    font-family: 'Open Sans', sans-serif;
+}
+
 body {
     display: flex;
     justify-content: space-between;
@@ -16,6 +30,7 @@ body {
     min-height: 100%;
 }
 
+/* Estilização do Header */
 .header {
     background-color: var(--second-color);
     color: var(--sixth-color);
@@ -91,7 +106,6 @@ body {
 }
 
 /* Estilização do Footer */
-
 footer {
     display: flex;
     flex-direction: column;
