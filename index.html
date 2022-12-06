@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="src/css/animation.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -63,7 +63,7 @@
             </ul>
         </nav>
 
-        <img src="src/img/icon/trofeu.png" atl="icone trofeu">
+        <!-- <img src="src/img/icon/trofeu.png" atl="icone trofeu"> -->
     </header>
     <!-- header base do site até aqui-->
 
@@ -75,77 +75,81 @@
             </div>
 
             <div class="container">
-                <button class="arrow-left" aria-label="Previous image"><</button>
-                <button class="arrow-right" aria-label="Previous image">></button>
-                        <div class="gallery-wrapper">
-                            <div class="gallery">
-                                <div class="banner fase-de-grupos" id="banner-fase-de-grupos">
-                                    <a href="fase-de-grupos.html">
-                                        <!-- <img src="src/img/home/fasedegrupos_med.jpg" alt="imagem fase de grupos"> -->
-                                        <div class="conteudo">
-                                            <h3>FASE DE GRUPOS</h3>
-                                            <p>
-                                                Acompanhe a fase de grupos para ficar por dentro dos resuntados.
-                                            </p>
-                                        </div>
-                                        <!--Usar essa imagem de background-->
-                                    </a>
+                <button class="arrow-left" aria-label="Previous image">&lang;</button>
+                <button class="arrow-right" aria-label="Previous image">&rang;</button>
+                <div class="gallery-wrapper">
+                    <div class="gallery">
+                        <div class="banner fase-de-grupos" id="banner-fase-de-grupos">
+                            <a href="fase-de-grupos.html">
+                                <img src="src/img/home/fasedegrupos_med.jpg" alt="Imagem Fase de grupos" class="images">
+                                <div class="conteudo">
+                                    <h3>FASE DE GRUPOS</h3>
+                                    <p>
+                                        Acompanhe a fase de grupos para ficar por dentro dos resuntados
+                                    </p>
                                 </div>
-                                <div class="banner mata-mata" id="banner-mata-mata">
-                                    <a href="mata-mata.html">
-                                        <div class="conteudo">
-                                            <h3>MATA MATA</h3>
-                                            <p>
-                                                Agora é tudo ou nada! Acompanhe o Mata Mata da Copa.
-                                            </p>
-                                        </div>
-                                        <!--Usar essa imagem de background-->
-                                    </a>
-                                </div>
-                                <div class="banner simulador" id="banner-simulador">
-                                    <a href="simulador.html">
-                                        <div class="conteudo">
-                                            <h3>SIMULADOR</h3>
-                                            <p>Mostre que você está por dentro dessa copa e dê o seu
-                                                palpite no Simulador.
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="banner sede-da-copa" id="banner-sede-da-copa">
-                                    <a href="sede-da-copa.html">
-                                        <div class="conteudo">
-                                            <h3>SEDE DA COPA</h3>
-                                            <P>Conheça um pouco sobre o Qatar. O pais sede da copa de 2022</P>
-                                        </div>
-                                        <!--Usar essa imagem de background-->
-                                    </a>
-                                </div>
-                                <div class="banner voce-sabia" id="banner-voce-sabia">
-                                    <a href="voce-sabia.html">
-                                        <div class="conteudo">
-                                            <h3>VOCÊ SABIA?</h3>
-                                            <p>Curiosidades da Histora da Copa e das seleções participantes</p>
-                                        </div>
-                                        <!--Usar essa imagem de background-->
-                                    </a>
-                                </div>
-                                <!-- Somente para fechar o carrossel. Será alterado para Javascript -->
-                                <div class="banner fase-de-grupos" id="banner-fase-de-grupos">
-                                    <a href="fase-de-grupos.html">
-                                        <!-- <img src="src/img/home/fasedegrupos_med.jpg" alt="imagem fase de grupos"> -->
-                                        <div class="conteudo">
-                                            <h3>FASE DE GRUPOS</h3>
-                                            <p>
-                                                Acompanhe a fase de grupos para ficar por dentro dos resuntados.
-                                            </p>
-                                        </div>
-                                        <!--Usar essa imagem de background-->
-                                    </a>
-                                </div>
-
-                            </div>
+                            </a>
                         </div>
+
+                        <div class="banner mata-mata" id="banner-mata-mata">
+                            <a href="mata-mata.html">
+                                <img src="src/img/home/matamata_med.jpg" alt="Imagem Mata mata" class="images">
+                                <div class="conteudo">
+                                    <h3>MATA MATA</h3>
+                                    <p>
+                                        Agora é tudo ou nada! Acompanhe o Mata Mata da Copa
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="banner simulador" id="banner-simulador">
+                            <a href="simulador.html">
+                                <img src="src/img/home/simulador_med.jpg" alt="Imagem Simulador" class="images">
+                                <div class="conteudo">
+                                    <h3>SIMULADOR</h3>
+                                    <p>Mostre que você está por dentro dessa copa e dê o seu
+                                        palpite no Simulador
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="banner sede-da-copa" id="banner-sede-da-copa">
+                            <a href="sede-da-copa.html">
+                                <img src="src/img/home/sede-da-copa_med.jpg" alt="Imagem Sede da copa" class="images">
+                                <div class="conteudo">
+                                    <h3>SEDE DA COPA</h3>
+                                    <P>Conheça um pouco sobre o Qatar. O pais sede da copa de 2022</P>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="banner voce-sabia" id="banner-voce-sabia">
+                            <a href="voce-sabia.html">
+                                <img src="src/img/home/voce-sabia_med.jpg" alt="Imagem Você sabia" class="images">
+                                <div class="conteudo">
+                                    <h3>VOCÊ SABIA?</h3>
+                                    <p>Curiosidades da Histora da Copa e das seleções participantes</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Somente para fechar o carrossel. Será alterado para Javascript -->
+                        <div class="banner fase-de-grupos" id="banner-fase-de-grupos">
+                            <a href="fase-de-grupos.html">
+                                <img src="src/img/home/fasedegrupos_med.jpg" alt="Imagem Fase de grupos" class="images">
+                                <div class="conteudo">
+                                    <h3>FASE DE GRUPOS</h3>
+                                    <p>
+                                        Acompanhe a fase de grupos para ficar por dentro dos resuntados
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -219,7 +223,7 @@
                     <img src="src/img/icon/logo-grupo1-white.png" atl="logo do grupo 1">
                 </div>
                 <div>
-                    <h6>Portal Tech</h6>
+                    <h6>Proz Educação &copy; - Portal Tech</h6>
                 </div>
                 <nav>
                     <ul>
