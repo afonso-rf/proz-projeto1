@@ -7,62 +7,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela da Copa do Mundo 2022</title>
     <link rel="icon" type="image/png" href="src/img/icon/icons8-football-32.png" />
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="src/css/default.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- header base do site -->
-    <header class="header-base">
+    <header class="header">
         <div>
             <a href="index.html">
-                <div>
-                    <img src="src/img/icon/taca-icon_23x50.png" atl="icone taça">
-                </div>
+                <img class="" src="src/img/icon/trofeu.png" atl="icone trofeu">
                 <div>
                     <span>COPA DO MUNDO 2022</span>
                 </div>
             </a>
         </div>
 
-        <div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">
-                            <span>HOME</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="fase-de-grupos.html">
-                            <span>FASE DE GRUPOS</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mata-mata.html">
-                            <span>MATA MATA</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="simulador.html">
-                            <span>SIMULADOR</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="sede-da-copa.html">
-                            <span>SEDE DA COPA</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="voce-sabia.html">
-                            <span>VOCÊ SABIA?</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        
-        <img src="src/img/icon/icons8-football-32.png" atl="icone bola de fultebol">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <span>HOME</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="fase-de-grupos.html">
+                        <span>FASE DE GRUPOS</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mata-mata.html">
+                        <span>MATA MATA</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="simulador.html">
+                        <span>SIMULADOR</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="sede-da-copa.html">
+                        <span>SEDE DA COPA</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="voce-sabia.html">
+                        <span>VOCÊ SABIA?</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- <img src="src/img/icon/trofeu.png" atl="icone trofeu"> -->
     </header>
+    <!-- header base do site até aqui-->
+
     <main><!--barra de navegação entre simulador e o mata-mata-->
         <section>
             <div>
@@ -226,8 +227,8 @@
     <!-- Footer base do site -->
     <footer>
         <section>
-            <div class="footer1">
-                <div>
+            <div class="footer-1">
+                <div class="column">
                     <div>
                         <h4>Copa do Mundo 2022</h4>
                     </div>
@@ -251,7 +252,7 @@
                         </ul>
                     </div>
                 </div>
-                <div>
+                <div class="column">
                     <div>
                         <h4>Copa do Mundo 2022</h4>
                     </div>
@@ -270,7 +271,7 @@
                         </ul>
                     </div>
                 </div>
-                <div>
+                <div class="column">
                     <div>
                         <h4>Mais informações</h4>
                     </div>
@@ -287,14 +288,14 @@
             </div>
         </section>
         <section>
-            <div class="footer2">
-                <div>
-                    <img src="src/img/icon/logo-grupo1-black.png" atl="logo do grupo 1">
+            <div class="footer-2">
+                <div class="logo-grupo">
+                    <img src="src/img/icon/logo-grupo1-white.png" atl="logo do grupo 1">
                 </div>
                 <div>
-                    <h6>Portal Tech</h6>
+                    <h6>Proz Educação &copy; - Portal Tech</h6>
                 </div>
-                <div>
+                <nav>
                     <ul>
                         <li>
                             <a href="https://www.facebook.com/" target="_blank">
@@ -322,7 +323,7 @@
                     </a>
                 </li> -->
                     </ul>
-                </div>
+                </nav>
             </div>
         </section>
     </footer>
