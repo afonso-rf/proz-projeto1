@@ -27,7 +27,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    min-height: 100%;
+
 }
 
 /* Estilização do Header */
@@ -100,9 +100,10 @@ body {
 .header ul li a:hover {
     transform: scale(1.1);
     text-decoration: underline;
+    color: white;
     font-size: 17px;
     font-weight: 700;
-    transition: 150ms ease-in-out;
+    transition: 400ms ease-in-out;
 }
 
 /* Estilização do Footer */
@@ -117,8 +118,8 @@ footer {
     background-color: var(--thrid-color);
     display: flex;
     justify-content: space-evenly;
-    height: 140px;
-    padding-top: 20px;
+    height: 120px;
+    padding-top: 10px;
 
 }
 
