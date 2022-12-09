@@ -118,7 +118,7 @@ main section {
 }
 
 .text-autor h2 {
-    font-size: 37px;
+    font-size: 35px;
     font-weight: 600;
     margin-bottom: 16px;
 }
@@ -146,11 +146,20 @@ main section {
 }
 
 
+/* Responsividade */
 @media screen and (max-device-width: 1202px),
 (max-width: 1202px) {
 
     .header nav ul li a span {
         font-size: 12px;
+    }
+
+    .text-autor h2 {
+        font-size: 34px;
+    }
+
+    .text-autor p {
+        font-size: 17px;
     }
 
 }
@@ -173,11 +182,11 @@ main section {
     }
 
     .text-autor h2 {
-        font-size: 35px;
+        font-size: 33px;
     }
 
     .text-autor p {
-        font-size: 17px;
+        font-size: 16px;
     }
 }
 
@@ -205,11 +214,11 @@ main section {
     }
 
     .text-autor h2 {
-        font-size: 34px;
+        font-size: 32px;
     }
 
     .text-autor p {
-        font-size: 16px;
+        font-size: 15px;
     }
  
 }
@@ -238,7 +247,7 @@ main section {
     }
 
     .text-autor h2 {
-        font-size: 32px;
+        font-size: 30px;
     }
 
     .text-autor p {
