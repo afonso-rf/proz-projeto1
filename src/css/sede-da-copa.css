@@ -31,9 +31,9 @@ figure {
     justify-content: center
 }
 
-div {
+.map {
     float: left;
     border: transparent thin solid;
     padding: 5px;
-    margin: 0px 20px 10px 0;
+    margin: 0px 40px 20px 0px;
 }
