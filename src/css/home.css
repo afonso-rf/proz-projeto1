@@ -173,22 +173,24 @@ footer {
 
 /* Responsividade da pagina */
 
-@media screen and (max-device-width: 1650px), (max-width: 1650px) {
+@media screen and (max-device-width: 1650px),
+(max-width: 1650px) {
 
-    /* .main, */
+
     .gallery .banner a {
         max-width: 1650px;
         max-height: 550px;
     }
 }
 
-@media screen and (max-device-width: 1368px), (max-width: 1368px) {
+@media screen and (max-device-width: 1368px),
+(max-width: 1368px) {
 
-    /* .main, */
     .gallery .banner a {
         max-width: 1368px;
         max-height: 400px;
     }
+
     .gallery .banner .conteudo h3 {
         font-size: 42px;
         margin-top: 3%;
@@ -200,9 +202,9 @@ footer {
     }
 }
 
-@media screen and (max-device-width: 1282px), (max-width: 1282px) {
+@media screen and (max-device-width: 1282px),
+(max-width: 1282px) {
 
-    /* .main, */
     .gallery .banner a {
         max-width: 1282px;
         max-height: 400px;
@@ -219,9 +221,9 @@ footer {
     }
 }
 
-@media screen and (max-device-width: 1025px), (max-width: 1025px) {
+@media screen and (max-device-width: 1025px),
+(max-width: 1025px) {
 
-    /* .main, */
     .gallery .banner a {
         max-width: 1025px;
         max-height: 400px;
@@ -242,9 +244,9 @@ footer {
     }
 }
 
-@media screen and (max-device-width: 851px), (max-width: 851px) {
+@media screen and (max-device-width: 851px),
+(max-width: 851px) {
 
-    /* .main, */
     .gallery .banner a {
         max-width: 805px;
         max-height: 370px;
