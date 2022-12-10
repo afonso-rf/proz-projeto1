@@ -34,7 +34,6 @@ body {
     top: 2%;
     left: 4%;
     right: auto;
-    width: 100vh;
 
     color: var(--sixth-color);
     font-size: 80px;
@@ -262,7 +261,6 @@ footer {
 
     .container h1 {
         font-size: 53px;
-        width: 70vh;
     }
 
     .container p {
