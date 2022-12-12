@@ -1,0 +1,78 @@
+.all {
+    background-color: #d3b4bb;
+    display:grid;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#tituloSimu {
+    padding: 5px;
+    margin: 10px;
+    font-size: 50px;
+    text-align: center;
+}
+
+#navEtapas {
+    margin-top: 10px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#navEtapas ul {
+    display: flex;
+    align-items:center;
+}
+
+#navEtapas ul li {
+    margin: 10px;
+    background-color: #d1c9cb;
+    border-radius: 100px;
+    color:#ffffff;
+    padding: 20px;
+}
+
+#finaLi {
+    background: url(/src/img/icon/trofeu.png);
+    background-size: 60%;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+#coluna {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    border: 20px;
+}
+
+#coluna h2 {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+.pag1 {
+    display: flex;
+}
+
+
+.grupo {
+    background-color: #e2dbda;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.grupo h3 {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    font-size:large;
+    
+    
+}
+
+.grupo label {
+    margin: 10px;
+    padding: 8px;
+}
