@@ -55,7 +55,7 @@ main section {
 
 .title h1 {
     color: var(--sixth-color);
-    font-size: 15vh;
+    font-size: 13vh;
     font-weight: 700;
     text-align: center;
     text-shadow: 0.05em 0.05em 0.05em var(--primary-color);
@@ -104,7 +104,7 @@ main section {
 .figure-body {
     background-color: var(--primary-color);
     position: absolute;
-    bottom: -60px;
+    bottom: -65px;
     left: 18px;
     width: 135px;
     height: 125px;
@@ -113,18 +113,20 @@ main section {
 
 .text-autor {
     position: relative;
+    margin-top: 10px;
     margin-left: 3vh;
     width: 110vh;
+    
 }
 
 .text-autor h2 {
-    font-size: 35px;
+    font-size: 32px;
     font-weight: 600;
     margin-bottom: 16px;
 }
 
 .text-autor p {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 500;
 
 }
