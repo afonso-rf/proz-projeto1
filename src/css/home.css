@@ -18,7 +18,6 @@ body {
     justify-content: center;
     align-items: center;
     min-width: 320px;
-    /* height: 720px; */
 }
 
 .container {
@@ -43,7 +42,6 @@ body {
     padding-left: 16px;
     margin-bottom: 16px;
     z-index: 1;
-
 }
 
 .container h1~p {
@@ -59,60 +57,29 @@ body {
     font-size: 30px;
     font-weight: 500;
     z-index: 1;
-
-}
-
-.arrow-left,
-.arrow-right {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: auto;
-    bottom: 0;
-    font-size: 60px;
-    font-weight: bold;
-    color: var(--fifth-color);
-    width: 50px;
-    cursor: pointer;
-    border: none;
-    background: linear-gradient(to left, transparent 0%, var(--primary-color) 130%);
-    opacity: 0;
-    transition: all 400ms ease-in-out;
-    z-index: 2;
-
-}
-
-.arrow-right {
-    left: auto;
-    right: 0;
-    background: linear-gradient(to right, transparent 0%, var(--primary-color) 130%);
-}
-
-.arrow-left:hover,
-.arrow-right:hover {
-    opacity: 1;
 }
 
 .gallery-wrapper {
+    width: 1920px;
+    height: 720px;
+    margin: 0 auto;
     overflow: hidden;
 }
 
 .gallery {
+    width: 500%;
+    height: 100%;
     display: flex;
     flex-flow: row nowrap;
 }
 
-.gallery .banner a {
+.banner {
     background-color: var(--forth-color);
     display: flex;
     position: relative;
     flex-shrink: 0;
-    width: 1920px;
-    height: 720px;
-    animation-name: animacao;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-
+    width: 20%;
+    transition: 1.2s;
 }
 
 .banner .conteudo {
@@ -163,6 +130,81 @@ body {
     background: linear-gradient(to left, transparent 0%, var(--primary-color) 100%);
 }
 
+/* Movimentação dos Slides */
+.gallery input {
+    display: none;
+}
+
+.manual-navigation, .auto-navigation {
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+.manual-btn {
+    border: 2px solid var(--sixth-color);
+    padding: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 1s;
+    z-index: 1;
+}
+
+.manual-btn:hover {
+    background-color: var(--thrid-color);
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+#radio4:checked~.first {
+    margin-left: -60%;
+}
+
+#radio5:checked~.first {
+    margin-left: -80%;
+}
+
+.auto-navigation div {
+    border: 2px solid var(--second-color);
+    padding: 5px;
+    border-radius: 15px;
+}
+
+#radio1:checked~.auto-navigation .auto-btn1 {
+    background-color: var(--thrid-color);
+}
+
+#radio2:checked~.auto-navigation .auto-btn2 {
+    background-color: var(--thrid-color);
+}
+
+#radio3:checked~.auto-navigation .auto-btn3 {
+    background-color: var(--thrid-color);
+}
+
+#radio4:checked~.auto-navigation .auto-btn4 {
+    background-color: var(--thrid-color);
+}
+
+#radio5:checked~.auto-navigation .auto-btn5 {
+    background-color: var(--thrid-color);
+}
+
+
+/* Fixação do Footer */
 footer {
     position: absolute;
     left: 0;
@@ -171,12 +213,11 @@ footer {
 }
 
 /* Responsividade da pagina */
-
 @media screen and (max-device-width: 1650px),
 (max-width: 1650px) {
 
 
-    .gallery .banner a {
+    .gallery-wrapper {
         max-width: 1650px;
         max-height: 550px;
     }
@@ -185,7 +226,7 @@ footer {
 @media screen and (max-device-width: 1368px),
 (max-width: 1368px) {
 
-    .gallery .banner a {
+    .gallery-wrapper {
         max-width: 1368px;
         max-height: 400px;
     }
@@ -204,7 +245,7 @@ footer {
 @media screen and (max-device-width: 1282px),
 (max-width: 1282px) {
 
-    .gallery .banner a {
+    .gallery-wrapper {
         max-width: 1282px;
         max-height: 400px;
     }
@@ -223,7 +264,7 @@ footer {
 @media screen and (max-device-width: 1025px),
 (max-width: 1025px) {
 
-    .gallery .banner a {
+    .gallery-wrapper {
         max-width: 1025px;
         max-height: 400px;
     }
@@ -246,8 +287,7 @@ footer {
 @media screen and (max-device-width: 851px),
 (max-width: 851px) {
 
-    .gallery .banner a {
-        max-width: 805px;
+    .gallery-wrapper {
         max-height: 370px;
     }
 
