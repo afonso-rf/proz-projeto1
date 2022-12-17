@@ -1,12 +1,3 @@
-/* Cores padrões */
-:root {
-    --primary-color: #70062e;
-    --second-color: #800730;
-    --thrid-color: #8f0732;
-    --forth-color: #af5771;
-    --fifth-color: #d3b4bb;
-    --sixth-color: #e2dbda;
-}
 
 body {
     background-color: var(--primary-color);

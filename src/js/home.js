@@ -3,13 +3,11 @@ document.querySelector("#radio1").checked = true
 let quantSlides = document.querySelectorAll('.banner').length
 
 
-setInterval(function () {
-    nextSlide()
-}, 5000)
+setInterval(() => nextImage(quantSlides), 6000)
 
-const nextSlide = () => {
+const nextImage = (quant) => {
     count++
-    if (count > quantSlides) {
+    if (count > quant) {
         count = 1
     }
     document.querySelector("#radio" + count).checked = true
