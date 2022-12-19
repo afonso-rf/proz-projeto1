@@ -52,15 +52,14 @@ p {
 }
 
 img {
-    display: inline-block;
-    justify-content: center;
-    margin: 35px 19% 0px 19%;
+    display: block;
+    margin: 0px auto;
 }
 
 
 figcaption {
     text-align: center;
-    margin: 0 0 0px 0;
+    /* margin: 0 0 0px 0; */
 
 }
 
@@ -71,7 +70,9 @@ figcaption {
 }
 
 .map img {
-  margin: 0px 30px 20px 0px;
+    display: inline-block;
+    float: left;
+    margin: 0px 30px 15px 0px;
 }
 
 section {
