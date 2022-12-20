@@ -1,14 +1,56 @@
-@keyframes animacao {
-    0% {margin-left: 0;}
-    15% { margin-left: 0;}
-    20% { margin-left: -100%; }
-    35% { margin-left: -100%; }
-    40% { margin-left: -200%; }
-    55% { margin-left: -200%; }
-    60% { margin-left: -300%; }
-    75% { margin-left: -300%; }
-    80% { margin-left: -400%; }
-    95% { margin-left: -400%; }
-    100% { margin-left: -500%; }
-    
+@-webkit-keyframes slide-in-right {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@-webkit-keyframes slide-out-left {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-out-left {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        opacity: 1;
+    }
 }

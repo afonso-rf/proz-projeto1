@@ -1,11 +1,5 @@
-/* Cores padrões */
 :root {
-    --primary-color: #70062e;
-    --second-color: #800730;
-    --thrid-color: #8f0732;
-    --forth-color: #af5771;
-    --fifth-color: #d3b4bb;
-    --sixth-color: #e2dbda;
+    --time-of-move: 2s;
 }
 
 body {
@@ -18,7 +12,6 @@ body {
     justify-content: center;
     align-items: center;
     min-width: 320px;
-    /* height: 720px; */
 }
 
 .container {
@@ -43,7 +36,6 @@ body {
     padding-left: 16px;
     margin-bottom: 16px;
     z-index: 1;
-
 }
 
 .container h1~p {
@@ -52,68 +44,42 @@ body {
     left: 5%;
     right: auto;
     width: 50vh;
-
     color: var(--sixth-color);
     text-align: left;
     text-shadow: 0.05em 0.05em 0.05em var(--primary-color);
     font-size: 30px;
     font-weight: 500;
     z-index: 1;
-
-}
-
-.arrow-left,
-.arrow-right {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: auto;
-    bottom: 0;
-    font-size: 60px;
-    font-weight: bold;
-    color: var(--fifth-color);
-    width: 50px;
-    cursor: pointer;
-    border: none;
-    background: linear-gradient(to left, transparent 0%, var(--primary-color) 130%);
-    opacity: 0;
-    transition: all 400ms ease-in-out;
-    z-index: 2;
-
-}
-
-.arrow-right {
-    left: auto;
-    right: 0;
-    background: linear-gradient(to right, transparent 0%, var(--primary-color) 130%);
-}
-
-.arrow-left:hover,
-.arrow-right:hover {
-    opacity: 1;
 }
 
 .gallery-wrapper {
+     width: 100%;
+    height: 710px;
     overflow: hidden;
 }
 
 .gallery {
-    display: flex;
-    flex-flow: row nowrap;
-}
-
-.gallery .banner a {
-    background-color: var(--forth-color);
+    width: 100%;
+    height: 100%;
     display: flex;
     position: relative;
-    flex-shrink: 0;
-    width: 1920px;
-    height: 720px;
-    animation-name: animacao;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-
 }
+
+.banner {
+    width: 100%;
+    height: 100%;
+    background-color: var(--forth-color);
+    display: flex;
+    position: absolute;
+    -webkit-animation: slide-out-left var(--time-of-move)   both;
+    animation: slide-out-left var(--time-of-move)   both;
+}
+
+.banner .images {
+    width: 100%;
+    height: 100%;
+}
+
 
 .banner .conteudo {
     background-color: #24242450;
@@ -147,11 +113,6 @@ body {
     text-shadow: 0.05em 0.05em 0.05em var(--primary-color);
 }
 
-.banner .images {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
 
 .container:after {
     content: "";
@@ -159,10 +120,91 @@ body {
     top: 0;
     left: 0;
     bottom: 0;
-    right: 50%;
+    right: 55%;
     background: linear-gradient(to left, transparent 0%, var(--primary-color) 100%);
 }
 
+/* Movimentação dos Slides */
+.gallery input {
+    display: none;
+}
+
+.manual-navigation, .auto-navigation {
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+.manual-btn {
+    border: 2px solid var(--sixth-color);
+    padding: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 1s;
+    z-index: 1;
+}
+
+.manual-btn:hover {
+    background-color: var(--thrid-color);
+}
+
+
+#radio1:checked~#slide1 {
+    -webkit-animation: slide-in-right var(--time-of-move) both;
+    animation: slide-in-right var(--time-of-move)  both;
+}
+
+#radio2:checked~#slide2 {
+-webkit-animation: slide-in-right var(--time-of-move) both;
+    animation: slide-in-right var(--time-of-move)  both;
+}
+
+#radio3:checked~#slide3 {
+-webkit-animation: slide-in-right var(--time-of-move) both;
+    animation: slide-in-right var(--time-of-move)  both;
+}
+
+#radio4:checked~#slide4 {
+-webkit-animation: slide-in-right var(--time-of-move) both;
+    animation: slide-in-right var(--time-of-move)  both;
+}
+
+#radio5:checked~#slide5 {
+-webkit-animation: slide-in-right var(--time-of-move) both;
+    animation: slide-in-right var(--time-of-move)  both;
+}
+
+.auto-navigation div {
+    border: 2px solid var(--second-color);
+    padding: 5px;
+    border-radius: 15px;
+}
+
+#radio1:checked~.auto-navigation .auto-btn1 {
+    background-color: var(--thrid-color);
+}
+
+#radio2:checked~.auto-navigation .auto-btn2 {
+    background-color: var(--thrid-color);
+}
+
+#radio3:checked~.auto-navigation .auto-btn3 {
+    background-color: var(--thrid-color);
+}
+
+#radio4:checked~.auto-navigation .auto-btn4 {
+    background-color: var(--thrid-color);
+}
+
+#radio5:checked~.auto-navigation .auto-btn5 {
+    background-color: var(--thrid-color);
+}
+
+
+/* Fixação do Footer */
 footer {
     position: absolute;
     left: 0;
@@ -170,24 +212,27 @@ footer {
     width: 100%;
 }
 
+
 /* Responsividade da pagina */
+/* 1440 x 900 */
+@media screen and (max-device-width: 1440px), 
+(max-width: 1440px) {
 
-@media screen and (max-device-width: 1650px),
-(max-width: 1650px) {
 
-
-    .gallery .banner a {
-        max-width: 1650px;
-        max-height: 550px;
+    .gallery-wrapper {
+        /* max-width: 1440px; */
+        max-height: 700px;
     }
+
 }
 
-@media screen and (max-device-width: 1368px),
-(max-width: 1368px) {
+/* 1366 x 768 */
+@media screen and (max-device-width: 1366px),
+(max-width: 1366px) {
 
-    .gallery .banner a {
-        max-width: 1368px;
-        max-height: 400px;
+    .gallery-wrapper {
+        /* max-width: 1366px; */
+        max-height: 540px;
     }
 
     .gallery .banner .conteudo h3 {
@@ -201,12 +246,13 @@ footer {
     }
 }
 
-@media screen and (max-device-width: 1282px),
-(max-width: 1282px) {
+/* 1280 x 800 */
+@media screen and (max-device-width: 1280px),
+(max-width: 1280px) {
 
-    .gallery .banner a {
-        max-width: 1282px;
-        max-height: 400px;
+    .gallery-wrapper {
+        /* max-width: 1280px; */
+        max-height: 570px;
     }
 
     .gallery .banner .conteudo h3 {
@@ -220,16 +266,17 @@ footer {
     }
 }
 
-@media screen and (max-device-width: 1025px),
-(max-width: 1025px) {
+/* 1024 x 600 */
+@media screen and (max-device-width: 1024px),
+(max-width: 1024px) {
 
-    .gallery .banner a {
-        max-width: 1025px;
-        max-height: 400px;
+    .gallery-wrapper {
+        /* max-width: 1025px; */
+        max-height: 370px;
     }
 
-    .header nav ul li a span {
-        font-size: 12px;
+    .banner .conteudo {
+        right: 10%;
     }
 
     .gallery .banner .conteudo h3 {
@@ -239,25 +286,19 @@ footer {
     }
 
     .gallery .banner .conteudo p {
-        font-size: 28px;
+        font-size: 26px;
     }
 }
 
-@media screen and (max-device-width: 851px),
-(max-width: 851px) {
+/* 960 x 640 */
+@media screen and (max-device-width: 960px),
+(max-width: 960px) {
 
-    .gallery .banner a {
-        max-width: 805px;
-        max-height: 370px;
+
+    .gallery-wrapper {
+        max-height: 410px;
     }
 
-    .header nav ul li {
-        margin-left: 10px;
-    }
-
-    .header nav ul li a span {
-        font-size: 10px;
-    }
 
     .container h1 {
         font-size: 53px;
@@ -280,5 +321,106 @@ footer {
 
     .gallery .banner .conteudo p {
         font-size: 22px;
+    }
+}
+
+/* 800 x 480 */
+@media screen and (max-device-width: 800px),
+(max-width: 800px) {
+    
+    .gallery-wrapper {
+        max-height: 250px;
+    }
+
+    .container h1~p {
+        font-size: 24px;
+    }
+
+    .container:after {
+        right: 50%;
+    }
+    .manual-navigation, .auto-navigation {
+        bottom: 30px;
+    }
+
+    .gallery .banner .conteudo h3 {
+        font-size: 28px;
+     }
+
+     .gallery .banner .conteudo p {
+        font-size: 18px;
+    }
+    
+}
+
+/* 720 x 480 */
+@media screen and (max-device-width: 720px),
+(max-width: 720px) {
+
+    
+    
+}
+
+/* 640 x 960 */
+@media screen and (max-device-width: 640px),
+(max-width: 640px) {
+    
+    .gallery-wrapper {
+        max-height: 380px;
+    }
+    
+    .container h1~p {
+        width: 25vh;
+    }
+    
+}
+
+/* 480 x 800 */
+@media screen and (max-device-width: 480px), 
+(max-width: 480px) {
+    
+    .gallery-wrapper {
+        max-height: 560px;
+    }
+
+    .gallery .banner .conteudo {
+        right: 3%;
+        width: 45%;
+        height: 40%;
+    }
+
+    .gallery .banner .conteudo h3 {
+        font-size: 22px;
+    }
+
+}
+
+/* 320 x 480 */
+@media screen and (max-device-width: 320px),
+(max-width: 320px) {
+
+    .container h1 {
+        font-size: 34px;
+    }
+
+    .container h1~p {
+        width: 55vh;
+        top: 21%;
+        font-size: 17px;
+    }
+
+    .gallery-wrapper {
+        max-height: 260px;
+    }
+
+    .gallery .banner .conteudo {
+        width: 80%;
+        height: 50%;
+        top: 40%;
+        padding: 0px 6px;
+    }
+
+    .gallery .banner .conteudo p {
+        font-size: 16px;
     }
 }
