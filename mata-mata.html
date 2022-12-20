@@ -66,39 +66,45 @@
     </header>
     <!-- header base do site até aqui-->
 
-    <main><!--barra de navegação entre simulador e o mata-mata-->
+    <main>
+        <section>
+            <div class="titlematmata">
+                <h2 > MATA MATA </h2>
+            </div>
+        </section>        <!--barra de navegação entre simulador e o mata-mata-->
+
         <section id="container1">
             <div class="s-shero">
-                <ul>
+                <ul class="rownevegar">
                     <li class="navegar">
                         <a href="/simulador.html">
-                            <span class="number"> 1 </span>
+                            <span class="number"> <i> 1 </i></span>
                         </a>
                         <span class="navegarnome">SIMULADOR</span>
                     </li>
                     
                     <li class="navegar">
                         <a href="#oitavas">
-                           <span class="number">2</span>
+                           <span class="number"><i> 2 </i></span>
                         </a>
                         <span class="navegarnome"> OITAVAS DE FINAL </span>
                     </li>
                     <li class="navegar">
                         <a href="#quartas">
-                            <span class="number">3</span>
+                            <span class="number"> <i>3 </i></span>
                         </a>
                         <span class="navegarnome"> QUARTAS DE FINAL </span>
                     </li>
                     
                     <li class="navegar">
                         <a href="#semifinal">
-                            <span class="number">4</span>
+                            <span class="number"> <i> 4 </i> </span>
                         </a>
                         <span class="navegarnome"> SEMIFINAL </span>
                     </li>
                     <li class="navegar">
-                        <a href="#container3">                        
-                                <span class="number"> 5</span>
+                        <a href="#container4">                        
+                                <span class="number"> <i> 5 </i> </span>
                         </a>
                     <p class="navegarnome"> TERCEIRO LUGAR </p>    
                     </li>
@@ -118,11 +124,24 @@
 
         </section>
 
+        
+        <section class="container2">
+            <Div class="wrappernavegar">
+                <div class="titlenavegar">
+                    <span class="partidas"> OITAVAS DE FINAL  </span>
+                    <span class="partidas"> QUARTAS DE FINAL  </span>
+                    <span class="partidas"> SEMIFINAL  </span>
+                    <span class="partidas"> FINAL  </span>
+                    
+                </div>
+            </Div>
+        </section>
+        
         <!--Oitavas de Final-->
         <!--o mouse passará em cada partida e dará zoom-->
-        <section class="container2">
-            <div class="wrapper">
-                <div id="oitavas">
+        <section class="container3">
+            <div class="wrapper">        
+                <div id="oitavas">                    
                     <div class="boxoitavas"><!--Oitavas de Final-->
                         <div class="bloco">
                             <p class="dia"> Sáb. 03/12, 12:00 </p>
@@ -330,7 +349,7 @@
                 <!--QUARTAS DE FINAL-->
 
 
-                <div id="quartas">
+                <div id="quartas">                    
                     <div class="boxquartas">                                          
                         <div class="bloco">
                             <p class="dia"> Sex. 09/12, 12:00 </p>                        
@@ -522,9 +541,9 @@
         </section>
 
 
-        <section id="container3">
+        <section id="container4">
             <div class="textdisputa">
-                <span >Disputa pelo Terceiro Lugar</span>
+                <span >DISPUTA PELO TERCEIRO LUGAR</span>
             </div>
             <div class="wrapper-terceiro-lugar">
                 <div class="boxterceirolugar">
@@ -549,9 +568,11 @@
              </div>   
         </section>
         <p class="informacao"> * Todas as partidas estão no: <em> Horário de Brasília</em> </p>
-        <div class="voltartopo"><a href="#container1">
+        <div class="voltartopo">
+            <a href="#container1">
                 <p> Voltar ao Topo </p>
-            </a></div>
+            </a>
+        </div>
     </main>
 
     <!-- Footer base do site -->
