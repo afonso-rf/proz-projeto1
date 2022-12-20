@@ -91,14 +91,12 @@ body {
 }
 
 
-.header ul li:hover,
-.header ul li a:hover {
-    transform: scale(1.1);
-    text-decoration: underline;
+.header ul li:hover, .header ul li span:hover {
+    border-bottom: 1px solid white;
     color: white;
-    font-size: 17px;
-    font-weight: 700;
-    transition: 400ms ease-in-out;
+    font-weight: 800;
+    transition: 450ms all;
+    transform: scale(1.2);
 }
 
 /* Estilização do Footer */
