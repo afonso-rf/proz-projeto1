@@ -10,16 +10,17 @@
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
+    padding-bottom: 5px;
 }
 
 .s-shero{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 4px;
+    padding: 15px;
     border-bottom: solid #800730;
-    padding-bottom: 30px;
-    margin: auto 50px;
+    padding-bottom: 10px;
+    margin: auto 175px;
 
 } 
 
@@ -72,7 +73,6 @@
 .navegarnome {
     font-weight: bold;
     color: #3b3b3b;
-    padding-bottom: 15px
 }
 
 
