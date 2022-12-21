@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/fase-de-grupos.css">
 </head>
 
 <body>
@@ -65,13 +66,17 @@
     <!-- header base do site até aqui-->
     
     <!-- teste layout-->
+<main>  
+    <section class="titulo"> 
+        <h1>Fase de Grupos</h1>
+    </section>
     <section>
         <div class="tabela">
-            <div class="cabeçalho">
+            <div class="cabecalho">
                 <h4>GRUPO A</h4>
             </div>
-            <div class="tabela">
-                <div class="header">
+            <div class="tabela-de-pontos">
+                <div class="header-tabela">
                     <span>CLASSIFICAÇÃO</span>
                     <div>
                         <span>P</span>
@@ -85,12 +90,15 @@
                     </div>
                 </div>
                 <div class="body">
-                    <div class="row-active-1">
+                    <div class="row active-1">
                         <div class="time-info">
                             <span class="colocacao">
-                                "1" "º"
+                                1º
                             </span>
-                            <div class="bandeira" style="background-image: url("https://api-arc.estadao.com.br/copa-do-mundo-2022/bandeiras/bandeira-holanda.svg");"></div>
+                            <div class="bandeira">
+                                <img src="src/img/seleções/holanda.png" alt="Holanda">
+                            </div>
+
                             <span class="time">Holanda</span>
                         </div>
                         <div class="dados">
@@ -104,12 +112,14 @@
                             <span>4</span>
                         </div>
                     </div>
-                    <div class="row-active-2">
+                    <div class="row active-2">
                         <div class="time-info">
                             <span class="colocacao">
-                                "2" "º"
+                                2º
                             </span>
-                            <div class="bandeira" style="background-image: url("https://infograficos.estadao.com.br/public/esportes/brasoes/thumbs/50/senegal.png");"></div>
+                            <div class="bandeira">
+                                <img src="src/img/seleções/senegal.png">
+                            </div>
                             <span class="time">Senegal</span>
                         </div>
                         <div class="dados">
@@ -126,9 +136,11 @@
                     <div class="row">
                         <div class="time-info">
                             <span class="colocacao">
-                                "3" "º"
+                                3º
                             </span>
-                            <div class="bandeira" style="background-image: url("https://infograficos.estadao.com.br/public/esportes/brasoes/thumbs/50/equador.png");"></div>
+                            <div class="bandeira">
+                                <img src="src/img/seleções/equador.png">
+                            </div>
                             <span class="time">Equador</span>
                         </div>
                         <div class="dados">
@@ -145,9 +157,11 @@
                     <div class="row">
                         <div class="time-info">
                             <span class="colocacao">
-                                "4" "º"
+                                4º
                             </span>
-                            <div class="bandeira" style="background-image: url("https://infograficos.estadao.com.br/public/esportes/brasoes/thumbs/50/catar.png");"></div>
+                            <div class="bandeira">
+                                <img src="src/img/seleções/catar.png">
+                            </div>
                             <span class="time">Catar</span>
                         </div>
                         <div class="dados">
@@ -165,7 +179,7 @@
             </div>
         </div>
         <div class="container">
-            <div class="row copa-2022-jogos">
+            <div class="row1 copa-2022-jogos">
                 <div class="col-log-8">
                     <div class="fg-container">
                         <div class="fg-header">
@@ -205,41 +219,41 @@
                                     </div>
                                 </div>
                             </div>
-                            <div></div>
-                            <span>Rodada 2</span>
-                                <div class="fg-partidas">
-                                    <div class="fg-partida">
-                                        <span> SEX 25/11 |10h00 </span>
-                                        <div class="fg-placar">
-                                            <div>
-                                                <p>Catar</p>
-                                                <img src="https://api-arc.estadao.com.br/copa-do-mundo-2022/bandeiras/bandeira-catar.svg" alt="Catar">
-                                                <p>1</p>
+                            <div>
+                                <span>Rodada 2</span>
+                                    <div class="fg-partidas">
+                                        <div class="fg-partida">
+                                            <span> SEX 25/11 |10h00 </span>
+                                            <div class="fg-placar">
+                                                <div>
+                                                    <p>Catar</p>
+                                                    <img src="https://api-arc.estadao.com.br/copa-do-mundo-2022/bandeiras/bandeira-catar.svg" alt="Catar">
+                                                    <p>1</p>
+                                                </div>
+                                                <div>X</div>                                            
+                                                <div class="inverted">
+                                                    <p>Senegal</p>
+                                                    <img src="https://api-arc.estadao.com.br/copa-do-mundo-2022/bandeiras/bandeira-senegal.svg" alt="Senegal">
+                                                    <p>3</p>
+                                                </div>
                                             </div>
-                                            <div>X</div>                                            
-                                            <div class="inverted">
-                                                <p>Senegal</p>
-                                                <img src="https://api-arc.estadao.com.br/copa-do-mundo-2022/bandeiras/bandeira-senegal.svg" alt="Senegal">
-                                                <p>3</p>
-                                            </div>
-                                        </div>
-                                        <span> SEX 25/11 |13h00 </span>
-                                        <div class="fg-placar">
-                                            <div>
-                                                <p>Holanda</p>
-                                                <img src="https://api-arc.estadao.com.br/copa-do-mundo-2022/bandeiras/bandeira-holanda.svg" alt="Holanda">
-                                                <p>1</p>
-                                            </div>
-                                            <div>X</div>                                            
-                                            <div class="inverted">
-                                                <p>Equador</p>
-                                                <img src="https://api-arc.estadao.com.br/copa-do-mundo-2022/bandeiras/bandeira-equador.svg" alt="Equador">
-                                                <p>1</p>
+                                            <span> SEX 25/11 |13h00 </span>
+                                            <div class="fg-placar">
+                                                <div>
+                                                    <p>Holanda</p>
+                                                    <img src="https://api-arc.estadao.com.br/copa-do-mundo-2022/bandeiras/bandeira-holanda.svg" alt="Holanda">
+                                                    <p>1</p>
+                                                </div>
+                                                <div>X</div>                                            
+                                                <div class="inverted">
+                                                    <p>Equador</p>
+                                                    <img src="https://api-arc.estadao.com.br/copa-do-mundo-2022/bandeiras/bandeira-equador.svg" alt="Equador">
+                                                    <p>1</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
                             <div>
                             <span>Rodada 3</span>
                                 <div class="fg-partidas">
@@ -248,7 +262,7 @@
                                         <div class="fg-placar">
                                             <div>
                                                 <p>Equador</p>
-                                                <img src="https://api-arc.estadao.com.br/copa-do-mundo-2022/bandeiras/bandeira-equador.svg" alt="Equador>
+                                                <img src="https://api-arc.estadao.com.br/copa-do-mundo-2022/bandeiras/bandeira-equador.svg" alt="Equador">
                                                 <p>1</p>
                                             </div>
                                             <div>X</div>                                            
@@ -283,11 +297,11 @@
     </section>
     <section>
         <div class="tabela">
-            <div class="cabeçalho">
+            <div class="cabecalho">
                 <h4>GRUPO B</h4>
             </div>
-            <div class="tabela">
-                <div class="header">
+            <div class="tabela-de-pontos">
+                <div class="header-tabela">
                     <span>CLASSIFICAÇÃO</span>
                     <div>
                         <span>P</span>
@@ -301,12 +315,14 @@
                     </div>
                 </div>
                 <div class="body">
-                    <div class="row-active-1">
+                    <div class="row active-1">
                         <div class="time-info">
                             <span class="colocacao">
-                                "1" "º"
+                                1º
                             </span>
-                            <div class="bandeira" style="background-image: url("https://infograficos.estadao.com.br/public/esportes/brasoes/thumbs/50/inglaterra.png");"></div>
+                            <div class="bandeira">
+                                <img src="src/img/seleções/inglaterra.png">
+                            </div>
                             <span class="time">Inglaterra</span>
                         </div>
                         <div class="dados">
@@ -320,12 +336,14 @@
                             <span>7</span>
                         </div>
                     </div>
-                    <div class="row-active-2">
+                    <div class="row active-2">
                         <div class="time-info">
                             <span class="colocacao">
-                                "2" "º"
+                                2º
                             </span>
-                            <div class="bandeira" style="background-image: url("https://infograficos.estadao.com.br/public/esportes/brasoes/thumbs/50/eua.png");"></div>
+                            <div class="bandeira">
+                                <img src="src/img/seleções/eua.png">
+                            </div>
                             <span class="time">Estados Unidos</span>
                         </div>
                         <div class="dados">
@@ -342,9 +360,11 @@
                     <div class="row">
                         <div class="time-info">
                             <span class="colocacao">
-                                "3" "º"
+                                3º
                             </span>
-                            <div class="bandeira" style="background-image: url("https://infograficos.estadao.com.br/public/esportes/brasoes/thumbs/50/ira.png");"></div>
+                            <div class="bandeira">
+                                <img src="src/img/seleções/ira.png">
+                            </div>
                             <span class="time">Irã</span>
                         </div>
                         <div class="dados">
@@ -361,9 +381,11 @@
                     <div class="row">
                         <div class="time-info">
                             <span class="colocacao">
-                                "4" "º"
+                                4º
                             </span>
-                            <div class="bandeira" style="background-image: url("https://infograficos.estadao.com.br/public/esportes/brasoes/thumbs/50/pais_de_gales.png");"></div>
+                            <div class="bandeira">
+                                <img src="src/img/seleções/pais de gales.png">
+                            </div>
                             <span class="time">País de Gales</span>
                         </div>
                         <div class="dados">
@@ -421,7 +443,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div></div>
+                            <div>
                             <span>Rodada 2</span>
                                 <div class="fg-partidas">
                                     <div class="fg-partida">
@@ -499,11 +521,11 @@
 	</section>
     <section>
         <div class="tabela">
-            <div class="cabeçalho">
+            <div class="cabecalho">
                 <h4>GRUPO C</h4>
             </div>
-            <div class="tabela">
-                <div class="header">
+            <div class="tabela-de-pontos">
+                <div class="header-tabela">
                     <span>CLASSIFICAÇÃO</span>
                     <div>
                         <span>P</span>
@@ -517,12 +539,14 @@
                     </div>
                 </div>
                 <div class="body">
-                    <div class="row-active-1">
+                    <div class="row active-1">
                         <div class="time-info">
                             <span class="colocacao">
-                                "1" "º"
+                                1º
                             </span>
-                            <div class="bandeira" style="background-image: url("https://infograficos.estadao.com.br/public/esportes/brasoes/thumbs/50/argentina.png");"></div>
+                            <div class="bandeira">
+                                <img src="src/img/seleções/argentina.png">
+                            </div>
                             <span class="time">Argentina</span>
                         </div>
                         <div class="dados">
@@ -536,12 +560,14 @@
                             <span>3</span>
                         </div>
                     </div>
-                    <div class="row-active-2">
+                    <div class="row active-2">
                         <div class="time-info">
                             <span class="colocacao">
-                                "2" "º"
+                                2º
                             </span>
-                            <div class="bandeira" style="background-image: url("https://infograficos.estadao.com.br/public/esportes/brasoes/thumbs/50/polonia.png");"></div>
+                            <div class="bandeira">
+                                <img src="src/img/seleções/polonia.png">
+                            </div>
                             <span class="time">Polônia</span>
                         </div>
                         <div class="dados">
@@ -558,9 +584,11 @@
                     <div class="row">
                         <div class="time-info">
                             <span class="colocacao">
-                                "3" "º"
+                                3º
                             </span>
-                            <div class="bandeira" style="background-image: url("https://infograficos.estadao.com.br/public/esportes/brasoes/thumbs/50/mexico.png");"></div>
+                            <div class="bandeira">
+                                <img src="src/img/seleções/mexico.png">
+                            </div>
                             <span class="time">México</span>
                         </div>
                         <div class="dados">
@@ -577,9 +605,11 @@
                     <div class="row">
                         <div class="time-info">
                             <span class="colocacao">
-                                "4" "º"
+                                4º
                             </span>
-                            <div class="bandeira" style="background-image: url("https://infograficos.estadao.com.br/public/esportes/brasoes/thumbs/50/arabia_saudita.png");"></div>
+                            <div class="bandeira">
+                                <img src="src/img/seleções/arabia saudita.png">
+                            </div>
                             <span class="time">Arábia Saudita</span>
                         </div>
                         <div class="dados">
@@ -637,7 +667,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div></div>
+                            <div>
                             <span>Rodada 2</span>
                                 <div class="fg-partidas">
                                     <div class="fg-partida">
@@ -715,11 +745,11 @@
 	</section>
     <section>
         <div class="tabela">
-            <div class="cabeçalho">
+            <div class="cabecalho">
                 <h4>GRUPO D</h4>
             </div>
-            <div class="tabela">
-                <div class="header">
+            <div class="tabela-de-pontos">
+                <div class="header-tabela">
                     <span>CLASSIFICAÇÃO</span>
                     <div>
                         <span>P</span>
@@ -733,12 +763,14 @@
                     </div>
                 </div>
                 <div class="body">
-                    <div class="row-active-1">
+                    <div class="row active-1">
                         <div class="time-info">
                             <span class="colocacao">
-                                "1" "º"
+                                1º
                             </span>
-                            <div class="bandeira" style="background-image: url("https://infograficos.estadao.com.br/public/esportes/brasoes/thumbs/50/franca.png");"></div>
+                            <div class="bandeira">
+                                <img src="src/img/seleções/franca.png">
+                            </div>
                             <span class="time">França</span>
                         </div>
                         <div class="dados">
@@ -752,12 +784,14 @@
                             <span>3</span>
                         </div>
                     </div>
-                    <div class="row-active-2">
+                    <div class="row active-2">
                         <div class="time-info">
                             <span class="colocacao">
-                                "2" "º"
+                                2º
                             </span>
-                            <div class="bandeira" style="background-image: url("https://infograficos.estadao.com.br/public/esportes/brasoes/thumbs/50/australia.png");"></div>
+                            <div class="bandeira">
+                                <img src="src/img/seleções/australia.png">
+                            </div>
                             <span class="time">Austrália</span>
                         </div>
                         <div class="dados">
@@ -774,9 +808,11 @@
                     <div class="row">
                         <div class="time-info">
                             <span class="colocacao">
-                                "3" "º"
+                                3º
                             </span>
-                            <div class="bandeira" style="background-image: url("https://infograficos.estadao.com.br/public/esportes/brasoes/thumbs/50/tunisia.png");"></div>
+                            <div class="bandeira">
+                                <img src="src/img/seleções/tunisia.png">
+                            </div>
                             <span class="time">Tunísia</span>
                         </div>
                         <div class="dados">
@@ -793,9 +829,11 @@
                     <div class="row">
                         <div class="time-info">
                             <span class="colocacao">
-                                "4" "º"
+                                4º
                             </span>
-                            <div class="bandeira" style="background-image: url("https://infograficos.estadao.com.br/public/esportes/brasoes/thumbs/50/dinamarca.png");"></div>
+                            <div class="bandeira">
+                                <img src="src/img/seleções/dinamarca.png">
+                            </div>
                             <span class="time">Dinamarca</span>
                         </div>
                         <div class="dados">
@@ -853,7 +891,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div></div>
+                            <div>
                             <span>Rodada 2</span>
                                 <div class="fg-partidas">
                                     <div class="fg-partida">
@@ -931,11 +969,11 @@
 	</section>
     <section>
         <div class="tabela">
-            <div class="cabeçalho">
+            <div class="cabecalho">
                 <h4>GRUPO E</h4>
             </div>
-            <div class="tabela">
-                <div class="header">
+            <div class="tabela-de-pontos">
+                <div class="header-tabela">
                     <span>CLASSIFICAÇÃO</span>
                     <div>
                         <span>P</span>
@@ -949,12 +987,14 @@
                     </div>
                 </div>
                 <div class="body">
-                    <div class="row-active-1">
+                    <div class="row active-1">
                         <div class="time-info">
                             <span class="colocacao">
-                                "1" "º"
+                                1º
                             </span>
-                            <div class="bandeira" style="background-image: url("https://infograficos.estadao.com.br/public/esportes/brasoes/thumbs/50/japao.png");"></div>
+                            <div class="bandeira">
+                                <img src="src/img/seleções/japao.png">
+                            </div>
                             <span class="time">Japão</span>
                         </div>
                         <div class="dados">
@@ -968,12 +1008,14 @@
                             <span>1</span>
                         </div>
                     </div>
-                    <div class="row-active-2">
+                    <div class="row active-2">
                         <div class="time-info">
                             <span class="colocacao">
-                                "2" "º"
+                                2º
                             </span>
-                            <div class="bandeira" style="background-image: url("https://infograficos.estadao.com.br/public/esportes/brasoes/thumbs/50/espanha.png");"></div>
+                            <div class="bandeira">
+                                <img src="src/img/seleções/espanha.png">
+                            </div>
                             <span class="time">Espanha</span>
                         </div>
                         <div class="dados">
@@ -990,9 +1032,11 @@
                     <div class="row">
                         <div class="time-info">
                             <span class="colocacao">
-                                "3" "º"
+                                3º
                             </span>
-                            <div class="bandeira" style="background-image: url("https://infograficos.estadao.com.br/public/esportes/brasoes/thumbs/50/alemanha.png");"></div>
+                            <div class="bandeira">
+                                <img src="src/img/seleções/alemanha.png">
+                            </div>
                             <span class="time">Alemanha</span>
                         </div>
                         <div class="dados">
@@ -1009,9 +1053,11 @@
                     <div class="row">
                         <div class="time-info">
                             <span class="colocacao">
-                                "4" "º"
+                                4º
                             </span>
-                            <div class="bandeira" style="background-image: url("https://infograficos.estadao.com.br/public/esportes/brasoes/thumbs/50/costa_rica.png");"></div>
+                            <div class="bandeira">
+                                <img src="src/img/seleções/costa rica.png">
+                            </div>
                             <span class="time">Costa Rica</span>
                         </div>
                         <div class="dados">
@@ -1069,7 +1115,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div></div>
+                            <div>
                             <span>Rodada 2</span>
                                 <div class="fg-partidas">
                                     <div class="fg-partida">
@@ -1147,11 +1193,11 @@
 	</section>
     <section>
         <div class="tabela">
-            <div class="cabeçalho">
+            <div class="cabecalho">
                 <h4>GRUPO F</h4>
             </div>
-            <div class="tabela">
-                <div class="header">
+            <div class="tabela-de-pontos">
+                <div class="header-tabela">
                     <span>CLASSIFICAÇÃO</span>
                     <div>
                         <span>P</span>
@@ -1165,12 +1211,14 @@
                     </div>
                 </div>
                 <div class="body">
-                    <div class="row-active-1">
+                    <div class="row active-1">
                         <div class="time-info">
                             <span class="colocacao">
-                                "1" "º"
+                                1º
                             </span>
-                            <div class="bandeira" style="background-image: url("https://infograficos.estadao.com.br/public/esportes/brasoes/thumbs/50/marrocos.png");"></div>
+                            <div class="bandeira">
+                                <img src="src/img/seleções/marrocos.png">
+                            </div>
                             <span class="time">Marrocos</span>
                         </div>
                         <div class="dados">
@@ -1184,12 +1232,14 @@
                             <span>3</span>
                         </div>
                     </div>
-                    <div class="row-active-2">
+                    <div class="row active-2">
                         <div class="time-info">
                             <span class="colocacao">
-                                "2" "º"
+                                2º
                             </span>
-                            <div class="bandeira" style="background-image: url("https://infograficos.estadao.com.br/public/esportes/brasoes/thumbs/50/croacia.png");"></div>
+                            <div class="bandeira">
+                                <img src="src/img/seleções/croacia.png">
+                            </div>
                             <span class="time">Croácia</span>
                         </div>
                         <div class="dados">
@@ -1206,9 +1256,11 @@
                     <div class="row">
                         <div class="time-info">
                             <span class="colocacao">
-                                "3" "º"
+                                3º
                             </span>
-                            <div class="bandeira" style="background-image: url("https://infograficos.estadao.com.br/public/esportes/brasoes/thumbs/50/belgica.png");"></div>
+                            <div class="bandeira">
+                                <img src="src/img/seleções/belgica.png">
+                            </div>
                             <span class="time">Bélgica</span>
                         </div>
                         <div class="dados">
@@ -1225,9 +1277,11 @@
                     <div class="row">
                         <div class="time-info">
                             <span class="colocacao">
-                                "4" "º"
+                                4º
                             </span>
-                            <div class="bandeira" style="background-image: url("https://infograficos.estadao.com.br/public/esportes/brasoes/thumbs/50/canada.png");"></div>
+                            <div class="bandeira">
+                                <img src="src/img/seleções/canada.png">
+                            </div>
                             <span class="time">Canadá</span>
                         </div>
                         <div class="dados">
@@ -1285,7 +1339,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div></div>
+                            <div>
                             <span>Rodada 2</span>
                                 <div class="fg-partidas">
                                     <div class="fg-partida">
@@ -1363,11 +1417,11 @@
 	</section>
     <section>
         <div class="tabela">
-            <div class="cabeçalho">
+            <div class="cabecalho">
                 <h4>GRUPO G</h4>
             </div>
-            <div class="tabela">
-                <div class="header">
+            <div class="tabela-de-pontos">
+                <div class="header-tabela">
                     <span>CLASSIFICAÇÃO</span>
                     <div>
                         <span>P</span>
@@ -1381,12 +1435,14 @@
                     </div>
                 </div>
                 <div class="body">
-                    <div class="row-active-1">
+                    <div class="row active-1">
                         <div class="time-info">
                             <span class="colocacao">
-                                "1" "º"
+                                1º
                             </span>
-                            <div class="bandeira" style="background-image: url("https://infograficos.estadao.com.br/public/esportes/brasoes/thumbs/50/brasil.png");"></div>
+                            <div class="bandeira">
+                                <img src="src/img/seleções/brasil.png">
+                            </div>
                             <span class="time">Brasil</span>
                         </div>
                         <div class="dados">
@@ -1400,12 +1456,14 @@
                             <span>2</span>
                         </div>
                     </div>
-                    <div class="row-active-2">
+                    <div class="row active-2">
                         <div class="time-info">
                             <span class="colocacao">
-                                "2" "º"
+                                2º
                             </span>
-                            <div class="bandeira" style="background-image: url("https://infograficos.estadao.com.br/public/esportes/brasoes/thumbs/50/suica.png");"></div>
+                            <div class="bandeira">
+                                <img src="src/img/seleções/suica.png">
+                            </div>
                             <span class="time">Suíça</span>
                         </div>
                         <div class="dados">
@@ -1422,9 +1480,11 @@
                     <div class="row">
                         <div class="time-info">
                             <span class="colocacao">
-                                "3" "º"
+                                3º
                             </span>
-                            <div class="bandeira" style="background-image: url("https://infograficos.estadao.com.br/public/esportes/brasoes/thumbs/50/camaroes.png");"></div>
+                            <div class="bandeira">
+                                <img src="src/img/seleções/camaroes.png">
+                            </div>
                             <span class="time">Camarões</span>
                         </div>
                         <div class="dados">
@@ -1441,9 +1501,11 @@
                     <div class="row">
                         <div class="time-info">
                             <span class="colocacao">
-                                "4" "º"
+                                4º
                             </span>
-                            <div class="bandeira" style="background-image: url("https://infograficos.estadao.com.br/public/esportes/brasoes/thumbs/50/servia.png");"></div>
+                            <div class="bandeira">
+                                <img src="src/img/seleções/servia.png">
+                            </div>
                             <span class="time">Sérvia</span>
                         </div>
                         <div class="dados">
@@ -1501,7 +1563,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div></div>
+                            <div>
                             <span>Rodada 2</span>
                                 <div class="fg-partidas">
                                     <div class="fg-partida">
@@ -1579,11 +1641,11 @@
 	</section>
     <section>
         <div class="tabela">
-            <div class="cabeçalho">
+            <div class="cabecalho">
                 <h4>GRUPO H</h4>
             </div>
-            <div class="tabela">
-                <div class="header">
+            <div class="tabela-de-pontos">
+                <div class="header-tabela">
                     <span>CLASSIFICAÇÃO</span>
                     <div>
                         <span>P</span>
@@ -1597,12 +1659,14 @@
                     </div>
                 </div>
                 <div class="body">
-                    <div class="row-active-1">
+                    <div class="row active-1">
                         <div class="time-info">
                             <span class="colocacao">
-                                "1" "º"
+                                1º
                             </span>
-                            <div class="bandeira" style="background-image: url("https://infograficos.estadao.com.br/public/esportes/brasoes/thumbs/50/portugal.png");"></div>
+                            <div class="bandeira">
+                                <img src="src/img/seleções/portugal.png">
+                            </div>
                             <span class="time">Portugal</span>
                         </div>
                         <div class="dados">
@@ -1616,12 +1680,14 @@
                             <span>2</span>
                         </div>
                     </div>
-                    <div class="row-active-2">
+                    <div class="row active-2">
                         <div class="time-info">
                             <span class="colocacao">
-                                "2" "º"
+                                2º
                             </span>
-                            <div class="bandeira" style="background-image: url("https://infograficos.estadao.com.br/public/esportes/brasoes/thumbs/50/coreia-do-sul.png");"></div>
+                            <div class="bandeira">
+                                <img src="src/img/seleções/coreiadosul.png">
+                            </div>
                             <span class="time">Coreia do Sul</span>
                         </div>
                         <div class="dados">
@@ -1638,9 +1704,11 @@
                     <div class="row">
                         <div class="time-info">
                             <span class="colocacao">
-                                "3" "º"
+                                3º
                             </span>
-                            <div class="bandeira" style="background-image: url("https://infograficos.estadao.com.br/public/esportes/brasoes/thumbs/50/uruguai.png");"></div>
+                            <div class="bandeira">
+                                <img src="src/img/seleções/uruguai.png">
+                            </div>
                             <span class="time">Uruguai</span>
                         </div>
                         <div class="dados">
@@ -1657,9 +1725,11 @@
                     <div class="row">
                         <div class="time-info">
                             <span class="colocacao">
-                                "4" "º"
+                                4º
                             </span>
-                            <div class="bandeira" style="background-image: url("https://infograficos.estadao.com.br/public/esportes/brasoes/thumbs/50/gana.png");"></div>
+                            <div class="bandeira">
+                                <img src="src/img/seleções/gana.png">
+                            </div>
                             <span class="time">Gana</span>
                         </div>
                         <div class="dados">
@@ -1717,7 +1787,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div></div>
+                            <div>
                             <span>Rodada 2</span>
                                 <div class="fg-partidas">
                                     <div class="fg-partida">
@@ -1793,106 +1863,8 @@
             </div>
         </div>
 	</section>
-
+</main> 
     <!-- teste layout-->
-    
-    <section class="Grupo A">
-        <div class="container" style="border: 6px solid rgb(255, 255, 255);">
-            <div class="wrapper">
-                <h2>Grupo A</h2>
-                <h3> Holanda - Equador - Senegal - Catar</h3>
-                <div class="wrapper">
-                    <p>20/11 – 13h00  - Estádio Al Bayt</p>
-                    <p>Catar 0 x 2 Equador</p>
-                </div>
-                <P>21/11 – 13h00 – Senegal 0 x 2 Holanda – Estádio Al Thumama</P>
-                <p>25/11 – 10h00 – Catar 1 x 3 Senegal – Estádio Al Thumama</p>
-                <P>25/11 – 13h00 – Holanda 1 x 1 Equador – Estádio Internacional Khalifa</P>
-                <p>29/11 – 12h00 – Holanda 2 x 0 Catar – Estádio Al Bayt</p>
-                <p>29/11 – 12h00 – Equador 1 x 2 Senegal – Estádio Internacional Khalifa</p>
-            </div>
-        </div>
-
-    </section>
-
-    <section>
-        <h2>Grupo B</h2>
-        <h3> Inglaterra - Irã - Estados Unidos - País de Gales</h3>
-        <p>21/11 – 10h00 – Inglaterra 6 x 2 Irã – Estádio Internacional Khalifa</p>
-        <p>21/11 – 16h00 – Estados Unidos 1 x 1 País de Gales – Estádio Ahmad bin Ali</p>
-        <p>25/11 – 07h00 – País de Gales 0 x 2 Irã – Estádio Ahmed bin Ali</p>
-        <p>25/11 – 16h00 – Inglaterra 0 x 0 Estados Unidos – Estádio Al Bayt</p>
-        <p>29/11 – 16h00 – País de Gales 0 x 3 Inglaterra – Estádio Ahmad bin Ali</p>
-        <p>29/11 – 16h00 – Irã 0 x 1 Estados Unidos – Estádio Al Thumama</p>
-    </section>
-
-    <section>
-        <h2>Grupo C</h2>
-        <h3> Argentina - Arábia Saudita - México - Polônia </h3>
-        <p>22/11 – 07h – Argentina 1 x 2 Arábia Saudita – Estádio Nacional de Lusail</p>
-        <p>22/11 – 13h – México 0 x 0 Polônia – Estádio 974</p>
-        <p>26/11 – 10h – Polônia 2 x 0 Arábia Saudita – Estádio Cidade da Educação</p>
-        <p>26/11 – 16h – Argentina 2 x 0 México – Estádio Nacional de Lusail</p>
-        <p>30/11 – 16h – Arábia Saudita 1 x 2 México – Estádio Nacional de Lusail</p>
-        <p>30/11 – 16h – Polônia 0 x 2 Argentina – Estádio 974</p>
-    </section>
-
-    <section>
-        <h2>Grupo D</h2>
-        <h3> Dinamarca - Tunísia - França - Austrália</h3>
-        <p>22/11 – 10h – Dinamarca 0 x 0 Tunísia – Estádio Cidade da Educação</p>
-        <p>22/11 – 16h – França 4 x 1 Austrália – Estádio Al Janoub</p>
-        <p>26/11 – 07h – Tunísia 0 x 1 Austrália – Estádio Al Janoub</p>
-        <p>26/11 – 13h – França 2 x 1 Dinamarca – Estádio 974</p>
-        <p>30/11 – 12h – Tunísia 1 x 0 França – Estádio Cidade da Educação</p>
-        <p>30/11 – 12h – Austrália 1 x 0 Dinamarca – Estádio Al Janoub</p>
-    </section>
-
-    <section>
-        <h2>Grupo E</h2>
-        <h3> Alemanha - Japão - Espanha - Costa Rica </h3>
-        <p>23/11 – 10h00 – Alemanha 1 x 2 Japão – Estádio Internacional Khalifa</p>
-        <p>23/11 – 13h00 – Espanha 7 x 0 Costa Rica – Estádio Al Thumama</p>
-        <p>27/11 – 07h00 – Japão 0 x 1 Costa Rica – Estádio Ahmad bin Ali</p>
-        <p>27/11 – 16h00 – Espanha 1 x 1 Alemanha – Estádio Al Bayt</p>
-        <p>01/12 – 16h00 – Japão 2 x 1 Espanha – Estádio Internacional Khalifa</p>
-        <p>01/12 – 16h00 – Costa Rica 2 x 4 Alemanha – Estádio Al Bayt</p>
-    </section>
-
-    <section>
-        <h2>Grupo F</h2>
-        <h3> Marrocos - Croácia - Bélgica - Canadá </h3>
-        <P>23/11 – 07h00 – Marrocos 0 x 0 Croácia – Estádio Al Bayt</P>
-        <p>23/11 – 16h00 – Bélgica 1 x 0 Canadá – Estádio Ahmad bin Ali</p>
-        <p>27/11 – 10h00 – Bélgica 0 x 2 Marrocos – Estádio Al Thumama</p>
-        <p>27/11 – 13h00 – Croácia 4 x 1 Canadá – Estádio Internacional Khalifa</p>
-        <p>01/12 – 12h00 – Croácia 0 x 0 Bélgica – Estádio Ahmad bin Ali</p>
-        <p>01/12 – 12h00 – Canadá 1 x 2 Marrocos – Estádio Al Thumama</p>
-    </section>
-
-    <section>
-        <h2>Grupo G</h2>
-        <h3> Suíça - Camarões - Brasil - Sérvia </h3>
-        <p>24/11 – 07h00 – Suíça 1 x 0 Camarões – Estádio Al Janoub</p>
-        <p>24/11 – 16h00 – Brasil 2 x 0 Sérvia – Estádio Nacional de Lusail</p>
-        <p>28/11 – 07h00 – Camarões 3 x 3 Sérvia – Estádio Al Janoub</p>
-        <p>28/11 – 13h00 – Brasil 1 x 0 Suíça – Estádio 974</p>
-        <p>02/12 – 16h00 – Camarões 1 x 0 Brasil – Estádio Nacional de Lusail</p>
-        <p>02/12 – 16h00 – Sérvia 2 x 3 Suíça – Estádio 974</p>
-    </section>
-
-    <section>
-        <h2>Grupo H</h2>
-        <h3> Uruguai - Coreia do Sul - Portugal - Gana </h3>
-        <p>24/11 – 10h00 – Uruguai 0 x 0 Coreia do Sul – Estádio Cidade da Educação</p>
-        <p>24/11 – 13h00 – Portugal 3 x 2 Gana – Estádio 974</p>
-        <p>28/11 – 10h00 – Coreia do Sul 2 x 3 Gana – Estádio Cidade da Educação</p>
-        <p>28/11 – 16h00 – Portugal 2 x 0 Uruguai – Estádio Nacional de Lusail</p>
-        <p>02/12 – 12h00 – Coreia do Sul 2 x 1 Portugal – Estádio Cidade da Educação</p>
-        <p>02/12 – 12h00 – Gana 0 x 2 Uruguai – Estádio Al Janoub</p>
-    </section>
-
-    <!-- Footer base do site -->
     <footer>
         <section>
             <div class="footer-1">
