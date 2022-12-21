@@ -11,11 +11,26 @@
 
 main {
     width: 100%;
-    cursor: pointer;
     margin: 0;
     padding: 0;
     font-family: "Open Sans", sans-serif;
 
+}
+.titlematmata{  
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.titlematmata h2{
+    padding: 4px; 
+    background: var(--primary-color);
+    border-radius: 8px;
+    width: 45%;
+    text-align: center;
+    font-weight: bold;
+    color: var(--sixth-color);
+    margin-top: 10px;
 }
 
 /*inicio conf conteiner1*/
@@ -23,15 +38,19 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 4px;
+    padding: 25px;
     height: 100%;
     border-bottom: solid #800730;
     padding-bottom: 30px;
-    margin: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     
 
 }
-ul{
+
+.rownevegar{
     display: flex;
     gap: 20px;
     
@@ -59,6 +78,7 @@ ul{
 
 .number a {
     color: #800730;
+    
 }
 
 .number a:hover {
@@ -69,12 +89,23 @@ ul{
     width: 100%;
 }
 
+i::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    border-bottom:4px dotted var(--primary-color) ;
+    left: 82px;
+    height: 15px;
+
+}
+
 .navegar {
     align-items: center;
     display: flex;
     flex-direction: column;
     width: 90px;
     height: 120px;
+    position: relative;
 }
 
 .navegarnome {
@@ -83,16 +114,49 @@ ul{
     padding-top: 20px;
     font-size: 14px;
     text-align: center;
+    font-weight: 500;
 
 }
 
 /*FIM CONTEINER1*/
+.container2{
+    display: flex;
+    justify-content: center;
+    
+    
+
+}
+.wrappernavegar{
+    display: flex;    
+    justify-content: center;    
+    padding: 4px;
+    height: 100%;
+    width: 72%;  
+    background: linear-gradient(to right,var(--second-color), rgb(37, 34, 34));
+    border-radius: 8px;
+    
+}
+.titlenavegar{
+    display: flex;
+    gap:140px;
+}
+
+.partidas{
+    width: 25%;
+    text-align: center;
+    font-weight: 700;
+    color: #ffffff;
+
+}
+    
+
 
 /*inicio conf conteiner2*/
-.container2 {
+.container3 {
     display: flex;
     width: 100%;
     justify-content: center;
+    margin-bottom: 30px;
 
 
 }
@@ -107,19 +171,18 @@ ul{
 
  }
 
-.boxoitavas, .boxquartas .boxsemifinal .boxfinal.boxterceirolugar{
+.boxoitavas, .boxquartas, .boxsemifinal, .boxfinal, .boxterceirolugar{
     max-width: 100%;
     -moz-transition: all 0.5s;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;  
 }
-.boxoitavas:hover, .boxquartas:hover, .boxsemifinal:hover, .boxfinal:hover,.boxterceirolugar:hover {
+.boxoitavas:hover, .boxquartas:hover,.boxsemifinal:hover, .boxfinal:hover, .boxterceirolugar:hover {
 
     -moz-transform: scale(1.2);
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
 }
-
 
 .dia {
     background: linear-gradient(to right,var(--second-color), rgb(37, 34, 34));
@@ -358,11 +421,12 @@ ul{
     margin-top: 529px;
 
 }
- #container3{
+ #container4{
     display: flex;
     justify-content:center;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 30px;
         
  }
  .textdisputa{
@@ -382,6 +446,8 @@ ul{
     display: flex;
     justify-content: center;
     border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
 
  }
@@ -402,6 +468,7 @@ ul{
     display: flex;
     justify-content: flex-end;
     font-weight: 500;
+    margin-right: 50px;
 
 
 }
