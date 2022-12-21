@@ -8,9 +8,11 @@
     <title>Tabela da Copa do Mundo 2022</title>
     <link rel="icon" type="image/png" href="src/img/icon/icons8-football-32.png" />
     <link rel="stylesheet" href="src/css/default.css">
+    <link rel="stylesheet" href="src/css/mata-mata.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -64,164 +66,506 @@
     </header>
     <!-- header base do site até aqui-->
 
-    <main><!--barra de navegação entre simulador e o mata-mata-->
+    <main>
         <section>
-            <div>
-                <nav><!--Essa Navegaçãoa terá interação com a navegação do Simulador(Abinadabe)-->
-                    <ul><!--Verificar com a pró se será cada Li uma página-->
-                            <p> 1 </p>
-                            <a href="/src/simulador.html">
-                        <li>SIMULADOR</li>
-                            </a>
-                            <p> 2 </p>
-                        <li>OITAVAS DE FINAL</li>
-                        <p> 3 </p>
-                        <li>QUARTAS DE FINAL</li>
-                        <p> 4 </p>
-                        <li>SEMIFINAL</li>
-                        <img src="" alt="Trofeu">
-                        <!--Ver com Abinadabe o troféu-->
-                        <li>FINAL</li>
-                    </ul>
-                </nav>
+            <div class="titlematmata">
+                <h2 > MATA MATA </h2>
             </div>
+        </section>        <!--barra de navegação entre simulador e o mata-mata-->
+
+        <section id="container1">
+            <div class="s-shero">
+                <ul class="rownevegar">                    
+                    <li class="navegar">
+                        <a href="#oitavas">
+                           <span class="number"><i> 1 </i></span>
+                        </a>
+                        <span class="navegarnome"> OITAVAS DE FINAL </span>
+                    </li>
+                    <li class="navegar">
+                        <a href="#quartas">
+                            <span class="number"> <i> 2 </i></span>
+                        </a>
+                        <span class="navegarnome"> QUARTAS DE FINAL </span>
+                    </li>
+                    
+                    <li class="navegar">
+                        <a href="#semifinal">
+                            <span class="number"> <i> 3 </i> </span>
+                        </a>
+                        <span class="navegarnome"> SEMIFINAL </span>
+                    </li>
+                    <li class="navegar">
+                        <a href="#container4">                        
+                                <span class="number"> <i> 4 </i> </span>
+                        </a>
+                    <p class="navegarnome"> TERCEIRO LUGAR </p>    
+                    </li>
+                
+              
+                    <li class="navegar">
+                        <a href="#final">
+                            <div class="number">
+                                <img src="src/img/icon/trofeu.png" alt="trofeu">
+                            </div>
+                        </a>
+                        <span class="navegarnome"> FINAL </span>
+                    </li>
+    
+                </ul>
+            </div>
+
         </section>
 
-        <!--Oitavas de Final-->
-        <section>
-            <div>
-                <div>
-                    <div>
-                        <p> Sáb. 03/12, 12:00 </p>
-                        <!--o mouse passará em cada partida e dará zoom-->
-                        <img src="src/img/seleções/holanda.png" alt="Bandeira Holanda">
-                        <p>Holanda</p>
-                        <img src="src/img/seleções/eua.png" alt="Bandeira Estados Unidos">
-                        <p>Estados Unidos</p>
-                    </div>
-                    <div>
-                        <p> Sáb. 03/12, 16:00 </p>
-                        <img src="" alt="">
-                        <p>A combinar</p>
-                        <img src="" alt="">
-                        <p>A combinar</p>
-                    </div>
-                    <div>
-                        <p> Seg. 05/12, 12:00 </p>
-                        <img src="" alt="">
-                        <p>A combinar</p>
-                        <img src="" alt="">
-                        <p>A combinar</p>
-                    </div>
-                    <div>
-                        <p> Seg. 05/12, 16:00 </p>
-                        <img src="" alt="">
-                        <p>A combinar</p>
-                        <img src="" alt="">
-                        <p>A combinar</p>
-                    </div>
-                    <div>
-                        <p> Dom. 04/12, 12:00 </p>
-                        <img src="" alt="">
-                        <p>A combinar</p>
-                        <img src="" alt="">
-                        <p>A combinar</p>
-                    </div>
-                    <div>
-                        <p> Dom. 04/12, 16:00 </p>
-                        <img src="src/img/seleções/inglaterra.png" alt="Bandeira da Inglaterra">
-                        <p>Inglaterra</p>
-                        <img src="src/img/seleções/senegal.png" alt="Bandeira Senegal">
-                        <p>Senegal</p>
-                    </div>
-                    <div>
-                        <p> Ter. 06/12, 12:00 </p>
-                        <img src="" alt="">
-                        <p>A combinar</p>
-                        <img src="" alt="">
-                        <p>A combinar</p>
-                    </div>
-                    <div>
-                        <p> Ter. 06/12, 16:00 </p>
-                        <img src="" alt="">
-                        <p>A combinar</p>
-                        <img src="" alt="">
-                        <p>A combinar</p>
-                    </div>
+        
+        <section class="container2">
+            <Div class="wrappernavegar">
+                <div class="titlenavegar">
+                    <span class="partidas"> OITAVAS DE FINAL  </span>
+                    <span class="partidas"> QUARTAS DE FINAL  </span>
+                    <span class="partidas"> SEMIFINAL  </span>
+                    <span class="partidas"> FINAL  </span>
+                    
                 </div>
-            </div>
-        
-           <!--Quartas de Final-->
-        
-            <div>
-                <div>
-                    <div>
-                        <p> Sex. 09/12, 12:00 </p>
-                        <img src="" alt="">
-                        <p>A combinar</p>
-                        <img src="" alt="">
-                        <p>A combinar</p>
-                    </div>
-                    <div>
-                        <p> Sex. 09/12, 16:00 </p>
-                        <img src="" alt="">
-                        <p>A combinar</p>
-                        <img src="" alt="">
-                        <p>A combinar</p>
-                    </div>
-                    <div>
-                        <p> Sáb. 10/12, 12:00 </p>
-                        <img src="" alt="">
-                        <p>A combinar</p>
-                        <img src="" alt="">
-                        <p>A combinar</p>
-                    </div>
-                    <div>
-                        <p> Sáb. 10/12, 16:00 </p>
-                        <img src="" alt="">
-                        <p>A combinar</p>
-                        <img src="" alt="">
-                        <p>A combinar</p>
-                    </div>
-                </div>
-            </div>
-        
-            <!--semifinal-->
-        
-            <div>
-                <div>
-                    <div>
-                        <p> Ter. 13/12, 12:00 </p>
-                        <img src="" alt="">
-                        <p>A combinar</p>
-                        <img src="" alt="">
-                        <p>A combinar</p>
-                    </div>
-                    <div>
-                        <p> Qua. 14/12, 16:00 </p>
-                        <img src="" alt="">
-                        <p>A combinar</p>
-                        <img src="" alt="">
-                        <p>A combinar</p>
-                    </div>
-                </div>
-            </div>
-        
-           <!--Final-->
-        
-            <div>
-                <div>
-                    <div>
-                        <p> Qua. 18/12, 12:00 </p>
-                        <img src="" alt="">
-                        <p>A combinar</p>
-                        <img src="" alt="">
-                        <p>A combinar</p>
-                    </div>
-                </div>
-            </div>
+            </Div>
         </section>
-        <p>* Todas as partidas estão no: <i>Horário de Brasília</i></p>
+        
+        <!--Oitavas de Final-->
+        <!--o mouse passará em cada partida e dará zoom-->
+        <section class="container3">
+            <div class="wrapper">        
+                <div id="oitavas">                    
+                    <div class="boxoitavas"><!--Oitavas de Final-->
+                        <div class="bloco">
+                            <p class="dia"> Sáb. 03/12, 12:00 </p>
+                            <div class="selecao">
+                                <div class="selecao-title">
+                                    <img class="bandeira" src="src/img/seleções/holanda.png" alt="Bandeira Holanda">
+                                    <p>Holanda </p>
+                                </div>
+                                <span class="placar"> 3 </span>
+                            </div>
+
+                            <div class="selecao">
+                                <div class="selecao-title">
+                                    <img class="bandeira" src="src/img/seleções/eua.png" alt="Bandeira Estados Unidos">
+                                    <p>Estados Unidos </p>
+                                </div>
+                                <span class="placar"> 1 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boxoitavas">                        
+                        <div class="bloco">
+                            <p class="dia"> Sáb. 03/12, 16:00 </p>
+                            <div class="selecao">
+                                <div class="selecao-title">
+                                    <img class="bandeira" src="src/img/seleções/argentina.png" alt="Bandeira Argentina">
+                                    <p>Argentina</p>
+                                </div>
+                                <span class="placar"> 2 </span>
+                            </div>                                
+                            <div class="selecao">
+                                <div class="selecao-title">
+                                    <img class="bandeira" src="src/img/seleções/australia.png" alt="Bandeira Autrália">
+                                    <p>Austrália</p>
+                                </div> 
+                                <span class="placar"> 1 </span>                               
+                            </div>                       
+                        </div>
+                    </div>
+                    <div class="boxoitavas">                        
+                        <div class="bloco">
+                            <p class="dia"> Seg. 05/12, 12:00 </p>
+                            <div class="selecao">
+                                <div class="selecao-title">
+                                    <img class="bandeira" src="src/img/seleções/japao.png" alt="Bandeira japão">
+                                    <p>Japão</p>
+                                </div>
+                                <span class="placar"> 1 (1) </span>
+                            </div>
+                            <div class="selecao">
+                                <div class="selecao-title">
+                                    <img class="bandeira" src="src/img/seleções/croacia.png" alt="Bandeira Croacia">
+                                    <p>Croácia</p>
+                                </div>
+                                <span class="placar"> 1 (3) </span>  
+                            </div>                    
+                        </div>
+                    </div>
+                    <div class="boxoitavas">                                          
+                        <div class="bloco">
+                            <p class="dia"> Seg. 05/12, 16:00 </p>
+                            <div class="selecao">
+                                <div class="selecao-title">
+                                    <img class="bandeira" src="src/img/seleções/brasil.png" alt="Bandeira Brasil">
+                                    <p>Brasil</p>                                    
+                                </div>
+                                <span class="placar"> 4 </span>
+                            </div>
+
+                            <div class="selecao">
+                                <div class="selecao-title">
+                                    <img class="bandeira" src="src/img/seleções/coreiadosul.png"
+                                            alt="Bandeira Coreia do Sul">
+                                    <p>Coreia do Sul</p>
+                                </div>
+                                <span class="placar"> 1 </span>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="boxoitavas">
+                        <div class="bloco">
+                            <p class=" dia "> Dom. 04/12, 12:00 </p>
+                            <div class="selecao">
+                                <div class="selecao-title">
+                                    <img class="bandeira" src="src/img/seleções/franca.png" alt="Bandeira da Franca">
+                                    <p>França</p>
+                                </div>
+                                <span class="placar"> 3 </span>
+                            </div>
+
+                            <div class="selecao">  
+                                <div class="selecao-title">
+                                    <img class="bandeira" src="src/img/seleções/polonia.png" alt="Bandeira Polônia">                                    
+                                    <p>Polônia</p>
+                                </div> 
+                                <span class="placar"> 1 </span>
+                            </div>                     
+                        </div>
+                    </div>
+                    <div class="boxoitavas">         
+                        <div class="bloco"> 
+                            <p class="dia"> Dom. 04/12, 16:00 </p>
+                            <div class="selecao">
+                                <div class="selecao-title">
+                                    <img class="bandeira" src="src/img/seleções/inglaterra.png"
+                                        alt="Bandeira da Inglaterra">
+                                    <p>Inglaterra</p>
+                                </div>
+                                <div class="placar"> 3 </div>
+                            </div>
+
+                            <div class="selecao">
+                                <div class="selecao-title">
+                                    <img class="bandeira" src="src/img/seleções/senegal.png" alt="Bandeira Senegal">
+                                    <p>Senegal</p>
+                                </div> 
+                                <span class="placar"> 0 </span>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="boxoitavas">
+                        <div class="bloco">
+                            <p class="dia"> Ter. 06/12, 12:00 </p>
+                            <div class="selecao">
+                                <div class="selecao-title">
+                                    <img class="bandeira" src="src/img/seleções/marrocos.png" alt="Bandeira de Marrocos">
+                                    <p>Marrocos</p>
+                                </div>
+                                <span class="placar"> 0 (3)</span>
+                            </div>
+                            <div class="selecao"> 
+                                <div class="selecao-title">
+                                    <img class="bandeira" src="src/img/seleções/espanha.png" alt="Bandeira da Espanha">
+                                    <p>Espanha</p>
+                                </div>
+                                <span class="placar"> 0 (0) </span>
+                            </div>                               
+                        </div> 
+                    </div>       
+                    <div class="boxoitavas">                                           
+                        <div class="bloco">
+                            <p class="dia"> Ter. 06/12, 16:00 </p>
+                            <div class="selecao">
+                                <div class="selecao-title">
+                                    <img class="bandeira" src="src/img/seleções/portugal.png" alt="Bandeira de Portugal">
+                                    <p>Portugal</p>
+                                </div>                            
+                                <span class="placar"> 6 </span>
+                            </div>
+
+                            <div class="selecao">
+                                <div class="selecao-title">
+                                    <img class="bandeira" src="src/img/seleções/suica.png" alt="Bandeira da Suiça">
+                                    <p>Suiça</p>
+                                </div>
+                                <span class="placar"> 1 </span>
+                            </div>                      
+                        </div>
+                    </div>
+                </div>
+                <div class="fluxograma1">
+                    <div class="fluxograma-oitavas">
+                        <div>
+                            <div class="fluxo1">
+
+                            </div>
+                            <div class="fluxo2">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fluxograma-oitavas">
+                        <div>
+                            <div class="fluxo1">
+
+                            </div>
+                            <div class="fluxo2">
+
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="fluxograma-oitavas">
+                        <div>
+                            <div class="fluxo1">
+
+                            </div>
+                            <div class="fluxo2">
+
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="fluxograma-oitavas">
+                        <div>
+                            <div class="fluxo1">
+
+                            </div>
+                            <div class="fluxo2">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+
+                <!--QUARTAS DE FINAL-->
+
+
+                <div id="quartas">                    
+                    <div class="boxquartas">                                          
+                        <div class="bloco">
+                            <p class="dia"> Sex. 09/12, 12:00 </p>                        
+                            <div class="selecao">
+                                <div class="selecao-title">
+                                    <img class="bandeira" src="src/img/seleções/holanda.png" alt="Bndeira da Holanda">
+                                    <p>Holanda</p>
+                                </div>
+                                <span class="placar"> 2 (3)</span>
+                            </div>
+                            <div class="selecao">
+                                <div class="selecao-title">
+                                    <img class="bandeira" src="src/img/seleções/argentina.png" alt="Bandeira da Argentina">                                
+                                    <p>Argentina</p>
+                                </div> 
+                                <span class="placar"> 2 (4) </span>
+                            </div>                                                        
+                        </div>
+                    </div>
+                    <div class="boxquartas">                            
+                        <div class="bloco">
+                            <p class="dia"> Sex. 09/12, 16:00 </p>                                
+                            <div class="selecao">
+                                    <div class="selecao-title">
+                                        <img class="bandeira" src="src/img/seleções/croacia.png" alt="Bandeira da Croacia">
+                                        <p>Croácia</p>
+                                    </div>
+                                <span class="placar"> 1 (4)</span>
+                            </div>
+
+                            <div class="selecao">
+                                <div class="selecao-title">
+                                    <img class="bandeira" src="src/img/seleções/brasil.png" alt="Bandeira do Brasil">
+                                    <p>Brasil</p>
+                                </div>
+                                <span class="placar"> 1 (2)</span>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boxquartas">                                           
+                        <div class="bloco">
+                            <p class="dia"> Sáb. 10/12, 12:00 </p>                                
+                            <div class="selecao">
+                                <div class="selecao-title">
+                                    <img class="bandeira" src="src/img/seleções/inglaterra.png"
+                                        alt="Bandeira da Inglaterra">
+                                    <p>Inglaterra</p>
+                                </div>
+                                <span class="placar"> 1 </span>
+                            </div>
+                            <div class="selecao">
+                                <div class="selecao-title">
+                                    <img class="bandeira" src="src/img/seleções/franca.png" alt="Bandeira da França">
+                                    <p>França</p>
+                                </div>                       
+                                <span class="placar"> 2 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boxquartas">                          
+                        <div class="bloco">
+                            <p class="dia"> Sáb. 10/12, 16:00 </p>
+                            <div class="selecao">
+                                <div class="selecao-title">                                    
+                                    <img class="bandeira" src="src/img/seleções/marrocos.png" alt="Bandeira do Marrocos">
+                                    <p>Marrocos</p>
+                                </div>
+                                <span class="placar"> 1 </span>
+                            </div>
+                            <div class="selecao"> 
+                                <div class="selecao-title">
+                                    <img class="bandeira" src="src/img/seleções/portugal.png" alt="Bandeira de Portugal">
+                                    <p>Portugal</p>
+                                </div>
+                                <span class="placar"> 0 </span>                         
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fluxograma2">
+                    <div class="fluxograma-quartas">
+                        <div>
+                            <div class="fluxoquarta1">
+
+                            </div>
+                            <div class="fluxoquarta2">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fluxograma-quartas">
+                        <div>
+                            <div class="fluxoquarta1">
+
+                            </div>
+                            <div class="fluxoquarta2">
+
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+
+            <!-- SEMIFINAL -->
+
+                <div id="semifinal">
+                    <div class="boxsemifinal">                       
+                        <div class="bloco">
+                            <p class="dia"> Ter. 13/12, 12:00 </p>
+                            <div class="selecao">  
+                                <div class="selecao-title">
+                                    <img class="bandeira" src="src/img/seleções/argentina.png" alt="Bandeira da Argentina">
+                                    <p>Argentina</p>                             
+                                </div>
+                                <span class="placar"> 3 </span>                                                       
+                            </div>
+                            
+                            <div class="selecao">
+                                <div class="selecao-title">
+                                    <img class="bandeira" src="src/img/seleções/croacia.png" alt="Bandeira da Croácia">
+                                    <p>Croácia</p>
+                                </div>
+                                <span class="placar"> 0 </span>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="boxsemifinal">                        
+                        <div class="bloco">
+                            <p class="dia"> Qua. 14/12, 16:00 </p>
+                            <div class="selecao">
+                                <div class="selecao-title">
+                                     <img class="bandeira" src="src/img/seleções/franca.png" alt="Bandeira da França">
+                                     <p> França </p>                             
+                                </div> 
+                                <span class="placar"> 2 </span>                        
+                            </div>
+                            <div class="selecao">
+                                <div class="selecao-title">
+                                    <img class="bandeira" src="src/img/seleções/marrocos.png"
+                                            alt="Bandeira do Marrocos">
+                                    <p> Marrocos </p>                                    
+                                </div>
+                                <span class="placar"> 0 </span>                          
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fluxograma3">
+                    <div class="fluxograma-semi">
+                        <div>
+                            <div class="fluxosemi1">
+
+                            </div>
+                            <div class="fluxosemi2">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             
+                
+                <!--Final-->
+
+                <div id="final">
+                    <div class="boxfinal">                     
+                        <div class="bloco">
+                            <p class="dia"> Qua. 18/12, 12:00 </p>
+                            <div class="selecao">
+                                <div class="selecao-title">
+                                    <img class="bandeira" src="src/img/seleções/argentina.png"
+                                        alt="Bandeira da Argentina">
+                                    <p> Argentina </p>
+                                </div> 
+                                <span class="placar"> 3 (4)</span>
+                            </div>
+                            <div class="selecao">
+                                <div class="selecao-title">
+                                    <img class="bandeira" src="src/img/seleções/franca.png" alt="Bandeira da França">     
+                                    <p> França </p>    
+                                </div>
+                                <span class="placar"> 3 (2)</span>                                                         
+                            </div>                            
+                        </div>
+                    </div>                                  
+                </div>
+            </div>                       
+ 
+            <!--terceiro lugar-->
+
+        </section>
+
+
+        <section id="container4">
+            <div class="textdisputa">
+                <span >DISPUTA PELO TERCEIRO LUGAR</span>
+            </div>
+            <div class="wrapper-terceiro-lugar">
+                <div class="boxterceirolugar">
+                    <div class="bloco">
+                        <p class="dia"> Qua. 17/12, 12:00 </p>
+                        <div class="selecao">
+                            <div class="selecao-title">
+                                <img class="bandeira" src="src/img/seleções/croacia.png" alt="Bandeira da Croacia">
+                                <p>Croácia</p>                       
+                            </div>
+                            <span class="placar"> 2 </span>
+                        </div>
+                        <div class="selecao">
+                            <div class="selecao-title">
+                                <img class="bandeira" src="src/img/seleções/marrocos.png" alt="Bandeira do Marrocos">
+                                <p>Marrocos</p>
+                            </div>
+                            <span class="placar"> 1 </span>
+                        </div>                    
+                    </div>           
+                </div> 
+             </div>   
+        </section>
+        <p class="informacao"> * Todas as partidas estão no: <em> Horário de Brasília</em> </p>
+        <div class="voltartopo">
+            <a href="#container1">
+                <p> Voltar ao Topo </p>
+            </a>
+        </div>
     </main>
 
     <!-- Footer base do site -->

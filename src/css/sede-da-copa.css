@@ -1,0 +1,146 @@
+
+body {
+    background-color: var(--sixth-color);
+}
+
+main {
+    padding: 0px 175px 100px 175px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.zero h1 {
+    font-size: 35pt;
+    font-style: bold;
+    text-align: center;
+    font-weight: bolder;
+    height: 0;
+    padding: 0 0 25px 0;
+}
+
+.subtitle {
+    font-size: 25pt;
+    font-style: medium;
+    text-align: center;
+    padding: 0 0 25px 0;
+    color: #FE7700;
+}
+
+.s-hero {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+    background-color: var(--second-color);
+    color: white;
+    text-decoration: none;
+}
+
+.s-hero a {
+    color: var(--sixth-color);
+}
+
+a {
+    color: black;
+}
+
+.list-topics a, .stadiun-impar a, .s-hero a {
+    /* color: var(--sixth-color); */
+    font-style: bolder;
+}
+
+.zero p {
+    padding-top: 30px;
+}
+
+p {
+    text-align: justify;
+}
+
+img {
+    display: block;
+    margin: 0px auto;
+}
+
+
+figcaption {
+    text-align: center;
+    /* margin: 0 0 0px 0; */
+
+}
+
+.list-topics {
+    padding: 15px;
+    background-color: var(--fifth-color);
+    /* color: var(--sixth-color); */
+}
+
+.map img {
+    display: inline-block;
+    float: left;
+    margin: 0px 30px 15px 0px;
+}
+
+section {
+    padding: 15px;
+}
+
+.citys {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: var(--fifth-color);
+    /* color: var(--sixth-color); */
+    padding: 15px;
+}
+
+.stadiun-impar, .stadiun-par {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 10px solid var(--fifth-color);
+}
+
+.stadiun-impar {
+    background-color: var(--fifth-color);
+    /* color: var(--sixth-color); */
+}
+
+.stadiuns img {
+    margin: 0;
+    padding: 40px 0 0 0;
+}
+
+.stadiuns p {
+    font-size: 10pt;
+    padding-left: 25px;
+
+}
+
+.stadiuns h3 {
+    font-size: 12pt;
+    flex-direction: row;
+    padding-left: 25px;
+    width: 100%;
+}
+
+.box-comments {
+    margin-top: 100px;
+}
+
+.box-comments form {
+    background-color: var(--fifth-color);
+    /* color: white; */
+    font-weight: 700;
+    padding: 20px;
+    border: 10px solid var(--primary-color);
+
+}
+
+.box-comments textarea {
+    width: 100%;
+}
+
+.box-comments label {
+    padding-right: 5px;
+    font-weight: 400;
+}

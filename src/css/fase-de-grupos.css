@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    justify-content:space-between;
+    padding-top: 7px;
+    padding-right: 40px;
+    padding-left: 0px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid purple;
+    border-radius: 2px solid #DC5079;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+
+
+.tabela-de-pontos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 02px;
+    padding-right: 50px;
+}
+
+.titulo {
+    width: 100%;
+    height: 150px;
+    justify-content: center;
+    display: flex;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 13vh;
+}
+
+.tabela {
+    background-color: #c1b6b8;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    min-height: 100px;
+    margin: 16px 0;
+    justify-content: center;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    border: 2px solid #DC5079;
+    border-radius: 15px;
+   
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    border-top: 2px solid #af5771;
+    align-items: center;
+    padding-top: 6px;
+}
+
+.row:first-child{
+    border-top: none;
+}
+
+.header-tabela div {
+    display: flex;
+    gap: 5px;
+}
+
+.body {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    gap: 10px;
+    padding: 3px 0px;
+    flex-direction: column;
+}
+
+.header-tabela {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+
+.header-tabela div span, .dados span{
+    
+    width: 28px;
+    text-align: center;
+    
+}
+
+.bandeira{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+
+}
+
+.bandeira img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    border-radius: 50%;
+    
+}
+
+.time-info {
+    display: flex;
+    justify-content: left;
+    gap: 7px;
+    align-items: center;
+}
+
+.dados {
+    display: flex;
+    gap: 5px;
+    
+}
+/* 
+.dados span{
+    width: 20px;
+    text-align: center;
+}
+ */
+
+.row1 {
+    margin-bottom: 80px;
+} 
+
+.fg-container{
+    width: 848px;
+    max-width: 95%;
+    min-width: auto;
+}
+
+.fg-container{
+    font-size: 22px;
+    flex: 1;
+    position: relative;
+}
+
+.fg-container{
+    margin-top: 20px;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    border: 2px solid #DC5079;
+    border-radius: 15px;
+}
+
+.fg-header{
+    
+}
+
+.fg-rodada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    gap: 2px;
+    padding: 20px 0;
+    
+}
+
+.fg-partida{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
