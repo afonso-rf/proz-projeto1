@@ -14,7 +14,7 @@ main {
     margin: 0;
     padding: 0;
     font-family: "Open Sans", sans-serif;
-
+    background: var(--sixth-color) ;
 }
 .titlematmata{  
     display: flex;
@@ -31,6 +31,7 @@ main {
     font-weight: bold;
     color: var(--sixth-color);
     margin-top: 10px;
+    font-size: 20px ;
 }
 
 /*inicio conf conteiner1*/
@@ -58,7 +59,7 @@ main {
 }
 
 .number {
-    background: var(--sixth-color);
+    background: #b6b3b3;
     border-radius: 50%;
     width: 64px;
     height: 64px;
