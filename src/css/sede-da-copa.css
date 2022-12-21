@@ -1,6 +1,7 @@
 
 body {
     background-color: var(--sixth-color);
+    margin: 0px;
 }
 
 main {
@@ -8,8 +9,9 @@ main {
     font-family: 'Open Sans', sans-serif;
 }
 
+
 .zero h1 {
-    font-size: 35pt;
+    font-size: 50px;
     font-style: bold;
     text-align: center;
     font-weight: bolder;
@@ -17,20 +19,25 @@ main {
     padding: 0 0 25px 0;
 }
 
+h2 {
+   color: var(--thrid-color);
+}
+
 .subtitle {
-    font-size: 25pt;
-    font-style: medium;
+    font-size: 36px;
+    font-style: bold;
     text-align: center;
     padding: 0 0 25px 0;
-    color: #FE7700;
+    color: #c7778a;
 }
 
 .s-hero {
     display: flex;
     justify-content: space-evenly;
     padding: 15px;
-    background-color: var(--second-color);
-    color: white;
+    background: linear-gradient(to right,var(--second-color), rgb(37, 34, 34));
+    color: var(--sixth-color);
+    border-radius: 8px;
     text-decoration: none;
 }
 
@@ -53,6 +60,7 @@ a {
 
 p {
     text-align: justify;
+    font-size: 18px;
 }
 
 img {
@@ -63,6 +71,8 @@ img {
 
 figcaption {
     text-align: center;
+    font-size: 12px;
+    font-style: italic;
     /* margin: 0 0 0px 0; */
 
 }
@@ -90,7 +100,11 @@ section {
     gap: 40px;
     background-color: var(--fifth-color);
     /* color: var(--sixth-color); */
-    padding: 15px;
+    padding: 15px 30px;
+}
+
+.citys p {
+    font-size: 15px;
 }
 
 .stadiun-impar, .stadiun-par {
@@ -128,7 +142,7 @@ section {
 }
 
 .box-comments form {
-    background-color: var(--fifth-color);
+    /* background-color: var(--fifth-color); */
     /* color: white; */
     font-weight: 700;
     padding: 20px;
@@ -143,4 +157,10 @@ section {
 .box-comments label {
     padding-right: 5px;
     font-weight: 400;
+}
+
+.btn_submit {
+    display: block;
+    margin: 0px 94%;
+    border-radius: 5px;
 }
