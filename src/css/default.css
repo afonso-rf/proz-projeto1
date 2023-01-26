@@ -2,7 +2,7 @@
 :root {
     --primary-color: #70062e;
     --second-color: #800730;
-    --thrid-color: #8f0732;
+    --third-color: #8f0732;
     --forth-color: #af5771;
     --fifth-color: #d3b4bb;
     --sixth-color: #e2dbda;
@@ -108,7 +108,7 @@ footer {
 }
 
 .footer-1 {
-    background-color: var(--thrid-color);
+    background-color: var(--third-color);
     display: flex;
     justify-content: space-evenly;
     height: 120px;

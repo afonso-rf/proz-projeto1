@@ -131,7 +131,7 @@ body {
 
 .manual-navigation, .auto-navigation {
     position: absolute;
-    bottom: 60px;
+    bottom: 30px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -148,7 +148,7 @@ body {
 }
 
 .manual-btn:hover {
-    background-color: var(--thrid-color);
+    background-color: var(--third-color);
 }
 
 
@@ -184,23 +184,23 @@ body {
 }
 
 #radio1:checked~.auto-navigation .auto-btn1 {
-    background-color: var(--thrid-color);
+    background-color: var(--third-color);
 }
 
 #radio2:checked~.auto-navigation .auto-btn2 {
-    background-color: var(--thrid-color);
+    background-color: var(--third-color);
 }
 
 #radio3:checked~.auto-navigation .auto-btn3 {
-    background-color: var(--thrid-color);
+    background-color: var(--third-color);
 }
 
 #radio4:checked~.auto-navigation .auto-btn4 {
-    background-color: var(--thrid-color);
+    background-color: var(--third-color);
 }
 
 #radio5:checked~.auto-navigation .auto-btn5 {
-    background-color: var(--thrid-color);
+    background-color: var(--third-color);
 }
 
 
@@ -232,7 +232,7 @@ footer {
 
     .gallery-wrapper {
         /* max-width: 1366px; */
-        max-height: 540px;
+        max-height: 400px;
     }
 
     .gallery .banner .conteudo h3 {
