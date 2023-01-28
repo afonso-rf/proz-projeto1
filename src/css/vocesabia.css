@@ -205,12 +205,148 @@ h1 {
     
 }
 
+@media screen and (max-device-width: 768px),
+(max-width: 768px){ 
+    
+}
+
 @media screen and (max-device-width: 720px),
 (max-width: 720px){ 
     
 }
 
+@media screen and (max-device-width: 640px),
+(max-width: 640px){ 
+    
+}
+
 @media screen and (max-device-width: 480px),
 (max-width: 480px){ 
+
+    h1 {
+        padding: 50px 30px 0px;
+        font-size: 25px;
+    }
+
+    h2{
+        font-size: 22px;
+        padding: 0px 24px 20px;
+    }
+
+    .title{
+
+        display: revert;
+    }
+
+
+    .selecao{
+        
+        width: 100%;
+        height: 128%;
+        
+    }
+
+    .bandeira-selecao img {
+        width: 85%;
+        height: 100%;
+
+    }
+
+    .selecao .bandeira-pais{
+        width: 100%;
+        height: 56%;
+        gap: initial;
+    }
+
+    .text-pais{
+        font-size: 20px;
+    }
+
+    .selecoes{
+        width: 100%;
+    height: 100%;
+
+    }
+
+    .trofeu img{
+        width: 62px;
+        height: 40px;
+        max-width: fit-content;
+    }
+
+    .trofeu-ano{
+
+        margin-right: 30px;
+        gap: 0px;
+    }
+
     
+}
+    
+
+
+@media screen and (max-device-width: 320px),
+(max-width: 320px){ 
+    
+    h1 {
+        padding: 30px 20px 0px;
+        font-size: 25px;
+    }
+
+    h2{
+        font-size: 20px;
+        padding: 0px 24px 20px;
+    }
+
+    .title{
+
+        display: revert;
+    }
+
+
+    .selecao{
+        
+        width: 100%;
+        height: 128%;
+        
+    }
+
+    .bandeira-selecao img {
+        width: 85%;
+        height: 100%;
+
+    }
+
+    .selecao .bandeira-pais{
+        width: 100%;
+        height: 56%;
+        gap: initial;
+    }
+
+    .text-pais{
+        font-size: 20px;
+    }
+
+    .selecoes{
+        width: 100%;
+    height: 100%;
+
+    }
+
+    .trofeu img{
+        width: 65px;
+        height: 30px;
+        max-width: fit-content;
+    }
+
+    .trofeu-ano{
+
+        margin-right: 30px;
+        gap: 0px;
+    }
+
+    .coment-selecao {
+        font-size: 15px;
+        font-weight: bold;
+    }
 }
