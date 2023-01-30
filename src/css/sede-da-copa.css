@@ -137,30 +137,68 @@ section {
     width: 100%;
 }
 
-.box-comments {
+.comments {
     margin-top: 100px;
 }
 
-.box-comments form {
-    /* background-color: var(--fifth-color); */
-    /* color: white; */
-    font-weight: 700;
+.comments form {
+    background-color: #e638463d;
     padding: 20px;
     border: 10px solid var(--primary-color);
+    border-radius: 10px;
 
 }
 
-.box-comments textarea {
+.comments .box {
     width: 100%;
 }
 
 .box-comments label {
     padding-right: 5px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
-.btn_submit {
+#send {
     display: block;
-    margin: 0px 94%;
+    margin: 10px 94%;
     border-radius: 5px;
 }
+
+.box {
+    resize: none;
+}
+
+.campo.success input {
+    border: 3px solid #4ECA64;
+  }
+  
+  .campo.error input {
+    border: 3px solid #DB5A5A;
+  }
+  
+  .campo.error div.img-error {
+    visibility: visible;
+  }
+  
+  .campo.success div.img-success {
+    visibility: visible;
+  }
+  
+  .campo.error span{
+    color: #DB5A5A;
+    visibility: visible;
+  }
+  
+  .campo div {
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  visibility: hidden;
+  }
+  
+  .campo span {
+    visibility: hidden;
+    position: absolute;
+    margin-top: 5px;
+    font-size: 14px;
+  }
