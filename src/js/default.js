@@ -1,10 +1,11 @@
 let users = [
     {
         email: 'afonso@exemplo.com',
-        name: ['AFONSO','FILHO'],
+        name: ['AFONSO', 'FILHO'],
         password: '2023@2023'
     }
 ]
+
 const cModalItem = document.createElement('div')
 cModalItem.classList.add('c-modal-item')
 
@@ -138,6 +139,7 @@ wpSection.innerHTML = `
 `
 const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 const passRegex = /^(?=.*[$*&@#!.])[0-9a-zA-Z$*&@#!.]{6,}$/
+
 ////----Load
 const header = document.querySelector('header.header')
 const body = document.querySelector('body')
@@ -186,11 +188,10 @@ const inputUserPass = document.querySelector('form#loginform .input.user_pass')
 inputUserLogin.addEventListener('blur', (event) => {
     let item = event.target
     let spanMessage = ''
-    if (emailRegex.test(item.value)) {
 
-    } else if (item.value.trim() == '') {
+    if (item.value.trim() == '') {
         spanMessage = 'Campo email obrigatório!'
-    } else {
+    } else if (!emailRegex.test(item.value)) {
         spanMessage = 'Email invalido!'
     }
     item.setCustomValidity(spanMessage)
@@ -200,6 +201,7 @@ inputUserLogin.addEventListener('blur', (event) => {
 inputUserPass.addEventListener('blur', (event) => {
     let user = event.target
     let spanMessage = ''
+
     if (user.value.trim() == '') {
         spanMessage = 'Campo Senha obrigatório!'
     }
@@ -214,6 +216,7 @@ formLogin.addEventListener('submit', (event) => {
     let spanMessage = ''
     let validated = false
     let user = ''
+
     for (i in users) {
         if (users[i].email === inputUserLogin.value.trim()) {
             if (users[i].password === inputUserPass.value.trim()) {
@@ -222,6 +225,7 @@ formLogin.addEventListener('submit', (event) => {
             }
         }
     }
+
     if (!validated) {
         spanMessage = 'Email ou senha errado!'
     } else {
@@ -239,13 +243,27 @@ const inputRegisterName = document.querySelector('form#registerform .input.user_
 const inputRegisterEmail = document.querySelector('form#registerform .input.user_email')
 const inputRegisterPass = document.querySelectorAll('form#registerform .input.user_pass')
 
+inputRegisterName.addEventListener('blur', (event) => {
+    let item = event.target
+    let spanMessage = ''
+    let name = item.value.toUpperCase().trim().split(" ")
+    
+    if (item.value.trim() == '') {
+        spanMessage = 'Campo nome obrigatório!'
+    } 
+    item.setCustomValidity(spanMessage)
+    document.querySelector('span.message.register').innerHTML = spanMessage
+
+})
+
 inputRegisterEmail.addEventListener('blur', (event) => {
     let item = event.target
     let spanMessage = ''
-    if (emailRegex.test(item.value)) {
 
-    } else if (item.value.trim() == '') {
+    if (item.value.trim() == '') {
         spanMessage = 'Campo email obrigatório!'
+    } else if (emailRegex.test(item.value)) {
+
     } else {
         spanMessage = 'Email invalido!'
     }
@@ -267,7 +285,6 @@ for (i of inputRegisterPass) {
         item.setCustomValidity(spanMessage)
         document.querySelector('span.message.register').innerHTML = spanMessage
     })
-
 }
 
 formRegister.addEventListener('submit', (event) => {
@@ -278,8 +295,8 @@ formRegister.addEventListener('submit', (event) => {
     user.name = inputRegisterName.value.trim().toUpperCase().split(" ")
     user.email = inputRegisterEmail.value.trim()
 
-    for ( i in users) {
-        if (users[i].email == user.email){
+    for (i in users) {
+        if (users[i].email == user.email) {
             emailExisting = true
         }
     }
@@ -321,7 +338,22 @@ formReset.addEventListener('submit', (event) => {
     event.preventDefault()
     let spanMessage = ''
     let emailExisting = false
-    
+
+    for (i in users) {
+        if (users[i].email === inputReset.value) {
+            emailExisting = true
+        }
+    }
+
+    if (!emailExisting) {
+        spanMessage = 'Email não encontrado! Favor verificar se o email está correto'
+    } else {
+        console.log('Solicitação de Reset')
+    }
+
+    spanMessage = spanMessage == "" ? '<i style="color: #00FF00;">Enviado a solicitação com Sucesso</i>' : spanMessage;
+    document.querySelector('span.message.reset').innerHTML = spanMessage
+
 })
 
 ////----Funções
@@ -371,6 +403,3 @@ function disconneted() {
         cModalItem.innerHTML = cModalInitial
     }
 }
-
-
-// <i style="color: #00FF00;"></i>
