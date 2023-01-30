@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <script src="src/js/sede.js" defer></script>
 </head>
 
 <body>
@@ -318,15 +319,34 @@
             </p>
         </section>
 
-        <section class="box-comments" id="box-comments">
-            <form>
-                <fieldset>
-                  <legend>Comentários.</legend>
-                  <label>Nome:</label><input class="campo_nome" type="text"><br>
-                  <label>Mensagem:</label><br><textarea class="msg" cols="35" rows="8" placeholder="Digite aqui."></textarea><br>
-                  <input class="btn_submit" type="submit" value="Enviar">
-                </fieldset>
-            </form>
+        <section class="comments" id="comments">
+                <form class="box-comments" id="box-comments">
+                    <div class="campo">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name">
+                        <div class="img-success"><img src="./src/img/sede-da-copa/success-icon.svg"></div>
+                        <div class="img-error"><img src="./src/img/sede-da-copa/error-icon.svg"></div>
+                        <span>Error message</span>
+                    </div>
+                    <div class="campo">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email">
+                        <div class="img-success"><img src="./src/img/sede-da-copa/success-icon.svg"></div>
+                        <div class="img-error"><img src="./src/img/sede-da-copa/error-icon.svg"></div>
+                        <span>Error message</span>
+                    </div>
+                    <div class="campo">
+                        <label for="text">Mensagem:</label>
+                        <input type="text" id="box-text" class="box" rows="8" placeholder="Digite aqui.">
+                        <div class="img-success"><img src="./src/img/sede-da-copa/success-icon.svg"></div>
+                        <div class="img-error"><img src="./src/img/sede-da-copa/error-icon.svg"></div>
+                        <span>Error message</span>
+                    </div>
+                    <button type="submit" id="send">ENVIAR</button>
+                    <ul id="comments-send">
+                                 
+                    </ul>
+                </form>
         </section>  
     </main>
 
