@@ -137,21 +137,6 @@ section {
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .comments {
     margin-top: 100px;
 }
@@ -175,7 +160,7 @@ section {
 
 #send {
     display: block;
-    margin: 0px 94%;
+    margin: 10px 94%;
     border-radius: 5px;
 }
 
