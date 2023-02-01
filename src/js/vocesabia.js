@@ -1,5 +1,6 @@
 
-const lista = [
+
+[
     {
         selecao: "Brasil",
         bandeira: "",
@@ -51,9 +52,5 @@ trofeu.innerHTML=""
 
 for (let i=0; i < selecoes [0].ANOS.length; i++)
 {trofeu.innerHTML +- '<img src="src/img/icon/trofeu.png" alt="Troféu">'}
-
-for ( i in lista ){
-    <span>list [i].selecao</span>
-}
 
 
