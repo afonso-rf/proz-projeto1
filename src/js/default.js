@@ -10,8 +10,8 @@ const cModalItem = document.createElement('div')
 cModalItem.classList.add('c-modal-item')
 
 const cModalInitial = `
-<button data-target="#form-login" class="btn-active-modal" onclick="switchForms('form-login')">Entrar</button>
-<button data-target="#form-sign-up" class="btn-active-modal" onclick="switchForms('form-sign-up')">Criar conta</button>
+<button class="btn-active-modal" onclick="switchForms('form-login')">Entrar</button>
+<button class="btn-active-modal" onclick="switchForms('form-sign-up')">Criar conta</button>
 `
 
 
@@ -67,7 +67,7 @@ wpSection.innerHTML = `
         <div class="modal-dialog" >
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
@@ -111,7 +111,7 @@ wpSection.innerHTML = `
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" aria-label="Close">
                         <span aria-hidden="true">×</span></button>
                 </div>
                 <div class="modal-body">
