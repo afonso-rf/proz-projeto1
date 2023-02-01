@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <script src="./src/js/simulador.js" defer></script>
 </head>
 
 <body>
@@ -65,10 +66,10 @@
         <!-- <img src="src/img/icon/trofeu.png" atl="icone trofeu"> -->
     </header>
     <!-- header base do site até aqui-->
-
     <h1 id="tituloSimu">Simulador da Copa Catar 2022</h1>
+
     <section class="all">
-        <!--Será mostrado de acordo com a fase--> 
+    <!--Será mostrado de acordo com a fase--> 
             <ul class="s-shero">
                 <li class="navegar">  
                     <span class="number-check">
@@ -123,209 +124,287 @@
                 </li>
             </ul>
 
-
         <div id="coluna">
             <div class="pag1">
                 <div id="faseG">
                     <h2>PRIMEIRA FASE</h2>
+
                     <div class="grupo">
                         <h3>GRUPO A</h3>
-                        <div class="grupoBox">
+                        <div class="grupoBox" data-group="1">
+
                             <div class="itensG">
-                                <input type="checkbox" name="selecao1A" id="selecao1A">
-                                <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/ecuador.png" alt="Equador" width="30"height="30">
-                                <label for="selecao1A">Equador</label><br>
+                                <label for="ecu">
+                                    <input type="checkbox" name="selecao1A" id="ecu" onchange="checkSelecao(this, 'grupoA','ecu');">
+                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/ecuador.png" alt="Equador" width="30"height="30">
+                                    Equador</label>
                             </div>
+
                             <div class="itensG">
-                                <input type="checkbox" name="selecao2A" id="selecao2A">
-                                <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/holanda.png" alt="Holanda" width="30"height="30">
-                                <label for="selecao2A">Holanda</label><br>
+                                <label for="ned">
+                                    <input type="checkbox" name="selecao2A" id="ned" onchange="checkSelecao(this, 'grupoA','ned');">
+                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/holanda.png" alt="Holanda" width="30"height="30">
+                                    Holanda</label>
                             </div>
+
                             <div class="itensG">
-                                <input type="checkbox" name="selecao3A" id="selecao3A">
-                                <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/senegal.png" alt="Senegal" width="30"height="30">
-                                <label for="selecao3A">Senegal</label><br>
+                                <label for="sen"><input type="checkbox" name="selecao3A" id="sen" onchange="checkSelecao(this, 'grupoA','sen');">
+                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/senegal.png" alt="Senegal" width="30"height="30">
+                                    Senegal</label>
                             </div>
+
                             <div class="itensG">
-                                <input type="checkbox" name="selecao4A" id="selecao4A">
-                                <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/qatar.png" alt="Catar" width="30"height="30">
-                                <label for="selecao4A">Catar</label><br>
+                                <label for="qat">
+                                    <input type="checkbox" name="selecao4A" id="qat" onchange="checkSelecao(this, 'grupoA','qat');">
+                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/qatar.png" alt="Catar" width="30"height="30">
+                                    Catar</label>
                             </div>
+
                         </div>
                     </div>
+
                     <div class="grupo">
                         <h3>GRUPO B</h3>
-                        <div class="grupoBox">
+                        <div class="grupoBox" data-group="2">
+
                             <div class="itensG">
-                                <input type="checkbox" name="selecao1B" id="selecao1B">
-                                <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/inglaterra.png" alt="Inglaterra"width="30" height="30">
-                                <label for="selecao1B">Inglaterra</label><br>
+                                <label for="ing">
+                                    <input type="checkbox" name="selecao1B" id="ing" onchange="checkSelecao(this, 'grupoB','ing');">
+                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/inglaterra.png" alt="Inglaterra"width="30" height="30">
+                                    Inglaterra</label>
                             </div>
+
                             <div class="itensG">
-                                <input type="checkbox" name="selecao2B" id="selecao2B">
-                                <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/ira.png" alt="Irã" width="30"height="30">
-                                <label for="selecao2B">Irã</label><br>
+                                <label for="ira">
+                                    <input type="checkbox" name="selecao2B" id="ira" onchange="checkSelecao(this, 'grupoB','ira');">
+                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/ira.png" alt="Irã" width="30"height="30">
+                                    Irã</label>
                             </div>
+
                             <div class="itensG">
-                                <input type="checkbox" name="selecao3B" id="selecao3B">
-                                <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/eua.png" alt="Estados Unidos"width="30" height="30">
-                                <label for="selecao3B">Estados Unidos</label><br>
+                                <label for="usa">
+                                    <input type="checkbox" name="selecao3B" id="usa" onchange="checkSelecao(this, 'grupoB','usa');">
+                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/eua.png" alt="Estados Unidos"width="30" height="30">
+                                    Estados Unidos</label>
                             </div>
+
                             <div class="itensG">
-                                <input type="checkbox" name="selecao4B" id="selecao4B">
-                                <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/wales.png" alt="País de Gales"width="30" height="30">
-                                <label for="selecao4B">País de Gales</label><br>
+                                <label for="wal">
+                                    <input type="checkbox" name="selecao4B" id="wal" onchange="checkSelecao(this, 'grupoB','wal');">
+                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/wales.png" alt="País de Gales"width="30" height="30">
+                                    País de Gales</label>
                             </div>
+
                         </div>
                     </div>
+
                     <div class="grupo">
                         <h3>GRUPO C</h3>
-                        <div class="grupoBox">
+                        <div class="grupoBox" data-group="3">
+
                             <div class="itensG">
-                                <input type="checkbox" name="selecao1C" id="selecao1C">
-                                <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/polonia.png" alt="Polônia" width="30"height="30">
-                                <label for="selecao1C">Polônia</label><br>
+                                <label for="pol">
+                                    <input type="checkbox" name="selecao1C" id="pol" onchange="checkSelecao(this, 'grupoC','pol');">
+                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/polonia.png" alt="Polônia" width="30"height="30">
+                                    Polônia</label>
                             </div>
+
                             <div class="itensG">
-                                <input type="checkbox" name="selecao2C" id="selecao2C">
-                                <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/argentina.png" alt="Argentina"width="30" height="30">
-                                <label for="selecao2C">Argentina</label><br>
+                                <label for="arg">
+                                    <input type="checkbox" name="selecao2C" id="arg" onchange="checkSelecao(this, 'grupoC','arg');">
+                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/argentina.png" alt="Argentina"width="30" height="30">
+                                    Argentina</label>
                             </div>
+
                             <div class="itensG">
-                                <input type="checkbox" name="selecao3C" id="selecao3C">
-                                <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/arabia-saudita.png"alt="Arábia Saudita" width="30" height="30">
-                                <label for="selecao3C">Arábia Saudita</label><br>
+                                <label for="ksa">
+                                    <input type="checkbox" name="selecao3C" id="ksa" onchange="checkSelecao(this, 'grupoC','ksa');">
+                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/arabia-saudita.png"alt="Arábia Saudita" width="30" height="30">
+                                    Arábia Saudita</label>
                             </div>
+
                             <div class="itensG">
-                                <input type="checkbox" name="selecao4C" id="selecao4C">
-                                <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/mexico.png" alt="México" width="30"height="30">
-                                <label for="selecao4C">México</label><br>
+                                <label for="mex">
+                                    <input type="checkbox" name="selecao4C" id="mex" onchange="checkSelecao(this, 'grupoC','mex');">
+                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/mexico.png" alt="México" width="30"height="30">
+                                    México</label>
                             </div>
+
                         </div>
                     </div>
+
                     <div class="grupo">
                         <h3>GRUPO D</h3>
-                        <div class="grupoBox">
+                        <div class="grupoBox" data-group="4">
+
                             <div class="itensG">
-                                <input type="checkbox" name="selecao1D" id="selecao1D">
-                                <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/franca.png" alt="França" width="30"height="30">
-                                <label for="selecao1D">França</label><br>
+                                <label for="fra">
+                                    <input type="checkbox" name="selecao1D" id="fra" onchange="checkSelecao(this, 'grupoD','fra');">
+                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/franca.png" alt="França" width="30"height="30">
+                                    França</label>
                             </div>
+
                             <div class="itensG">
-                                <input type="checkbox" name="selecao2D" id="selecao2D">
-                                <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/australia.png" alt="Austrália"width="30" height="30">
-                                <label for="selecao2D">Austrália</label><br>
+                                <label for="aus">
+                                    <input type="checkbox" name="selecao2D" id="aus" onchange="checkSelecao(this, 'grupoD','aus');">
+                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/australia.png" alt="Austrália"width="30" height="30">
+                                    Austrália</label>
                             </div>
+
                             <div class="itensG">
-                                <input type="checkbox" name="selecao3D" id="selecao3D">
-                                <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/dinamarca.png" alt="Dinamarca"width="30" height="30">
-                                <label for="selecao3D">Dinamarca</label><br>
+                                <label for="den">
+                                    <input type="checkbox" name="selecao3D" id="den" onchange="checkSelecao(this, 'grupoD','den');">
+                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/dinamarca.png" alt="Dinamarca"width="30" height="30">
+                                    Dinamarca</label>
                             </div>
+
                             <div class="itensG">
-                                <input type="checkbox" name="selecao4D" id="selecao4D">
-                                <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/tunisia.png" alt="Tunísia" width="30"height="30">
-                                <label for="selecao4D">Tunísia</label><br>
+                                <label for="tun">
+                                    <input type="checkbox" name="selecao4D" id="tun" onchange="checkSelecao(this, 'grupoD','tun');">
+                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/tunisia.png" alt="Tunísia" width="30"height="30">
+                                    Tunísia</label>
                             </div>
+
                         </div>
                     </div>
+
                     <div class="grupo">
                         <h3>GRUPO E</h3>
-                        <div class="grupoBox">
+                        <div class="grupoBox" data-group="5">
+
                             <div class="itensG">
-                                <input type="checkbox" name="selecao1E" id="selecao1E">
-                                <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/espanha.png" alt="Espanha" width="30"height="30">
-                                <label for="selecao1E">Espanha</label><br>
+                                <label for="esp">
+                                    <input type="checkbox" name="selecao1E" id="esp" onchange="checkSelecao(this, 'grupoE','esp');">
+                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/espanha.png" alt="Espanha" width="30"height="30">
+                                    Espanha</label>
                             </div>
+
                             <div class="itensG">
-                                <input type="checkbox" name="selecao2E" id="selecao2E">
-                                <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/japao.png" alt="Japão" width="30"height="30">
-                                <label for="selecao2C">Japão</label><br>
+                                <label for="jpn">
+                                    <input type="checkbox" name="selecao2E" id="jpn" onchange="checkSelecao(this, 'grupoE','jpn');">
+                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/japao.png" alt="Japão" width="30"height="30">
+                                    Japão</label>
                             </div>
+
                             <div class="itensG">
-                                <input type="checkbox" name="selecao3E" id="selecao3E">
-                                <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/costa-rica.png" alt="Costa Rica"width="30" height="30">
-                                <label for="selecao3C">Costa Rica</label><br>
+                                <label for="crc">
+                                    <input type="checkbox" name="selecao3E" id="crc" onchange="checkSelecao(this, 'grupoE','crc');">
+                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/costa-rica.png" alt="Costa Rica"width="30" height="30">
+                                    Costa Rica</label>
                             </div>
+
                             <div class="itensG">
-                                <input type="checkbox" name="selecao4E" id="selecao4E">
-                                <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/alemanha.png" alt="alemanha"width="30" height="30">
-                                <label for="selecao4E">alemanha</label><br>
+                                <label for="ger">
+                                    <input type="checkbox" name="selecao4E" id="ger" onchange="checkSelecao(this, 'grupoE','ger');">
+                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/alemanha.png" alt="alemanha"width="30" height="30">
+                                    alemanha</label>
                             </div>
+
                         </div>
                     </div>
+
                     <div class="grupo">
                         <h3>GRUPO F</h3>
-                        <div class="grupoBox">
+                        <div class="grupoBox" data-group="6">
+
                             <div class="itensG">
-                                <input type="checkbox" name="selecao1F" id="selecao1F">
-                                <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/croacia.png" alt="Croácia" width="30"height="30">
-                                <label for="selecao1F">Croácia</label><br>
+                                <label for="cro">
+                                    <input type="checkbox" name="selecao1F" id="cro" onchange="checkSelecao(this, 'grupoF','cro');">
+                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/croacia.png" alt="Croácia" width="30"height="30">
+                                    Croácia</label>
                             </div>
+
                             <div class="itensG">
-                                <input type="checkbox" name="selecao2F" id="selecao2F">
-                                <img src="https://frontendapiapp.blob.core.windows.net/image/88x88/197551.png" alt="Marrocos" width="30"height="30">
-                                <label for="selecao2F">Marrocos</label><br>
+                                <label for="mar">
+                                    <input type="checkbox" name="selecao2F" id="mar" onchange="checkSelecao(this, 'grupoF','mar');">
+                                    <img src="https://frontendapiapp.blob.core.windows.net/image/88x88/197551.png" alt="Marrocos" width="30"height="30">
+                                    Marrocos</label>
                             </div>
+
                             <div class="itensG">
-                                <input type="checkbox" name="selecao3F" id="selecao3F">
-                                <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/belgica.png" alt="Bélgica" width="30"height="30">
-                                <label for="selecao3F">Bélgica</label><br>
+                                <label for="bel">
+                                    <input type="checkbox" name="selecao3F" id="bel" onchange="checkSelecao(this, 'grupoF','bel');">
+                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/belgica.png" alt="Bélgica" width="30"height="30">
+                                    Bélgica</label>
                             </div>
+
                             <div class="itensG">
-                                <input type="checkbox" name="selecao4F" id="selecao4F">
-                                <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/canada.png" alt="Canadá" width="30"height="30">
-                                <label for="selecao4F">Canadá</label><br>
+                                <label for="can">
+                                    <input type="checkbox" name="selecao4F" id="can" onchange="checkSelecao(this, 'grupoF','can');">
+                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/canada.png" alt="Canadá" width="30"height="30">
+                                    Canadá</label>
                             </div>
+
                         </div>
                     </div>
+
                     <div class="grupo">
                         <h3>GRUPO G</h3>
-                        <div class="grupoBox">
+                        <div class="grupoBox" data-group="7">
+
                             <div class="itensG">
-                                <input type="checkbox" name="selecao1G" id="selecao1G">
-                                <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/brasil.png" alt="Brasil" width="30"height="30">
-                                <label for="selecao1G">Brasil</label><br>
+                                <label for="bra">
+                                    <input type="checkbox" name="selecao1G" id="bra" onchange="checkSelecao(this, 'grupoG','bra');">
+                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/brasil.png" alt="Brasil" width="30"height="30">
+                                    Brasil</label>
                             </div>
+
                             <div class="itensG">
-                                <input type="checkbox" name="selecao2G" id="selecao2G">
-                                <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/suica.png" alt="Suíça" width="30"height="30">
-                                <label for="selecao2G">Suíça</label><br>
+                                <label for="swi">
+                                    <input type="checkbox" name="selecao2G" id="swi" onchange="checkSelecao(this, 'grupoG','swi');">
+                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/suica.png" alt="Suíça" width="30"height="30">
+                                    Suíça</label>
                             </div>
+
                             <div class="itensG">
-                                <input type="checkbox" name="selecao3G" id="selecao3G">
-                                <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/camaroes.png" alt="Camarões"width="30" height="30">
-                                <label for="selecao3G">Camarões</label><br>
+                                <label for="cmr">
+                                    <input type="checkbox" name="selecao3G" id="cmr" onchange="checkSelecao(this, 'grupoG','cmr');">
+                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/camaroes.png" alt="Camarões"width="30" height="30">
+                                    Camarões</label>
                             </div>
+
                             <div class="itensG">
-                                <input type="checkbox" name="selecao4G" id="selecao4G">
-                                <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/servia.png" alt="Sérvia" width="30"height="30">
-                                <label for="selecao4G">Sérvia</label><br>
+                                <label for="srb">
+                                    <input type="checkbox" name="selecao4G" id="srb" onchange="checkSelecao(this, 'grupoG','srb');">
+                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/servia.png" alt="Sérvia" width="30"height="30">
+                                    Sérvia</label>
                             </div>
+
                         </div>
                     </div>
+
                     <div class="grupo">
                         <h3>GRUPO H</h3>
-                        <div class="grupoBox">
+                        <div class="grupoBox" data-group="8">
+
                             <div class="itensG">
-                                <input type="checkbox" name="selecao1H" id="selecao1H">
-                                <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/portugal.png" alt="Portugal"width="30" height="30">
-                                <label for="selecao1H">Portugal</label><br>
+                                <label for="por">
+                                    <input type="checkbox" name="selecao1H" id="por" onchange="checkSelecao(this, 'grupoH','por');">
+                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/portugal.png" alt="Portugal"width="30" height="30">
+                                    Portugal</label>
                             </div>
+
                             <div class="itensG">
-                                <input type="checkbox" name="selecao2H" id="selecao2H">
-                                <img src="https://frontendapiapp.blob.core.windows.net/image/88x88/gana.png" alt="Gana" width="30"height="30">
-                                <label for="selecao2H">Gana</label><br>
+                                <label for="gha">
+                                    <input type="checkbox" name="selecao2H" id="gha" onchange="checkSelecao(this, 'grupoH','gha');">
+                                    <img src="https://frontendapiapp.blob.core.windows.net/image/88x88/gana.png" alt="Gana" width="30"height="30">
+                                    Gana</label>
                             </div>
+
                             <div class="itensG">
-                                <input type="checkbox" name="selecao3H" id="selecao3H">
-                                <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/uruguai.png" alt="Uruguai" width="30"height="30">
-                                <label for="selecao3H">Uruguai</label><br>
+                                <label for="uru">
+                                    <input type="checkbox" name="selecao3H" id="uru" onchange="checkSelecao(this, 'grupoH','uru');">
+                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/uruguai.png" alt="Uruguai" width="30"height="30">
+                                    Uruguai</label>
                             </div>
+
                             <div class="itensG">
-                                <input type="checkbox" name="selecao4H" id="selecao4H">
-                                <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/coreia-do-sul.png"alt="Coreia do Sul" width="30" height="30">
-                                <label for="selecao4H">Coreia do Sul</label><br>
+                                <label for="kor">
+                                    <input type="checkbox" name="selecao4H" id="kor" onchange="checkSelecao(this, 'grupoH','kor');">
+                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/coreia-do-sul.png"alt="Coreia do Sul" width="30" height="30">
+                                    Coreia do Sul</label>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -334,53 +413,51 @@
                 <h2>OITAVAS DE FINAL</h2>
     
                 <div class="boxOitavas">
-                    <label for="a1">1° do grupo A</label><br>
-                    <label for="b2">2° do grupo B</label><br><br>
+                    <label for="a1" id="a1">1° do grupo A</label><br>
+                    <label for="b2" id="b2">2° do grupo B</label><br><br>
                 </div>
                 
                 <div class="boxOitavas">
-                    <label for="c1">1° do grupo C</label><br>
-                    <label for="d2">2° do grupo D</label><br><br>
+                    <label for="c1" id="c1">1° do grupo C</label><br>
+                    <label for="d2" id="d2">2° do grupo D</label><br><br>
                 </div>
 
                 <div class="boxOitavas">
-                    <label for="e1">1° do grupo E</label><br>
-                    <label for="f2">2° do grupo F</label><br><br>
+                    <label for="e1" id="e1">1° do grupo E</label><br>
+                    <label for="f2" id="f2">2° do grupo F</label><br><br>
                 </div>
 
                 <div class="boxOitavas">
-                    <label for="g1">1° do grupo G</label><br>
-                    <label for="h2">2° do grupo H</label><br><br>
+                    <label for="g1" id="g1">1° do grupo G</label><br>
+                    <label for="h2" id="h2">2° do grupo H</label><br><br>
                 </div>
 
                 <div class="boxOitavas">
-                    <label for="b1">1° do grupo B</label><br>
-                    <label for="a2">2° do grupo A</label><br><br>
+                    <label for="b1" id="b1">1° do grupo B</label><br>
+                    <label for="a2" id="a2">2° do grupo A</label><br><br>
                 </div>
 
                 <div class="boxOitavas">
-                    <label for="d1">1° do grupo D</label><br>
-                    <label for="c2">2° do grupo C</label><br><br>
+                    <label for="d1" id="d1">1° do grupo D</label><br>
+                    <label for="c2" id="c2">2° do grupo C</label><br><br>
                 </div>
 
                 <div class="boxOitavas">
-                    <label for="f1">1° do grupo F</label><br>
-                    <label for="e2">2° do grupo E</label><br><br>
+                    <label for="f1" id="c1">1° do grupo F</label><br>
+                    <label for="e2" id="e2">2° do grupo E</label><br><br>
                 </div>
                 <div class="boxOitavas">
-                    <label for="h1">1° do grupo H</label><br>
-                    <label for="g2">2° do grupo G</label><br><br>
+                    <label for="h1" id="h1">1° do grupo H</label><br>
+                    <label for="g2" id="g2">2° do grupo G</label><br><br>
                 </div>
             </div>
         </div>
+
         <div class="buttonDiv">
             <button type="button" class="button">Limpar Campos</button>
             <button type="button" class="button">Voltar</button>
             <button type="button" class="button">Ir para Oitavas de Final</button>
         </div>
-
-        </section>
-        
     </section>
 
     <!-- Footer base do site -->

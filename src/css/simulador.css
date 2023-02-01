@@ -126,18 +126,23 @@
     overflow: hidden;
 }
 .itensG {
-    margin-left:15px;
+    margin-left: 70px;
     color: #3b3b3b;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 3px;
+    font-size: 19px;
+    font-weight: 500;
+    padding: 5px;
     align-items: center;
     display: flex;
 }
+
+.itensG label {
+    cursor: pointer;
+}
+
 .itensG input {
     cursor: pointer;
     margin-right: 8px;
-    transform : scale(1.2);
+    transform : scale(1.4);
 }
 
 .itensG img {
