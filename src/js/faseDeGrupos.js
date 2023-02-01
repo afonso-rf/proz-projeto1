@@ -479,7 +479,7 @@ tabelaButtons[1].addEventListener('click', () => {
 for (item of cabecalhoButtons) {
     item.addEventListener('click', e => {
         let tag = e.target
-        if (tag.classList == 'active') {
+        if (tag.classList.contains('active')) {
 
         } else {
             for (i of cabecalhoButtons) {
@@ -500,7 +500,7 @@ jogosContainer.innerHTML = jogosFG('a', rodadas, selecoesFaseDeGrupos)
 for (item of fGButtons) {
     item.addEventListener('click', e => {
         let tag = e.target
-        if (tag.classList == 'active') {
+        if (tag.classList.contains('active')) {
 
         } else {
             for (i of fGButtons) {
