@@ -12,7 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap"
-        rel="stylesheet">
+        rel="stylesheet">    
+    <script defer src="src/js/mata-mata.js"></script>
     <script src="src/js/default.js" defer></script>
 </head>
 
@@ -81,36 +82,36 @@
 
         <section id="container1">
             <div class="s-shero">
-                <ul class="rownevegar">
-                    <li class="navegar">
-                        <a href="#oitavas">
-                            <span class="number"><i> 1 </i></span>
+                <ul class="rownevegar">                    
+                    <li  id="number1"class="navegar">
+                        <a href="javascript:void(0)">
+                           <span  class="number"><i> 1 </i></span>
                         </a>
                         <span class="navegarnome"> OITAVAS DE FINAL </span>
                     </li>
-                    <li class="navegar">
-                        <a href="#quartas">
+                    <li id="number2" class="navegar">
+                        <a href="javascript:void(0)">
                             <span class="number"> <i> 2 </i></span>
                         </a>
                         <span class="navegarnome"> QUARTAS DE FINAL </span>
                     </li>
-
-                    <li class="navegar">
-                        <a href="#semifinal">
+                    
+                    <li id="number3" class="navegar">
+                        <a href="javascript:void(0)">
                             <span class="number"> <i> 3 </i> </span>
                         </a>
                         <span class="navegarnome"> SEMIFINAL </span>
                     </li>
-                    <li class="navegar">
-                        <a href="#container4">
-                            <span class="number"> <i> 4 </i> </span>
+                    <!-- <li id="number4"class="navegar">
+                        <a href="javascript:void(0)">                        
+                                <span class="number"> <i> 4 </i> </span>
                         </a>
                         <p class="navegarnome"> TERCEIRO LUGAR </p>
                     </li>
-
-
-                    <li class="navegar">
-                        <a href="#final">
+                
+               -->
+                    <li id="numberFinal" class="navegar">
+                        <a href="javascript:void(0)">
                             <div class="number">
                                 <img src="src/img/icon/trofeu.png" alt="trofeu">
                             </div>
@@ -123,24 +124,24 @@
 
         </section>
 
-
-        <section class="container2">
+        
+        <section id="container2" class="container2">
             <Div class="wrappernavegar">
                 <div class="titlenavegar">
-                    <span class="partidas"> OITAVAS DE FINAL </span>
-                    <span class="partidas"> QUARTAS DE FINAL </span>
-                    <span class="partidas"> SEMIFINAL </span>
-                    <span class="partidas"> FINAL </span>
-
+                    <span id="cont2-oitavas" class="partidas"> OITAVAS DE FINAL  </span>
+                    <span id="cont2-quartas" class="partidas"> QUARTAS DE FINAL  </span>
+                    <span id="cont2-semi" class="partidas"> SEMIFINAL  </span>
+                    <span id="cont2-final" class="partidas"> FINAL  </span>
+                    
                 </div>
             </Div>
         </section>
 
         <!--Oitavas de Final-->
         <!--o mouse passará em cada partida e dará zoom-->
-        <section class="container3">
-            <div class="wrapper">
-                <div id="oitavas">
+        <section id="container3" class="container3">
+            <div class="wrapper">        
+                <div class="jogos" id="oitavas">                    
                     <div class="boxoitavas"><!--Oitavas de Final-->
                         <div class="bloco">
                             <p class="dia"> Sáb. 03/12, 12:00 </p>
@@ -303,7 +304,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="fluxograma1">
+                <div id="fluxo-grama" class="fluxograma1 fluxograma">
                     <div class="fluxograma-oitavas">
                         <div>
                             <div class="fluxo1">
@@ -350,8 +351,8 @@
                 <!--QUARTAS DE FINAL-->
 
 
-                <div id="quartas">
-                    <div class="boxquartas">
+                <div class="jogos" id="quartas">                    
+                    <div class="boxquartas">                                          
                         <div class="bloco">
                             <p class="dia"> Sex. 09/12, 12:00 </p>
                             <div class="selecao">
@@ -433,8 +434,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="fluxograma2">
-                    <div class="fluxograma-quartas">
+                <div id="fluxograma-quartas"  class="fluxograma2 fluxograma">
+                    <div  class="fluxograma-quartas">
                         <div>
                             <div class="fluxoquarta1">
 
@@ -458,8 +459,8 @@
 
                 <!-- SEMIFINAL -->
 
-                <div id="semifinal">
-                    <div class="boxsemifinal">
+                <div class="jogos" id="semifinal">
+                    <div class="boxsemifinal">                       
                         <div class="bloco">
                             <p class="dia"> Ter. 13/12, 12:00 </p>
                             <div class="selecao">
@@ -501,7 +502,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="fluxograma3">
+                <div id="fluxograma-semifinal"  class="fluxograma3 fluxograma">
                     <div class="fluxograma-semi">
                         <div>
                             <div class="fluxosemi1">
@@ -517,8 +518,8 @@
 
                 <!--Final-->
 
-                <div id="final">
-                    <div class="boxfinal">
+                <div class="jogos" id="final">
+                    <div class="boxfinal">                     
                         <div class="bloco">
                             <p class="dia"> Qua. 18/12, 12:00 </p>
                             <div class="selecao">
@@ -546,12 +547,12 @@
         </section>
 
 
-        <section id="container4">
+        <section class="jogos" id="container4">
             <div class="textdisputa">
                 <span>DISPUTA PELO TERCEIRO LUGAR</span>
             </div>
-            <div class="wrapper-terceiro-lugar">
-                <div class="boxterceirolugar">
+            <div id="wapperTerceiroLuga" class="wrapper-terceiro-lugar">
+                <div id="boxTerceirolugar" class="boxterceirolugar">
                     <div class="bloco">
                         <p class="dia"> Qua. 17/12, 12:00 </p>
                         <div class="selecao">

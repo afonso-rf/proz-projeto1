@@ -77,14 +77,11 @@ main {
     color: white;
 }
 
-.number a {
-    color: #800730;
-    
+li.active .number {
+    background-color: #800730;
+    color: white;
 }
 
-.number a:hover {
-    color: #ffffff;
-}
 
 .number img {
     width: 100%;
@@ -437,6 +434,7 @@ i::before {
     margin-bottom: 10px;  
     color: #ffffff;
     background: linear-gradient(to right,var(--second-color), rgb(37, 34, 34));
+    font-weight: 700;
 
  }
  .wrapper-terceiro-lugar{
