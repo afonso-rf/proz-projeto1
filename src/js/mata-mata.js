@@ -96,19 +96,20 @@ function limpar(){
 
 function activaconfquartas(){
     for (i of jogos){
-        
+        document.querySelector("#semifinal").style.marginTop = ("170px")
         document.querySelector(".fluxograma2").style.gap = ("234px")
         document.querySelector(".fluxoquarta2").style.height = ("160px")
         document.querySelector(".fluxograma-quartas").style.paddingTop = ("79px")
         jogos[1].style.marginTop = ("10px")
         jogos[1].style.marginBottom = ("10px")
-        
+ 
                
     }
 }
 
 function limpaconfquartas(){
     for (i of jogos){
+        document.querySelector("#semifinal").style.marginTop = ""
         document.querySelector(".fluxograma2").style.gap = ""
         document.querySelector(".fluxoquarta2").style.height = ""
         document.querySelector(".fluxograma-quartas").style.paddingTop = ""
@@ -135,7 +136,6 @@ function activeconfsemifinal(){
 function limpaconfsemifinal(){
     for (i of jogos){
         document.querySelector(".boxfinal").style.marginTop = ""
-        jogos[2].style.marginTop = ""
         jogos[2].style.marginBottom = ""   
         jogos[2].style.gap= ""
         document.querySelector(".fluxosemi1").style.height = ""
