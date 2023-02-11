@@ -44,33 +44,36 @@ button.btn-active {
     cursor: pointer;
     z-index: 5;
     -webkit-animation: slide-right 2s ease-in-out infinite both;
-	        animation: slide-right 2s ease-in-out infinite both;
+    animation: slide-right 2s ease-in-out infinite both;
 }
 
 @-webkit-keyframes slide-right {
     0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
     }
+
     50% {
-      -webkit-transform: translateX(20px);
-              transform: translateX(20px);
+        -webkit-transform: translateX(20px);
+        transform: translateX(20px);
     }
-  }
-  @keyframes slide-right {
+}
+
+@keyframes slide-right {
     0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
     }
+
     50% {
-      -webkit-transform: translateX(20px);
-              transform: translateX(20px);
+        -webkit-transform: translateX(20px);
+        transform: translateX(20px);
     }
-  }
+}
 
 button.btn-active:hover {
-color: white;
-background-color: var(--primary-color);
+    color: white;
+    background-color: var(--primary-color);
 }
 
 
@@ -96,6 +99,16 @@ background-color: var(--primary-color);
 .tabela>button:nth-child(2) {
     right: 0;
     transform: translate(50%, -50%);
+}
+
+.tabela>button:hover {
+    background-color: var(--second-color);
+    border: 2px solid white;
+    color: white;
+}
+
+.tabela>button:active {
+    border: 0.5px solid white;
 }
 
 .cabecalho,
@@ -129,6 +142,11 @@ background-color: var(--primary-color);
     color: var(--primary-color);
     font-size: 16px;
     cursor: pointer;
+}
+
+.cabecalho>button:hover,
+.fg-header>button:hover {
+    border: 1px solid var(--sixth-color)
 }
 
 .cabecalho>button.active,

@@ -1,224 +1,224 @@
 ////---Dados
 const selecoesFaseDeGrupos = [
     {
-        id: "a1",
+        id: 1,
         grupo: "a",
         selecao: "HOLANDA",
         bandeira: "src/img/seleções/holanda.png",
         pontos: [3, 2, 1, 0, 5, 1]
     },
     {
-        id: "a2",
+        id: 2,
         grupo: "a",
         selecao: "SENEGAL",
         bandeira: "src/img/seleções/senegal.png",
         pontos: [3, 2, 0, 1, 5, 4]
     },
     {
-        id: "a3",
+        id: 3,
         grupo: "a",
         selecao: "EQUADOR",
         bandeira: "src/img/seleções/equador.png",
         pontos: [3, 1, 1, 1, 4, 3]
     },
     {
-        id: "a4",
+        id: 4,
         grupo: "a",
         selecao: "CATAR",
         bandeira: "src/img/seleções/catar.png",
         pontos: [3, 0, 0, 3, 1, 7]
     },
     {
-        id: "b1",
+        id: 5,
         grupo: "b",
         selecao: "INGLATERRA",
         bandeira: "src/img/seleções/inglaterra.png",
         pontos: [3, 2, 1, 0, 9, 2]
     },
     {
-        id: "b2",
+        id: 6,
         grupo: "b",
         selecao: "ESTADOS UNIDOS",
         bandeira: "src/img/seleções/eua.png",
         pontos: [3, 1, 2, 0, 2, 1]
     },
     {
-        id: "b3",
+        id: 7,
         grupo: "b",
         selecao: "IRÃ",
         bandeira: "src/img/seleções/ira.png",
         pontos: [3, 1, 0, 2, 4, 7]
     },
     {
-        id: "b4",
+        id: 8,
         grupo: "b",
         selecao: "PAÍS DE GALES",
         bandeira: "src/img/seleções/pais-de-gales.png",
         pontos: [3, 0, 1, 2, 1, 6]
     },
     {
-        id: "c1",
+        id: 9,
         grupo: "c",
         selecao: "ARGENTINA",
         bandeira: "src/img/seleções/argentina.png",
         pontos: [3, 2, 0, 1, 5, 2]
     },
     {
-        id: "c2",
+        id: 10,
         grupo: "c",
         selecao: "POLÔNIA",
         bandeira: "src/img/seleções/polonia.png",
         pontos: [3, 1, 1, 1, 2, 2]
     },
     {
-        id: "c3",
+        id: 11,
         grupo: "c",
         selecao: "MÉXICO",
         bandeira: "src/img/seleções/mexico.png",
         pontos: [3, 1, 1, 1, 2, 3]
     },
     {
-        id: "c4",
+        id: 12,
         grupo: "c",
         selecao: "ARÁBIA SAUDITA",
         bandeira: "src/img/seleções/arabia-saudita.png",
         pontos: [3, 1, 0, 2, 3, 5]
     },
     {
-        id: "d1",
+        id: 13,
         grupo: "d",
         selecao: "FRANÇA",
         bandeira: "src/img/seleções/franca.png",
         pontos: [3, 2, 0, 1, 6, 3]
     },
     {
-        id: "d2",
+        id: 14,
         grupo: "d",
         selecao: "AUSTRÁLIA",
         bandeira: "src/img/seleções/australia.png",
         pontos: [3, 2, 0, 1, 3, 4]
     },
     {
-        id: "d3",
+        id: 15,
         grupo: "d",
         selecao: "TUNÍSIA",
         bandeira: "src/img/seleções/tunisia.png",
         pontos: [3, 1, 1, 1, 1, 1]
     },
     {
-        id: "d4",
+        id: 16,
         grupo: "d",
         selecao: "DINAMARCA",
         bandeira: "src/img/seleções/dinamarca.png",
         pontos: [3, 0, 1, 2, 1, 3]
     },
     {
-        id: "e1",
+        id: 17,
         grupo: "e",
         selecao: "JAPÃO",
         bandeira: "src/img/seleções/japao.png",
         pontos: [3, 2, 0, 1, 4, 3]
     },
     {
-        id: "e2",
+        id: 18,
         grupo: "e",
         selecao: "ESPANHA",
         bandeira: "src/img/seleções/espanha.png",
         pontos: [3, 1, 1, 1, 9, 3]
     },
     {
-        id: "e3",
+        id: 19,
         grupo: "e",
         selecao: "ALEMANHA",
         bandeira: "src/img/seleções/alemanha.png",
         pontos: [3, 1, 1, 1, 6, 5]
     },
     {
-        id: "e4",
+        id: 20,
         grupo: "e",
         selecao: "COSTA RICA",
         bandeira: "src/img/seleções/costa-rica.png",
         pontos: [3, 1, 0, 2, 3, 11]
     },
     {
-        id: "f1",
+        id: 21,
         grupo: "f",
         selecao: "MARROCOS",
         bandeira: "src/img/seleções/marrocos.png",
         pontos: [3, 2, 1, 0, 4, 1]
     },
     {
-        id: "f2",
+        id: 22,
         grupo: "f",
         selecao: "CROÁCIA",
         bandeira: "src/img/seleções/croacia.png",
         pontos: [3, 1, 2, 0, 4, 1]
     },
     {
-        id: "f3",
+        id: 23,
         grupo: "f",
         selecao: "BÉLGICA",
-        bandeira: "src/img/seleções/croacia.png",
+        bandeira: "src/img/seleções/belgica.png",
         pontos: [3, 1, 1, 1, 1, 2]
     },
     {
-        id: "f4",
+        id: 24,
         grupo: "f",
         selecao: "CANADÁ",
         bandeira: "src/img/seleções/canada.png",
         pontos: [3, 0, 0, 3, 2, 7]
     },
     {
-        id: "g1",
+        id: 25,
         grupo: "g",
         selecao: "BRASIL",
         bandeira: "src/img/seleções/brasil.png",
         pontos: [3, 2, 0, 1, 3, 1]
     },
     {
-        id: "g2",
+        id: 26,
         grupo: "g",
         selecao: "SUÍÇA",
         bandeira: "src/img/seleções/suica.png",
         pontos: [3, 2, 0, 1, 4, 3]
     },
     {
-        id: "g3",
+        id: 27,
         grupo: "g",
         selecao: "CAMARÕES",
         bandeira: "src/img/seleções/camaroes.png",
         pontos: [3, 1, 1, 1, 4, 4]
     },
     {
-        id: "g4",
+        id: 28,
         grupo: "g",
         selecao: "SÉRVIA",
         bandeira: "src/img/seleções/servia.png",
         pontos: [3, 0, 1, 2, 5, 8]
     },
     {
-        id: "h1",
+        id: 29,
         grupo: "h",
         selecao: "PORTUGAL",
         bandeira: "src/img/seleções/portugal.png",
         pontos: [3, 2, 0, 1, 6, 4]
     },
     {
-        id: "h2",
+        id: 30,
         grupo: "h",
         selecao: "COREIA DO SUL",
         bandeira: "src/img/seleções/coreiadosul.png",
         pontos: [3, 1, 1, 1, 4, 4]
     },
     {
-        id: "h3",
+        id: 31,
         grupo: "h",
         selecao: "URUGUAI",
         bandeira: "src/img/seleções/uruguai.png",
         pontos: [3, 1, 1, 1, 2, 2]
     },
     {
-        id: "h4",
+        id: 32,
         grupo: "h",
         selecao: "GANA",
         bandeira: "src/img/seleções/gana.png",
@@ -228,218 +228,218 @@ const selecoesFaseDeGrupos = [
 
 const rodadas = [
     {
-        grupo: 'a',
+        grupo: "a",
         rodadas: [{
-            dia: ['DOM 20/11', 'SEG 21/11'],
-            hora: ['13h00'],
+            dia: ["DOM 20/11", "SEG 21/11"],
+            hora: ["13h00"],
             partidas: [
-                { id_time1: ['a4', 0], id_time2: ['a3', 2] },
-                { id_time1: ['a2', 0], id_time2: ['a1', 2] }
+                { id_time1: ["4", 0], id_time2: ["3", 2] },
+                { id_time1: ["2", 0], id_time2: ["1", 2] }
             ]
         },
         {
-            dia: ['SEX 25/11'],
-            hora: ['10h00', '13h00'],
+            dia: ["SEX 25/11"],
+            hora: ["10h00", "13h00"],
             partidas: [
-                { id_time1: ['a4', 1], id_time2: ['a2', 3] },
-                { id_time1: ['a1', 1], id_time2: ['a3', 1] }
+                { id_time1: ["4", 1], id_time2: ["2", 3] },
+                { id_time1: ["1", 1], id_time2: ["3", 1] }
             ]
         },
         {
-            dia: ['TER 29/11'],
-            hora: ['12h00'],
+            dia: ["TER 29/11"],
+            hora: ["12h00"],
             partidas: [
-                { id_time1: ['a3', 1], id_time2: ['a2', 2] },
-                { id_time1: ['a1', 2], id_time2: ['a4', 0] }
+                { id_time1: ["3", 1], id_time2: ["2", 2] },
+                { id_time1: ["1", 2], id_time2: ["4", 0] }
             ]
         }]
     },
     {
-        grupo: 'b',
+        grupo: "b",
         rodadas: [{
-            dia: ['SEG 21/11'],
-            hora: ['10h00', '16h00'],
+            dia: ["SEG 21/11"],
+            hora: ["10h00", "16h00"],
             partidas: [
-                { id_time1: ['b1', 6], id_time2: ['b3', 2] },
-                { id_time1: ['b2', 1], id_time2: ['b4', 1] }
+                { id_time1: ["5", 6], id_time2: ["7", 2] },
+                { id_time1: ["6", 1], id_time2: ["8", 1] }
             ]
         },
         {
-            dia: ['SEX 25/11'],
-            hora: ['07h00', '16h00'],
+            dia: ["SEX 25/11"],
+            hora: ["07h00", "16h00"],
             partidas: [
-                { id_time1: ['b4', 0], id_time2: ['b3', 2] },
-                { id_time1: ['b1', 0], id_time2: ['b2', 0] }
+                { id_time1: ["8", 0], id_time2: ["7", 2] },
+                { id_time1: ["5", 0], id_time2: ["6", 0] }
             ]
         },
         {
-            dia: ['TER 29/11'],
-            hora: ['16h00'],
+            dia: ["TER 29/11"],
+            hora: ["16h00"],
             partidas: [
-                { id_time1: ['b3', 0], id_time2: ['b2', 1] },
-                { id_time1: ['b4', 0], id_time2: ['b1', 3] }
+                { id_time1: ["7", 0], id_time2: ["6", 1] },
+                { id_time1: ["8", 0], id_time2: ["5", 3] }
             ]
         }]
     },
     {
-        grupo: 'c',
+        grupo: "c",
         rodadas: [{
-            dia: ['TER 22/11'],
-            hora: ['07h00', '13h00'],
+            dia: ["TER 22/11"],
+            hora: ["07h00", "13h00"],
             partidas: [
-                { id_time1: ['c1', 1], id_time2: ['c4', 2] },
-                { id_time1: ['c3', 0], id_time2: ['c2', 0] }
+                { id_time1: ["9", 1], id_time2: ["12", 2] },
+                { id_time1: ["11", 0], id_time2: ["10", 0] }
             ]
         },
         {
-            dia: ['SAB 26/11'],
-            hora: ['10h00', '16h00'],
+            dia: ["SAB 26/11"],
+            hora: ["10h00", "16h00"],
             partidas: [
-                { id_time1: ['c2', 2], id_time2: ['c4', 0] },
-                { id_time1: ['c1', 2], id_time2: ['c3', 0] }
+                { id_time1: ["10", 2], id_time2: ["12", 0] },
+                { id_time1: ["9", 2], id_time2: ["11", 0] }
             ]
         },
         {
-            dia: ['QUA 30/11'],
-            hora: ['16h00'],
+            dia: ["QUA 30/11"],
+            hora: ["16h00"],
             partidas: [
-                { id_time1: ['c2', 0], id_time2: ['c1', 2] },
-                { id_time1: ['c4', 1], id_time2: ['c3', 2] }
+                { id_time1: ["10", 0], id_time2: ["9", 2] },
+                { id_time1: ["12", 1], id_time2: ["11", 2] }
             ]
         }]
     },
     {
-        grupo: 'd',
+        grupo: "d",
         rodadas: [{
-            dia: ['TER 22/11'],
-            hora: ['10h00', '16h00'],
+            dia: ["TER 22/11"],
+            hora: ["10h00", "16h00"],
             partidas: [
-                { id_time1: ['d4', 0], id_time2: ['d3', 0] },
-                { id_time1: ['d1', 4], id_time2: ['d2', 1] }
+                { id_time1: ["16", 0], id_time2: ["15", 0] },
+                { id_time1: ["13", 4], id_time2: ["14", 1] }
             ]
         },
         {
-            dia: ['SAB 26/11'],
-            hora: ['07h00', '13h00'],
+            dia: ["SAB 26/11"],
+            hora: ["07h00", "13h00"],
             partidas: [
-                { id_time1: ['d3', 0], id_time2: ['d2', 1] },
-                { id_time1: ['d1', 2], id_time2: ['d4', 1] }
+                { id_time1: ["15", 0], id_time2: ["14", 1] },
+                { id_time1: ["13", 2], id_time2: ["16", 1] }
             ]
         },
         {
-            dia: ['QUA 30/11'],
-            hora: ['12h00'],
+            dia: ["QUA 30/11"],
+            hora: ["12h00"],
             partidas: [
-                { id_time1: ['d3', 1], id_time2: ['d1', 0] },
-                { id_time1: ['d2', 1], id_time2: ['d4', 0] }
+                { id_time1: ["15", 1], id_time2: ["13", 0] },
+                { id_time1: ["14", 1], id_time2: ["16", 0] }
             ]
         }]
     },
     {
-        grupo: 'e',
+        grupo: "e",
         rodadas: [{
-            dia: ['QUA 23/11'],
-            hora: ['10h00', '13h00'],
+            dia: ["QUA 23/11"],
+            hora: ["10h00", "13h00"],
             partidas: [
-                { id_time1: ['e3', 1], id_time2: ['e1', 2] },
-                { id_time1: ['e2', 7], id_time2: ['e4', 0] }
+                { id_time1: ["19", 1], id_time2: ["17", 2] },
+                { id_time1: ["18", 7], id_time2: ["20", 0] }
             ]
         },
         {
-            dia: ['DOM 27/11'],
-            hora: ['07h00', '16h00'],
+            dia: ["DOM 27/11"],
+            hora: ["07h00", "16h00"],
             partidas: [
-                { id_time1: ['e1', 0], id_time2: ['e4', 1] },
-                { id_time1: ['e2', 1], id_time2: ['e3', 1] }
+                { id_time1: ["17", 0], id_time2: ["20", 1] },
+                { id_time1: ["18", 1], id_time2: ["19", 1] }
             ]
         },
         {
-            dia: ['QUI 01/12'],
-            hora: ['16h00'],
+            dia: ["QUI 01/12"],
+            hora: ["16h00"],
             partidas: [
-                { id_time1: ['e1', 2], id_time2: ['e2', 1] },
-                { id_time1: ['e4', 2], id_time2: ['e3', 4] }
+                { id_time1: ["17", 2], id_time2: ["18", 1] },
+                { id_time1: ["20", 2], id_time2: ["19", 4] }
             ]
         }]
     },
     {
-        grupo: 'f',
+        grupo: "f",
         rodadas: [{
-            dia: ['QUA 23/11'],
-            hora: ['07h00', '16h00'],
+            dia: ["QUA 23/11"],
+            hora: ["07h00", "16h00"],
             partidas: [
-                { id_time1: ['f1', 0], id_time2: ['f2', 0] },
-                { id_time1: ['f3', 1], id_time2: ['f4', 0] }
+                { id_time1: ["21", 0], id_time2: ["22", 0] },
+                { id_time1: ["23", 1], id_time2: ["24", 0] }
             ]
         },
         {
-            dia: ['DOM 27/11'],
-            hora: ['10h00', '13h00'],
+            dia: ["DOM 27/11"],
+            hora: ["10h00", "13h00"],
             partidas: [
-                { id_time1: ['f3', 0], id_time2: ['f1', 2] },
-                { id_time1: ['f2', 4], id_time2: ['f4', 1] }
+                { id_time1: ["23", 0], id_time2: ["21", 2] },
+                { id_time1: ["22", 4], id_time2: ["24", 1] }
             ]
         },
         {
-            dia: ['QUI 01/12'],
-            hora: ['12h00'],
+            dia: ["QUI 01/12"],
+            hora: ["12h00"],
             partidas: [
-                { id_time1: ['f2', 0], id_time2: ['f3', 0] },
-                { id_time1: ['f4', 1], id_time2: ['f1', 2] }
+                { id_time1: ["22", 0], id_time2: ["23", 0] },
+                { id_time1: ["24", 1], id_time2: ["21", 2] }
             ]
         }]
     },
     {
-        grupo: 'g',
+        grupo: "g",
         rodadas: [{
-            dia: ['QUI 24/11'],
-            hora: ['07h00', '16h00'],
+            dia: ["QUI 24/11"],
+            hora: ["07h00", "16h00"],
             partidas: [
-                { id_time1: ['g2', 1], id_time2: ['g3', 0] },
-                { id_time1: ['g1', 2], id_time2: ['g4', 0] }
+                { id_time1: ["26", 1], id_time2: ["27", 0] },
+                { id_time1: ["25", 2], id_time2: ["28", 0] }
             ]
         },
         {
-            dia: ['SEG 28/11'],
-            hora: ['07h00', '13h00'],
+            dia: ["SEG 28/11"],
+            hora: ["07h00", "13h00"],
             partidas: [
-                { id_time1: ['g3', 3], id_time2: ['g4', 3] },
-                { id_time1: ['g1', 1], id_time2: ['g2', 0] }
+                { id_time1: ["27", 3], id_time2: ["28", 3] },
+                { id_time1: ["25", 1], id_time2: ["26", 0] }
             ]
         },
         {
-            dia: ['SEX 02/12'],
-            hora: ['16h00'],
+            dia: ["SEX 02/12"],
+            hora: ["16h00"],
             partidas: [
-                { id_time1: ['g4', 2], id_time2: ['g2', 3] },
-                { id_time1: ['g3', 1], id_time2: ['g1', 0] }
+                { id_time1: ["28", 2], id_time2: ["26", 3] },
+                { id_time1: ["27", 1], id_time2: ["25", 0] }
             ]
         }]
     },
     {
-        grupo: 'h',
+        grupo: "h",
         rodadas: [{
-            dia: ['QUI 24/11'],
-            hora: ['10h00', '13h00'],
+            dia: ["QUI 24/11"],
+            hora: ["10h00", "13h00"],
             partidas: [
-                { id_time1: ['h3', 0], id_time2: ['h2', 0] },
-                { id_time1: ['h1', 3], id_time2: ['h4', 2] }
+                { id_time1: ["31", 0], id_time2: ["30", 0] },
+                { id_time1: ["29", 3], id_time2: ["32", 2] }
             ]
         },
         {
-            dia: ['SEG 28/11'],
-            hora: ['10h00', '16h00'],
+            dia: ["SEG 28/11"],
+            hora: ["10h00", "16h00"],
             partidas: [
-                { id_time1: ['h2', 2], id_time2: ['h4', 3] },
-                { id_time1: ['h1', 2], id_time2: ['h3', 0] }
+                { id_time1: ["30", 2], id_time2: ["32", 3] },
+                { id_time1: ["29", 2], id_time2: ["31", 0] }
             ]
         },
         {
-            dia: ['SEX 02/12'],
-            hora: ['12h00'],
+            dia: ["SEX 02/12"],
+            hora: ["12h00"],
             partidas: [
-                { id_time1: ['h2', 2], id_time2: ['h1', 1] },
-                { id_time1: ['h4', 0], id_time2: ['h3', 2] }
+                { id_time1: ["30", 2], id_time2: ["29", 1] },
+                { id_time1: ["32", 0], id_time2: ["31", 2] }
             ]
         }]
     }
