@@ -418,6 +418,16 @@ i::before {
     margin-top: 529px;
 
 }
+.activemarginfinal{
+    margin: 10px;
+}
+.activemarginquarta{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+
  #container4{
     display: flex;
     justify-content:center;
@@ -480,6 +490,10 @@ i::before {
     display: flex;
     background-color: #d3b4bb;
     justify-content: center;
+}
+
+.activemargin3{
+    margin-top: 170px;
 }
 
 /* Responsividade */
