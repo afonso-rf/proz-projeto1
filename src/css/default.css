@@ -10,7 +10,8 @@
 
 /* Reset */
 header *,
-footer * {
+footer *,
+.modal * {
     margin: 0;
     padding: 0;
     font: inherit;
@@ -21,7 +22,8 @@ footer * {
 
 /* Fonte de texto padrão */
 header *,
-footer * {
+footer *,
+.modal * {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -439,15 +441,13 @@ textarea {
 .modal .modal-content .modal-body .login input[type=text],
 .modal .modal-content .modal-body .login input[type=email],
 .modal .modal-content .modal-body .login input[type=url],
-.modal .modal-content .modal-body .login input[type=password],
-.modal .modal-content .modal-body .login input[type=search] {
+.modal .modal-content .modal-body .login input[type=password] {
     width: 100%;
     padding: 13px 15px;
     border: 1px solid #e1e1e1;
     border-radius: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: #fff;
 }
 
 
@@ -642,7 +642,9 @@ input[type=radio] {
 .c-modal-item .c-user_item .c-user_menu li:not(:first-child) {
     margin-top: 6px;
 }
-
+.update_email {
+    background-color: var(--fifth-color);
+}
 
 /*  */
 
