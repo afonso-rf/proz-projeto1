@@ -1,576 +1,337 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simulador</title>
-    <link rel="icon" href="src/img/seleções">
-    <link rel="stylesheet" href="src/css/default.css">
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/simulador.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="src/img/seleções" />
+    <link rel="stylesheet" href="src/css/default.css" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/simulador.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
     <script src="src/js/default.js" defer></script>
     <script src="./src/js/simulador.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- header base do site -->
     <header class="header">
-        <div>
-            <a href="index.html">
-                <img class="" src="src/img/icon/trofeu.png" atl="icone trofeu">
-                <div>
-                    <span>COPA DO MUNDO 2022</span>
-                </div>
-            </a>
-        </div>
+      <div>
+        <a href="index.html">
+          <img class="" src="src/img/icon/trofeu.png" atl="icone trofeu" />
+          <div>
+            <span>COPA DO MUNDO 2022</span>
+          </div>
+        </a>
+      </div>
 
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">
-                        <span>HOME</span>
-                        <div></div>
-                    </a>
-                </li>
-                <li>
-                    <a href="fase-de-grupos.html">
-                        <span>FASE DE GRUPOS</span>
-                        <div></div>
-                    </a>
-                </li>
-                <li>
-                    <a href="mata-mata.html">
-                        <span>MATA MATA</span>
-                        <div></div>
-                    </a>
-                </li>
-                <li>
-                    <a href="simulador.html">
-                        <span>SIMULADOR</span>
-                        <div></div>
-                    </a>
-                </li>
-                <li>
-                    <a href="sede-da-copa.html">
-                        <span>SEDE DA COPA</span>
-                        <div></div>
-                    </a>
-                </li>
-                <li>
-                    <a href="voce-sabia.html">
-                        <span>VOCÊ SABIA?</span>
-                        <div></div>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <!-- <img src="src/img/icon/trofeu.png" atl="icone trofeu"> -->
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">
+              <span>HOME</span>
+              <div></div>
+            </a>
+          </li>
+          <li>
+            <a href="fase-de-grupos.html">
+              <span>FASE DE GRUPOS</span>
+              <div></div>
+            </a>
+          </li>
+          <li>
+            <a href="mata-mata.html">
+              <span>MATA MATA</span>
+              <div></div>
+            </a>
+          </li>
+          <li>
+            <a href="simulador.html">
+              <span>SIMULADOR</span>
+              <div></div>
+            </a>
+          </li>
+          <li>
+            <a href="sede-da-copa.html">
+              <span>SEDE DA COPA</span>
+              <div></div>
+            </a>
+          </li>
+          <li>
+            <a href="voce-sabia.html">
+              <span>VOCÊ SABIA?</span>
+              <div></div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- <img src="src/img/icon/trofeu.png" atl="icone trofeu"> -->
     </header>
     <!-- header base do site até aqui-->
     <h1 id="tituloSimu">Simulador da Copa Catar 2022</h1>
 
     <section class="all">
-    <!--Será mostrado de acordo com a fase--> 
-            <ul class="s-shero">
-                <li class="navegar">  
-                    <span class="number-check">
-                        <i>1</i>
-                    </span>
-                    <span class="navegarnome">PRIMEIRA FASE</span>
-                </li> 
-                <div class="pontilhado">
+      <!--Será mostrado de acordo com a fase-->
+      <ul class="s-shero">
+        <li class="navegar">
+          <span class="number-check">
+            <i>1</i>
+          </span>
+          <span class="navegarnome">PRIMEIRA FASE</span>
+        </li>
+        <div class="pontilhado"></div>
+        <li class="navegar">
+          <span class="number-check">
+            <i> 2 </i>
+          </span>
+          <span class="navegarnome"> OITAVAS DE FINAL </span>
+        </li>
+        <div class="pontilhado"></div>
+        <li class="navegar">
+          <span class="number-check">
+            <i> 3 </i>
+          </span>
+          <span class="navegarnome"> QUARTAS DE FINAL </span>
+        </li>
+        <div class="pontilhado"></div>
+        <li class="navegar">
+          <span class="number-check">
+            <i> 4 </i>
+          </span>
+          <span class="navegarnome"> SEMIFINAL </span>
+        </li>
+        <div class="pontilhado"></div>
+        <div class="pontilhado"></div>
+        <li class="navegar">
+          <span class="number-check">
+            <img src="./src/img/icon/trofeu.png" alt="trofeu" />
+          </span>
+          <span class="navegarnome"> FINAL </span>
+        </li>
+      </ul>
 
+      <div class="coluna">
+        <div id="oitavas" class="conteudo">
+          <div class="pag1">
+            <div id="faseG">
+              <h2>PRIMEIRA FASE</h2>
             </div>
-            <li class="navegar">
-                <span class="number-check">
-                    <i> 2 </i>
-                </span>
-                <span class="navegarnome"> OITAVAS DE FINAL </span>
-            </li>
-            <div class="pontilhado">
-
+          </div>
+          <div class="coluna2">
+            <h2>OITAVAS DE FINAL</h2>
+            <div class="boxWin">
+              <span id="a1"></span><label>1° do grupo A </label>
+              <span id="b2"></span><label>2° do grupo B </label>
             </div>
-            <li class="navegar">
-                <span class="number-check">
-                    <i> 3 </i>
-                </span>
-                <span class="navegarnome"> QUARTAS DE FINAL </span>
-            </li>
-            <div class="pontilhado">
-
+            <div class="boxWin">
+              <span id="c1"></span><label>1° do grupo C </label>
+              <span id="d2"></span><label>2° do grupo D </label>
             </div>
-            <li class="navegar">
-                <span class="number-check">
-                    <i> 4 </i>
-                </span>
-                <span class="navegarnome"> SEMIFINAL </span>
-            </li>
-            <div class="pontilhado">
-
+            <div class="boxWin">
+              <span id="e1"></span><label>1° do grupo E </label>
+              <span id="f2"></span><label>2° do grupo F </label>
             </div>
-            <li class="navegar">
-                <span class="number-check">
-                    <i> 5 </i>
-                </span>
-                <span class="navegarnome"> TERCEIRO LUGAR </span>
-            </li>
-            <div class="pontilhado">
-
+            <div class="boxWin">
+              <span id="g1"></span><label>1° do grupo G </label>
+              <span id="h2"></span><label>2° do grupo H </label>
             </div>
-            <li class="navegar">
-                <span class="number-check">
-                    <img src="./src/img/icon/trofeu.png" alt="trofeu">
-                </span>
-                <span class="navegarnome"> FINAL </span>
-            </li>
-        </ul>
-
-        <div id="coluna">
-            <div class="pag1">
-                <div id="faseG">
-                    <h2>PRIMEIRA FASE</h2>
-
-                    <div class="grupo">
-                        <h3>GRUPO A</h3>
-                        <div class="grupoBox" data-group="1">
-
-                            <div class="itensG">
-                                <label for="ecu">
-                                    <input type="checkbox" name="selecao1A" id="ecu" onchange="checkSelecao(this, 'grupoA','ecu');">
-                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/ecuador.png" alt="Equador" width="30"height="30">
-                                    Equador</label>
-                            </div>
-
-                            <div class="itensG">
-                                <label for="ned">
-                                    <input type="checkbox" name="selecao2A" id="ned" onchange="checkSelecao(this, 'grupoA','ned');">
-                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/holanda.png" alt="Holanda" width="30"height="30">
-                                    Holanda</label>
-                            </div>
-
-                            <div class="itensG">
-                                <label for="sen"><input type="checkbox" name="selecao3A" id="sen" onchange="checkSelecao(this, 'grupoA','sen');">
-                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/senegal.png" alt="Senegal" width="30"height="30">
-                                    Senegal</label>
-                            </div>
-
-                            <div class="itensG">
-                                <label for="qat">
-                                    <input type="checkbox" name="selecao4A" id="qat" onchange="checkSelecao(this, 'grupoA','qat');">
-                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/qatar.png" alt="Catar" width="30"height="30">
-                                    Catar</label>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="grupo">
-                        <h3>GRUPO B</h3>
-                        <div class="grupoBox" data-group="2">
-
-                            <div class="itensG">
-                                <label for="ing">
-                                    <input type="checkbox" name="selecao1B" id="ing" onchange="checkSelecao(this, 'grupoB','ing');">
-                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/inglaterra.png" alt="Inglaterra"width="30" height="30">
-                                    Inglaterra</label>
-                            </div>
-
-                            <div class="itensG">
-                                <label for="ira">
-                                    <input type="checkbox" name="selecao2B" id="ira" onchange="checkSelecao(this, 'grupoB','ira');">
-                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/ira.png" alt="Irã" width="30"height="30">
-                                    Irã</label>
-                            </div>
-
-                            <div class="itensG">
-                                <label for="usa">
-                                    <input type="checkbox" name="selecao3B" id="usa" onchange="checkSelecao(this, 'grupoB','usa');">
-                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/eua.png" alt="Estados Unidos"width="30" height="30">
-                                    Estados Unidos</label>
-                            </div>
-
-                            <div class="itensG">
-                                <label for="wal">
-                                    <input type="checkbox" name="selecao4B" id="wal" onchange="checkSelecao(this, 'grupoB','wal');">
-                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/wales.png" alt="País de Gales"width="30" height="30">
-                                    País de Gales</label>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="grupo">
-                        <h3>GRUPO C</h3>
-                        <div class="grupoBox" data-group="3">
-
-                            <div class="itensG">
-                                <label for="pol">
-                                    <input type="checkbox" name="selecao1C" id="pol" onchange="checkSelecao(this, 'grupoC','pol');">
-                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/polonia.png" alt="Polônia" width="30"height="30">
-                                    Polônia</label>
-                            </div>
-
-                            <div class="itensG">
-                                <label for="arg">
-                                    <input type="checkbox" name="selecao2C" id="arg" onchange="checkSelecao(this, 'grupoC','arg');">
-                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/argentina.png" alt="Argentina"width="30" height="30">
-                                    Argentina</label>
-                            </div>
-
-                            <div class="itensG">
-                                <label for="ksa">
-                                    <input type="checkbox" name="selecao3C" id="ksa" onchange="checkSelecao(this, 'grupoC','ksa');">
-                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/arabia-saudita.png"alt="Arábia Saudita" width="30" height="30">
-                                    Arábia Saudita</label>
-                            </div>
-
-                            <div class="itensG">
-                                <label for="mex">
-                                    <input type="checkbox" name="selecao4C" id="mex" onchange="checkSelecao(this, 'grupoC','mex');">
-                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/mexico.png" alt="México" width="30"height="30">
-                                    México</label>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="grupo">
-                        <h3>GRUPO D</h3>
-                        <div class="grupoBox" data-group="4">
-
-                            <div class="itensG">
-                                <label for="fra">
-                                    <input type="checkbox" name="selecao1D" id="fra" onchange="checkSelecao(this, 'grupoD','fra');">
-                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/franca.png" alt="França" width="30"height="30">
-                                    França</label>
-                            </div>
-
-                            <div class="itensG">
-                                <label for="aus">
-                                    <input type="checkbox" name="selecao2D" id="aus" onchange="checkSelecao(this, 'grupoD','aus');">
-                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/australia.png" alt="Austrália"width="30" height="30">
-                                    Austrália</label>
-                            </div>
-
-                            <div class="itensG">
-                                <label for="den">
-                                    <input type="checkbox" name="selecao3D" id="den" onchange="checkSelecao(this, 'grupoD','den');">
-                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/dinamarca.png" alt="Dinamarca"width="30" height="30">
-                                    Dinamarca</label>
-                            </div>
-
-                            <div class="itensG">
-                                <label for="tun">
-                                    <input type="checkbox" name="selecao4D" id="tun" onchange="checkSelecao(this, 'grupoD','tun');">
-                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/tunisia.png" alt="Tunísia" width="30"height="30">
-                                    Tunísia</label>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="grupo">
-                        <h3>GRUPO E</h3>
-                        <div class="grupoBox" data-group="5">
-
-                            <div class="itensG">
-                                <label for="esp">
-                                    <input type="checkbox" name="selecao1E" id="esp" onchange="checkSelecao(this, 'grupoE','esp');">
-                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/espanha.png" alt="Espanha" width="30"height="30">
-                                    Espanha</label>
-                            </div>
-
-                            <div class="itensG">
-                                <label for="jpn">
-                                    <input type="checkbox" name="selecao2E" id="jpn" onchange="checkSelecao(this, 'grupoE','jpn');">
-                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/japao.png" alt="Japão" width="30"height="30">
-                                    Japão</label>
-                            </div>
-
-                            <div class="itensG">
-                                <label for="crc">
-                                    <input type="checkbox" name="selecao3E" id="crc" onchange="checkSelecao(this, 'grupoE','crc');">
-                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/costa-rica.png" alt="Costa Rica"width="30" height="30">
-                                    Costa Rica</label>
-                            </div>
-
-                            <div class="itensG">
-                                <label for="ger">
-                                    <input type="checkbox" name="selecao4E" id="ger" onchange="checkSelecao(this, 'grupoE','ger');">
-                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/alemanha.png" alt="alemanha"width="30" height="30">
-                                    alemanha</label>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="grupo">
-                        <h3>GRUPO F</h3>
-                        <div class="grupoBox" data-group="6">
-
-                            <div class="itensG">
-                                <label for="cro">
-                                    <input type="checkbox" name="selecao1F" id="cro" onchange="checkSelecao(this, 'grupoF','cro');">
-                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/croacia.png" alt="Croácia" width="30"height="30">
-                                    Croácia</label>
-                            </div>
-
-                            <div class="itensG">
-                                <label for="mar">
-                                    <input type="checkbox" name="selecao2F" id="mar" onchange="checkSelecao(this, 'grupoF','mar');">
-                                    <img src="https://frontendapiapp.blob.core.windows.net/image/88x88/197551.png" alt="Marrocos" width="30"height="30">
-                                    Marrocos</label>
-                            </div>
-
-                            <div class="itensG">
-                                <label for="bel">
-                                    <input type="checkbox" name="selecao3F" id="bel" onchange="checkSelecao(this, 'grupoF','bel');">
-                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/belgica.png" alt="Bélgica" width="30"height="30">
-                                    Bélgica</label>
-                            </div>
-
-                            <div class="itensG">
-                                <label for="can">
-                                    <input type="checkbox" name="selecao4F" id="can" onchange="checkSelecao(this, 'grupoF','can');">
-                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/canada.png" alt="Canadá" width="30"height="30">
-                                    Canadá</label>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="grupo">
-                        <h3>GRUPO G</h3>
-                        <div class="grupoBox" data-group="7">
-
-                            <div class="itensG">
-                                <label for="bra">
-                                    <input type="checkbox" name="selecao1G" id="bra" onchange="checkSelecao(this, 'grupoG','bra');">
-                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/brasil.png" alt="Brasil" width="30"height="30">
-                                    Brasil</label>
-                            </div>
-
-                            <div class="itensG">
-                                <label for="swi">
-                                    <input type="checkbox" name="selecao2G" id="swi" onchange="checkSelecao(this, 'grupoG','swi');">
-                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/suica.png" alt="Suíça" width="30"height="30">
-                                    Suíça</label>
-                            </div>
-
-                            <div class="itensG">
-                                <label for="cmr">
-                                    <input type="checkbox" name="selecao3G" id="cmr" onchange="checkSelecao(this, 'grupoG','cmr');">
-                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/camaroes.png" alt="Camarões"width="30" height="30">
-                                    Camarões</label>
-                            </div>
-
-                            <div class="itensG">
-                                <label for="srb">
-                                    <input type="checkbox" name="selecao4G" id="srb" onchange="checkSelecao(this, 'grupoG','srb');">
-                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/servia.png" alt="Sérvia" width="30"height="30">
-                                    Sérvia</label>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="grupo">
-                        <h3>GRUPO H</h3>
-                        <div class="grupoBox" data-group="8">
-
-                            <div class="itensG">
-                                <label for="por">
-                                    <input type="checkbox" name="selecao1H" id="por" onchange="checkSelecao(this, 'grupoH','por');">
-                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/portugal.png" alt="Portugal"width="30" height="30">
-                                    Portugal</label>
-                            </div>
-
-                            <div class="itensG">
-                                <label for="gha">
-                                    <input type="checkbox" name="selecao2H" id="gha" onchange="checkSelecao(this, 'grupoH','gha');">
-                                    <img src="https://frontendapiapp.blob.core.windows.net/image/88x88/gana.png" alt="Gana" width="30"height="30">
-                                    Gana</label>
-                            </div>
-
-                            <div class="itensG">
-                                <label for="uru">
-                                    <input type="checkbox" name="selecao3H" id="uru" onchange="checkSelecao(this, 'grupoH','uru');">
-                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/uruguai.png" alt="Uruguai" width="30"height="30">
-                                    Uruguai</label>
-                            </div>
-
-                            <div class="itensG">
-                                <label for="kor">
-                                    <input type="checkbox" name="selecao4H" id="kor" onchange="checkSelecao(this, 'grupoH','kor');">
-                                    <img src="https://frontendapiapp.blob.core.windows.net/images/88x88/coreia-do-sul.png"alt="Coreia do Sul" width="30" height="30">
-                                    Coreia do Sul</label>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
+            <div class="boxWin">
+              <span id="b1"></span><label>1° do grupo B </label>
+              <span id="a2"></span><label>2° do grupo A </label>
             </div>
-            <div class="faseOitavas">
-                <h2>OITAVAS DE FINAL</h2>
-
-                <div class="boxOitavas">
-                    <label for="a1" id="a1">1° do grupo A</label><br>
-                    <label for="b2" id="b2">2° do grupo B</label><br><br>
-                </div>
-
-                <div class="boxOitavas">
-                    <label for="c1" id="c1">1° do grupo C</label><br>
-                    <label for="d2" id="d2">2° do grupo D</label><br><br>
-                </div>
-
-                <div class="boxOitavas">
-                    <label for="e1" id="e1">1° do grupo E</label><br>
-                    <label for="f2" id="f2">2° do grupo F</label><br><br>
-                </div>
-
-                <div class="boxOitavas">
-                    <label for="g1" id="g1">1° do grupo G</label><br>
-                    <label for="h2" id="h2">2° do grupo H</label><br><br>
-                </div>
-
-                <div class="boxOitavas">
-                    <label for="b1" id="b1">1° do grupo B</label><br>
-                    <label for="a2" id="a2">2° do grupo A</label><br><br>
-                </div>
-
-                <div class="boxOitavas">
-                    <label for="d1" id="d1">1° do grupo D</label><br>
-                    <label for="c2" id="c2">2° do grupo C</label><br><br>
-                </div>
-
-                <div class="boxOitavas">
-                    <label for="f1" id="c1">1° do grupo F</label><br>
-                    <label for="e2" id="e2">2° do grupo E</label><br><br>
-                </div>
-                <div class="boxOitavas">
-                    <label for="h1" id="h1">1° do grupo H</label><br>
-                    <label for="g2" id="g2">2° do grupo G</label><br><br>
-                </div>
+            <div class="boxWin">
+              <span id="d1"></span><label>1° do grupo D </label>
+              <span id="c2"></span><label>2° do grupo C </label>
             </div>
+            <div class="boxWin">
+              <span id="f1"></span><label>1° do grupo F </label>
+              <span id="e2"></span><label>2° do grupo E </label>
+            </div>
+            <div class="boxWin">
+              <span id="h1"></span><label>1° do grupo H </label>
+              <span id="g2"></span><label>2° do grupo G </label>
+            </div>
+          </div>
         </div>
-
-        <div class="buttonDiv">
-            <button type="button" class="button">Limpar Campos</button>
-            <button type="button" class="button">Voltar</button>
-            <button type="button" class="button">Ir para Oitavas de Final</button>
+      </div>
+      <div class="coluna">
+        <div id="quartas" class="conteudo escondeFase">
+          <div class="quartas">
+            <h2>OITAVAS DE FINAL</h2>
+          </div>
         </div>
+      </div>
+      <div class="coluna">
+        <div id="semi" class="conteudo escondeFase">
+          <div class="semi">
+            <h2>QUARTAS DE FINAL</h2>
+          </div>
+        </div>
+      </div>
+      <div class="coluna">
+        <div id="final" class="conteudo escondeFase">
+          <div class="final">
+            <h2>SEMIFINAL</h2>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="coluna">
+        <div id="win" class="conteudo escondeFase">
+          <div class="win">
+            <h2>FINAL</h2>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="buttonDiv">
+        <button type="button" class="button">Limpar Campos</button>
+        <button type="button" class="button" onclick="voltarFase()">Voltar</button>
+        <button type="button" class="button" onclick="avancarFase()">
+          Próxima fase
+        </button>
+      </div>
     </section>
 
     <!-- Footer base do site -->
     <footer>
-        <section>
-            <div class="footer-1">
-                <div class="column">
-                    <div>
-                        <h4>Copa do Mundo 2022</h4>
-                    </div>
-                    <div>
-                        <ul>
-                            <li>
-                                <a href="fase-de-grupos.html">
-                                    <span>Fase de Grupos</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="mata-mata.html">
-                                    <span>Mata Mata</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="simulador.html">
-                                    <span>Simulador</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="column">
-                    <div>
-                        <h4>Copa do Mundo 2022</h4>
-                    </div>
-                    <div>
-                        <ul>
-                            <li>
-                                <a href="sede-da-copa.html">
-                                    <span>Sede da Copa</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="voce-sabia.html">
-                                    <span>Você Sabia?</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="column">
-                    <div>
-                        <h4>Mais informações</h4>
-                    </div>
-                    <div>
-                        <ul>
-                            <li>
-                                <a href="nossos-autores.html">
-                                    <span>Nossos Autores</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+      <section>
+        <div class="footer-1">
+          <div class="column">
+            <div>
+              <h4>Copa do Mundo 2022</h4>
             </div>
-        </section>
-        <section>
-            <div class="footer-2">
-                <div class="logo-grupo">
-                    <img src="src/img/icon/logo-grupo1-white.png" atl="logo do grupo 1">
-                </div>
-                <div>
-                    <h6>Proz Educação &copy; - Portal Tech</h6>
-                </div>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferer">
-                                <img src="src/img/icon/logo-facebook-32.png" alt="facebook.com">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferer">
-                                <img src="src/img/icon/logo-instagram-32.png" alt="instagram.com">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferer">
-                                <img src="src/img/icon/logo-linkedin-32.png" alt="linkedin.com">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferer">
-                                <img src="src/img/icon/logo-twitter-32.png" alt="twitter.com">
-                            </a>
-                        </li>
-                        <!-- <li>
+            <div>
+              <ul>
+                <li>
+                  <a href="fase-de-grupos.html">
+                    <span>Fase de Grupos</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="mata-mata.html">
+                    <span>Mata Mata</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="simulador.html">
+                    <span>Simulador</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="column">
+            <div>
+              <h4>Copa do Mundo 2022</h4>
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <a href="sede-da-copa.html">
+                    <span>Sede da Copa</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="voce-sabia.html">
+                    <span>Você Sabia?</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="column">
+            <div>
+              <h4>Mais informações</h4>
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <a href="nossos-autores.html">
+                    <span>Nossos Autores</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="footer-2">
+          <div class="logo-grupo">
+            <img
+              src="src/img/icon/logo-grupo1-white.png"
+              atl="logo do grupo 1"
+            />
+          </div>
+          <div>
+            <h6>Proz Educação &copy; - Portal Tech</h6>
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferer"
+                >
+                  <img
+                    src="src/img/icon/logo-facebook-32.png"
+                    alt="facebook.com"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferer"
+                >
+                  <img
+                    src="src/img/icon/logo-instagram-32.png"
+                    alt="instagram.com"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferer"
+                >
+                  <img
+                    src="src/img/icon/logo-linkedin-32.png"
+                    alt="linkedin.com"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferer"
+                >
+                  <img
+                    src="src/img/icon/logo-twitter-32.png"
+                    alt="twitter.com"
+                  />
+                </a>
+              </li>
+              <!-- <li>
                     <a href="https://github.com/#" target="_blank" rel="noopener noreferer">
                         <img src="src/img/icon/logo-github-32.png" alt="github.com/#">
                     </a>
                 </li> -->
-                    </ul>
-                </nav>
-            </div>
-        </section>
+            </ul>
+          </nav>
+        </div>
+      </section>
     </footer>
     <!-- Footer base do site até aqui-->
-
-</body>
-
+  </body>
 </html>
