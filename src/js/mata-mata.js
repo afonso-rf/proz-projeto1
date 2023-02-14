@@ -7,6 +7,9 @@ const boxFinal = document.getElementsByClassName("boxfinal");
 
 
 
+
+// EVENTO CLICK//
+
 btnNavegador[0].addEventListener("click", () => {
     
     limpar()
