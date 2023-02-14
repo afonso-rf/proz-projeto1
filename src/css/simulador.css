@@ -42,7 +42,7 @@
 
 }
 
-.number-check:hover{
+.atual{
     background-color: #800730;
     color:#fdfdfd;
 }
@@ -76,7 +76,12 @@
 }
 
 
-#coluna {
+.coluna {
+    width: auto;
+    height: auto;
+}
+
+.coluna .conteudo{
     margin: 0px 36px;
     margin-top: 20px;
     display: flex;
@@ -87,7 +92,7 @@
     padding-bottom: 50px;
 }
 
-#coluna h2 {
+.coluna h2 {
     background: linear-gradient(68deg, #850f2b, #1d1d1d);
     display: block;
     text-align: center;
@@ -99,10 +104,10 @@
 
 }
 
-.pag1 {
+/* .pag1 {
     display: flex;
     align-items: center;
-}
+} */
 
 
 .grupo {
@@ -137,19 +142,74 @@
 
 .itensG label {
     cursor: pointer;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.itensG span {
+    padding: 10px;
+    border: 1px solid #d3b4bb;
+    border-radius: 50%;
+    
+}
+
+.itensG label span.primeiro:before{
+    content: '1°';
+    color: #fdfdfd;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #FFC300;
+    box-shadow: 1px 2px 3px black;
+    border: #3b3b3b;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: -1px;
+    padding: 2px 5px;
+}
+
+.itensG label span.segundo:before{
+    content: '2°';
+    color: #fdfdfd;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #8B8B8B;
+    box-shadow: 1px 2px 3px black;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: -1px;
+    padding: 2px 5px;
 }
 
 .itensG input {
     cursor: pointer;
     margin-right: 8px;
     transform : scale(1.4);
+    visibility: hidden;
 }
 
 .itensG img {
     margin-right: 8px;
 }
 
-.boxOitavas{
+img.bandeiras{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.oitavas{
+
+}
+
+.escondeFase{
+    display: none;
+}
+
+.boxFases{
+    display: grid;
     background-color: #d3b4bb;
     text-align:center ;
     color: #e2dbda;
@@ -159,11 +219,21 @@
     overflow: hidden;
     border-top: 5px solid #850f2b;
 }
-.boxOitavas label{
+.boxFases label{
     color: #3b3b3b;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 3px;
+    font-size: 19px;
+    font-weight: 500;
+    padding: 5px;
+}
+
+div.selecao {
+    display: flex;
+    align-items: center;
+    color: #3b3b3b;
+    font-size: 19px;
+    font-weight: 500;
+    padding: 5px;
+    gap: 8px;
 }
 
 .buttonDiv {
@@ -220,11 +290,11 @@
         text-align: center;
         font-size:small;
     }
-    #coluna{
+    .coluna{
         justify-content: space-between;
         margin: 10px;
     }
-    #coluna h2{
+    .coluna h2{
         width: 350px;
     }
     .grupoBox{
@@ -241,11 +311,11 @@
         padding: 0;
         text-align: center;
     }
-    #coluna{
+    .coluna{
         justify-content: space-between;
         margin: 10px;
     }
-    #coluna h2{
+    .coluna h2{
         width: 340px;
     }
     .grupoBox{
@@ -261,11 +331,11 @@
         padding: 0;
         text-align: center;
     }
-    #coluna{
+    .coluna{
         justify-content: space-between;
         margin: 10px;
     }
-    #coluna h2{
+    .coluna h2{
         width: 250px;
     }
     .grupoBox{
@@ -286,11 +356,11 @@
         padding: 0;
         text-align: center;
     }
-    #coluna{
+    .coluna{
         justify-content: space-between;
         margin: 5px;
     }
-    #coluna h2{
+    .coluna h2{
         display: flex;
         text-align: center;
         width: 90px;
@@ -317,11 +387,11 @@
         padding: 0;
         text-align: center;
     }
-    #coluna{
+    .coluna{
         justify-content: space-between;
         margin: 2px;
     }
-    #coluna h2{
+    .coluna h2{
         background-color: none;
         color: #e2dbda;
         text-align: start;
