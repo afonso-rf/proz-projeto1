@@ -138,12 +138,12 @@ section {
 }
 
 .comments {
-    margin-top: 100px;
+    margin: 50px 120px 0px 120px;
 }
 
 .comments form {
-    background-color: #e638463d;
-    padding: 20px;
+    background-color: var(--third-color);
+    padding: 0px 140px 0px 110px;
     border: 10px solid var(--primary-color);
     border-radius: 10px;
 
@@ -153,15 +153,41 @@ section {
     width: 100%;
 }
 
+.comments h3 {
+    color: var(--sixth-color);
+    text-align: center;
+    font-size: 20px;
+}
+
+.campo input {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    margin: 0px 0px 0px 0px;
+}
+
 .box-comments label {
+    color: var(--sixth-color);
     padding-right: 5px;
     font-weight: 500;
+}
+
+#send:not(:hover) {
+    color: var(--sixth-color);
+    background-color: var(--second-color);
 }
 
 #send {
     display: block;
     margin: 10px 94%;
-    border-radius: 5px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    color: white;
+    background-color: var(--primary-color);
+    transition: background-color 200ms;
 }
 
 .box {
@@ -176,24 +202,25 @@ section {
     border: 3px solid #DB5A5A;
   }
   
-  .campo.error div.img-error {
+  /* .campo.error div.img-error {
     visibility: visible;
   }
   
   .campo.success div.img-success {
     visibility: visible;
   }
-  
+   */
   .campo.error span{
     color: #DB5A5A;
     visibility: visible;
+    
   }
   
   .campo div {
-  position: absolute;
-  top: 45px;
-  right: 10px;
-  visibility: hidden;
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    visibility: hidden;
   }
   
   .campo span {
@@ -202,3 +229,13 @@ section {
     margin-top: 5px;
     font-size: 14px;
   }
+
+/* #comments-send {
+    display: inline;
+    list-style-image: ;
+}
+
+.username {
+    background-color: var(--sixth-color);
+    list-style-image: url('https://definirtec.com/ampliar/img/users/user.png');
+} */

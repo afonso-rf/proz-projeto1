@@ -2,6 +2,7 @@ let box = document.getElementById('box-comments')
 let name = document.getElementById('name')
 let email = document.getElementById('email')
 let comment = document.getElementById('box-text')
+let send = document.getElementById('send')
 
 box.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -42,7 +43,8 @@ function setErrorFor(input, message) {
   span.innerText = message
 
   campo.className = 'campo error'
-}}
+}
+}
 
 function setErrorFor(input, message) {
     let campo = input.parentElement;
@@ -63,14 +65,19 @@ function isEmail(email) {
     return /^(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/.test(email)
 }
 
-// ----------Requer otimização-----------//
-
-// let send = document.getElementById('send');
-
-// send.addEventListener('click', function(){
-	// let boxValue = document.getElementById('box-text').value;
-	// let li = document.createElement('li');
-	// let text = document.createTextNode(boxValue);
-	// li.appendChild(text);
-	// document.getElementById('comments-send').appendChild(li);
-// })
+// function sendComment() {
+//     send.addEventListener('click', function(){
+//         let boxValue = document.getElementById('box-text').value;
+//         let nameValue = document.getElementById('name').value
+//         let li = document.createElement('li');
+//         li.setAttribute("class", "username");
+//         let span = document.createElement('span');
+//         span.setAttribute("class", "content");
+//         let text = document.createTextNode(boxValue);
+//         let username = document.createTextNode(nameValue);
+//         li.appendChild(username);
+//         span.appendChild(text);
+//         document.getElementById('comments-send').appendChild(li);
+//         document.getElementById('comments-send').appendChild(span);
+//     })
+// }
