@@ -470,12 +470,13 @@ const fases = {
   quartas: {
     fechar: () => {
       const elemento = document.getElementById('quartas');
-      elemento.classList.add(['faseQuartas', 'escondeFase'])
+      elemento.classList.add('escondeFase')
     },
     abrir: () => {
       const elemento = document.getElementById('quartas');
       elemento.classList.remove('escodeFase')
-      elemento.innerHTML += oitavasSelec(oitavasFase,selecoesFaseDeGrupos)
+      elemento.classList.add('faseQuartas')
+      elemento.querySelector('.quartas').innerHTML += oitavasSelec(oitavasFase,selecoesFaseDeGrupos)
     },
   },
   semi: {
