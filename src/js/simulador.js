@@ -231,7 +231,7 @@ let grupos = {
 const oitavasFase = [
   {
     jogo: ['a1', 'b2'],
-    selecao: ['', '']
+    selecao: ['', ''],
   },
   {
     jogo: ['c1', 'd2'],
@@ -259,6 +259,25 @@ const oitavasFase = [
   },
   {
     jogo: ['h1', 'g2'],
+    selecao: ['', '']
+  }
+]
+
+const quartasFase = [
+  {
+    jogo: ['o1', 'o2'],
+    selecao: ['', ''],
+  },
+  {
+    jogo: ['o3', 'o4'],
+    selecao: ['', '']
+  },
+  {
+    jogo: ['o5', 'o6'],
+    selecao: ['', '']
+  },
+  {
+    jogo: ['o7', 'o8'],
     selecao: ['', '']
   }
 ]
@@ -307,7 +326,7 @@ function checkSelecao(input, grupo, selecId, p1, p2) {
         grupos[grupo]["1"] = "";
         input.checked = false;
         document.getElementById(p1).innerHTML = ''
-        document.querySelector(`.boxFases>span#${p1}~label`).style.display = ''
+        document.querySelector(`.boxWin>span#${p1}~label`).style.display = ''
         document.querySelector(`label[for="${selecId}"]>span`).className = ''
         for(let i in oitavasFase){
           if(oitavasFase[i].jogo[0] === p1){
@@ -360,7 +379,7 @@ function checkSelecao(input, grupo, selecId, p1, p2) {
         grupos[grupo]["2"] = "";
         input.checked = false;
         document.getElementById(p2).innerHTML = ''
-        document.querySelector(`.boxFases>span#${p2}~label`).style.display = ''
+        document.querySelector(`.boxWin>span#${p2}~label`).style.display = ''
         document.querySelector(`label[for="${selecId}"]>span`).className = ''
         for(let i in oitavasFase){
           if(oitavasFase[i].jogo[1] === p2){
@@ -410,32 +429,31 @@ function gruposSelec(GRUPO, ARRAY) {
 
   return texHtml
 }
-
 function oitavasSelec(OITAVAS, ARRAY) {
   let selecoesOitavas = []
   let itens = ''
 
-  for(let i in  OITAVAS) {
+  for (let i in OITAVAS) {
     let lista = []
-    for(let y of ARRAY) {
-      if(OITAVAS[i].selecao[0] == y.id){
+    for (let y of ARRAY) {
+      if (OITAVAS[i].selecao[0] == y.id) {
         lista.push(y)
       }
-      if(OITAVAS[i].selecao[1] == y.id){
+      if (OITAVAS[i].selecao[1] == y.id) {
         lista.push(y)
       }
     }
     selecoesOitavas.push(lista)
   }
 
-  for(let i in selecoesOitavas){
+  for (let i in selecoesOitavas) {
     itens += `
     <div class="grupo confronto-${i}">
-    <h3>Confronto ${parseInt(i)+1}</h3>
+    <h3>CONFRONTO ${parseInt(i) + 1}</h3>
     <div class="grupoBox">
     `
-    for(let j in selecoesOitavas[i]){
-      itens +=`
+    for (let j in selecoesOitavas[i]) {
+      itens += `
       <div class="itensG">
             <label for="o${selecoesOitavas[i][j].id}">
                 <span></span>
@@ -453,6 +471,64 @@ function oitavasSelec(OITAVAS, ARRAY) {
 
   return itens
 }
+function quartasSelec(QUARTAS, ARRAY) {
+  let selecoesQuartas = []
+  let itens = ''
+
+  for (let i in QUARTAS) {
+    let lista = []
+    for (let y of ARRAY) {
+      if (QUARTAS[i].selecao[0] == y.id) {
+        lista.push(y)
+      }
+      if (QUARTAS[i].selecao[1] == y.id) {
+        lista.push(y)
+      }
+    }
+    selecoesQuartas.push(lista)
+  }
+
+  for (let i in selecoesQuartas) {
+    itens += `
+    <div class="grupo confronto-${i}">
+    <h3>CONFRONTO ${parseInt(i) + 1}</h3>
+    <div class="grupoBox">
+    `
+    for (let j in selecoesQuartas[i]) {
+      itens += `
+      <div class="itensG">
+            <label for="o${selecoesQuartas[i][j].id}">
+                <span></span>
+                <input type="checkbox" name="${selecoesQuartas[i][j].id}" id="o${selecoesQuartas[i][j].id}">
+                <img src="${selecoesQuartas[i][j].bandeira}" alt="${selecoesQuartas[i][j].selecao}" class="bandeiras">
+                ${selecoesQuartas[i][j].selecao}</label>
+      </div>
+      `
+    }
+    itens += `
+    </div>
+  </div>
+  `
+  }
+  return itens
+}
+function coluna2(ARRAY, H2) {
+  let textoHtml = `
+  <div class="coluna2">
+          <h2>${H2}</h2>
+  `
+  for (let i in ARRAY) {
+    textoHtml += `
+    <div class="boxWin">
+            <span id="${ARRAY[i].jogo[0]}"></span><label>Vencedor do Confronto ${ARRAY[i].jogo[0][1]}</label>
+            <span id="${ARRAY[i].jogo[1]}"></span><label>Vencedor do Confronto ${ARRAY[i].jogo[1][1]}</label>
+          </div>
+    `
+  }
+  return textoHtml += `
+  </div>
+  `
+}
 
 let pagAtual = 'oitavas'
 
@@ -460,7 +536,7 @@ const fases = {
   oitavas: {
     fechar: () => {
       const elemento = document.getElementById('oitavas');
-      elemento.className = 'oitavas escondeFase'
+      elemento.classList.add('escondeFase')
     },
     abrir: () => {
       const elemento = document.getElementById('oitavas');
@@ -474,15 +550,15 @@ const fases = {
     },
     abrir: () => {
       const elemento = document.getElementById('quartas');
-      elemento.classList.remove('escodeFase')
-      elemento.classList.add('faseQuartas')
-      elemento.querySelector('.quartas').innerHTML += oitavasSelec(oitavasFase,selecoesFaseDeGrupos)
+      elemento.classList.remove('escondeFase')
+      elemento.querySelector('.quartas').innerHTML += oitavasSelec(oitavasFase, selecoesFaseDeGrupos)
+      elemento.innerHTML += coluna2(quartasFase, 'QUARTAS DE FINAL')
     },
   },
   semi: {
     fechar: () => {
       const elemento = document.getElementById('semi');
-      elemento.className = 'faseSemi escondeFase'
+      elemento.classList.add('escondeFase')
     },
     abrir: () => {
       const elemento = document.getElementById('semi');
@@ -492,7 +568,7 @@ const fases = {
   final: {
     fechar: () => {
       const elemento = document.getElementById('final');
-      elemento.className = 'faseFinal escondeFase'
+      elemento.classList.add('escondeFase')
     },
     abrir: () => {
       const elemento = document.getElementById('final');
@@ -502,22 +578,36 @@ const fases = {
 }
 
 function avancarFase() {
+  if (pagAtual === 'semi') {
+    pagAtual = 'final'
+    fases.oitavas.fechar()
+    fases.quartas.fechar()
+    fases.semi.fechar()
+    fases.final.abrir()
+  }
   if (pagAtual === 'quartas') {
     pagAtual = 'semi'
     fases.oitavas.fechar()
     fases.quartas.fechar()
     fases.semi.abrir()
+    fases.final.fechar()
   }
   if (pagAtual === 'oitavas') {
     pagAtual = 'quartas'
     fases.oitavas.fechar()
     fases.quartas.abrir()
     fases.semi.fechar()
+    fases.final.fechar()
   }
   if (pagAtual === 'grupos') {
     pagAtual = 'oitavas'
     fases.oitavas.abrir()
     fases.quartas.fechar()
     fases.semi.fechar()
+    fases.final.fechar()
   }
+}
+
+function voltarFase() {
+  
 }

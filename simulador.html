@@ -1,307 +1,337 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador</title>
+    <link rel="icon" href="src/img/seleções" />
+    <link rel="stylesheet" href="src/css/default.css" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/simulador.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="src/js/default.js" defer></script>
+    <script src="./src/js/simulador.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Simulador</title>
-  <link rel="icon" href="src/img/seleções" />
-  <link rel="stylesheet" href="src/css/default.css" />
-  <link rel="stylesheet" href="./src/css/reset.css" />
-  <link rel="stylesheet" href="./src/css/simulador.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap"
-    rel="stylesheet" />
-  <script src="src/js/default.js" defer></script>
-  <script src="./src/js/simulador.js" defer></script>
-</head>
+  <body>
+    <!-- header base do site -->
+    <header class="header">
+      <div>
+        <a href="index.html">
+          <img class="" src="src/img/icon/trofeu.png" atl="icone trofeu" />
+          <div>
+            <span>COPA DO MUNDO 2022</span>
+          </div>
+        </a>
+      </div>
 
-<body>
-  <!-- header base do site -->
-  <header class="header">
-    <div>
-      <a href="index.html">
-        <img class="" src="src/img/icon/trofeu.png" atl="icone trofeu" />
-        <div>
-          <span>COPA DO MUNDO 2022</span>
-        </div>
-      </a>
-    </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">
+              <span>HOME</span>
+              <div></div>
+            </a>
+          </li>
+          <li>
+            <a href="fase-de-grupos.html">
+              <span>FASE DE GRUPOS</span>
+              <div></div>
+            </a>
+          </li>
+          <li>
+            <a href="mata-mata.html">
+              <span>MATA MATA</span>
+              <div></div>
+            </a>
+          </li>
+          <li>
+            <a href="simulador.html">
+              <span>SIMULADOR</span>
+              <div></div>
+            </a>
+          </li>
+          <li>
+            <a href="sede-da-copa.html">
+              <span>SEDE DA COPA</span>
+              <div></div>
+            </a>
+          </li>
+          <li>
+            <a href="voce-sabia.html">
+              <span>VOCÊ SABIA?</span>
+              <div></div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- <img src="src/img/icon/trofeu.png" atl="icone trofeu"> -->
+    </header>
+    <!-- header base do site até aqui-->
+    <h1 id="tituloSimu">Simulador da Copa Catar 2022</h1>
 
-    <nav>
-      <ul>
-        <li>
-          <a href="index.html">
-            <span>HOME</span>
-            <div></div>
-          </a>
+    <section class="all">
+      <!--Será mostrado de acordo com a fase-->
+      <ul class="s-shero">
+        <li class="navegar">
+          <span class="number-check">
+            <i>1</i>
+          </span>
+          <span class="navegarnome">PRIMEIRA FASE</span>
         </li>
-        <li>
-          <a href="fase-de-grupos.html">
-            <span>FASE DE GRUPOS</span>
-            <div></div>
-          </a>
+        <div class="pontilhado"></div>
+        <li class="navegar">
+          <span class="number-check">
+            <i> 2 </i>
+          </span>
+          <span class="navegarnome"> OITAVAS DE FINAL </span>
         </li>
-        <li>
-          <a href="mata-mata.html">
-            <span>MATA MATA</span>
-            <div></div>
-          </a>
+        <div class="pontilhado"></div>
+        <li class="navegar">
+          <span class="number-check">
+            <i> 3 </i>
+          </span>
+          <span class="navegarnome"> QUARTAS DE FINAL </span>
         </li>
-        <li>
-          <a href="simulador.html">
-            <span>SIMULADOR</span>
-            <div></div>
-          </a>
+        <div class="pontilhado"></div>
+        <li class="navegar">
+          <span class="number-check">
+            <i> 4 </i>
+          </span>
+          <span class="navegarnome"> SEMIFINAL </span>
         </li>
-        <li>
-          <a href="sede-da-copa.html">
-            <span>SEDE DA COPA</span>
-            <div></div>
-          </a>
-        </li>
-        <li>
-          <a href="voce-sabia.html">
-            <span>VOCÊ SABIA?</span>
-            <div></div>
-          </a>
+        <div class="pontilhado"></div>
+        <div class="pontilhado"></div>
+        <li class="navegar">
+          <span class="number-check">
+            <img src="./src/img/icon/trofeu.png" alt="trofeu" />
+          </span>
+          <span class="navegarnome"> FINAL </span>
         </li>
       </ul>
-    </nav>
-    <!-- <img src="src/img/icon/trofeu.png" atl="icone trofeu"> -->
-  </header>
-  <!-- header base do site até aqui-->
-  <h1 id="tituloSimu">Simulador da Copa Catar 2022</h1>
 
-  <section class="all">
-    <!--Será mostrado de acordo com a fase-->
-    <ul class="s-shero">
-      <li class="navegar">
-        <span class="number-check">
-          <i>1</i>
-        </span>
-        <span class="navegarnome">PRIMEIRA FASE</span>
-      </li>
-      <div class="pontilhado"></div>
-      <li class="navegar">
-        <span class="number-check">
-          <i> 2 </i>
-        </span>
-        <span class="navegarnome"> OITAVAS DE FINAL </span>
-      </li>
-      <div class="pontilhado"></div>
-      <li class="navegar">
-        <span class="number-check">
-          <i> 3 </i>
-        </span>
-        <span class="navegarnome"> QUARTAS DE FINAL </span>
-      </li>
-      <div class="pontilhado"></div>
-      <li class="navegar">
-        <span class="number-check">
-          <i> 4 </i>
-        </span>
-        <span class="navegarnome"> SEMIFINAL </span>
-      </li>
-      <div class="pontilhado"></div>
-      <div class="pontilhado"></div>
-      <li class="navegar">
-        <span class="number-check">
-          <img src="./src/img/icon/trofeu.png" alt="trofeu" />
-        </span>
-        <span class="navegarnome"> FINAL </span>
-      </li>
-    </ul>
-
-    <div class="coluna">
-      <div id="oitavas" class="conteudo">
-        <div class="pag1">
-          <div id="faseG">
-            <h2>PRIMEIRA FASE</h2>
+      <div class="coluna">
+        <div id="oitavas" class="conteudo">
+          <div class="pag1">
+            <div id="faseG">
+              <h2>PRIMEIRA FASE</h2>
+            </div>
           </div>
-        </div>
-        <div class="oitavas">
-          <h2>OITAVAS DE FINAL</h2>
-
-          <div class="boxFases">
-            <span id="a1"></span><label>1° do grupo A </label>
-            <span id="b2"></span><label>2° do grupo B </label>
-          </div>
-
-          <div class="boxFases">
-            <span id="c1"></span><label>1° do grupo C </label>
-            <span id="d2"></span><label>2° do grupo D </label>
-          </div>
-
-          <div class="boxFases">
-            <span id="e1"></span><label>1° do grupo E </label>
-            <span id="f2"></span><label>2° do grupo F </label>
-          </div>
-
-          <div class="boxFases">
-            <span id="g1"></span><label>1° do grupo G </label>
-            <span id="h2"></span><label>2° do grupo H </label>
-          </div>
-
-          <div class="boxFases">
-            <span id="b1"></span><label>1° do grupo B </label>
-            <span id="a2"></span><label>2° do grupo A </label>
-          </div>
-
-          <div class="boxFases">
-            <span id="d1"></span><label>1° do grupo D </label>
-            <span id="c2"></span><label>2° do grupo C </label>
-          </div>
-
-          <div class="boxFases">
-            <span id="f1"></span><label>1° do grupo F </label>
-            <span id="e2"></span><label>2° do grupo E </label>
-          </div>
-          <div class="boxFases">
-            <span id="h1"></span><label>1° do grupo H </label>
-            <span id="g2"></span><label>2° do grupo G </label>
+          <div class="coluna2">
+            <h2>OITAVAS DE FINAL</h2>
+            <div class="boxWin">
+              <span id="a1"></span><label>1° do grupo A </label>
+              <span id="b2"></span><label>2° do grupo B </label>
+            </div>
+            <div class="boxWin">
+              <span id="c1"></span><label>1° do grupo C </label>
+              <span id="d2"></span><label>2° do grupo D </label>
+            </div>
+            <div class="boxWin">
+              <span id="e1"></span><label>1° do grupo E </label>
+              <span id="f2"></span><label>2° do grupo F </label>
+            </div>
+            <div class="boxWin">
+              <span id="g1"></span><label>1° do grupo G </label>
+              <span id="h2"></span><label>2° do grupo H </label>
+            </div>
+            <div class="boxWin">
+              <span id="b1"></span><label>1° do grupo B </label>
+              <span id="a2"></span><label>2° do grupo A </label>
+            </div>
+            <div class="boxWin">
+              <span id="d1"></span><label>1° do grupo D </label>
+              <span id="c2"></span><label>2° do grupo C </label>
+            </div>
+            <div class="boxWin">
+              <span id="f1"></span><label>1° do grupo F </label>
+              <span id="e2"></span><label>2° do grupo E </label>
+            </div>
+            <div class="boxWin">
+              <span id="h1"></span><label>1° do grupo H </label>
+              <span id="g2"></span><label>2° do grupo G </label>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="coluna">
-      <div id="quartas" class="conteudo">
-        <div class="quartas">
-          <h2>Quartas de Final</h2>
+      <div class="coluna">
+        <div id="quartas" class="conteudo escondeFase">
+          <div class="quartas">
+            <h2>OITAVAS DE FINAL</h2>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="coluna">
-      <div id="semi" class="conteudo">
-        <div class="semi">
-          <h2>Semifinal</h2>
+      <div class="coluna">
+        <div id="semi" class="conteudo escondeFase">
+          <div class="semi">
+            <h2>QUARTAS DE FINAL</h2>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="coluna">
-      <div id="final" class="conteudo">
-        <div class="final">
-          <h2>Final</h2>
+      <div class="coluna">
+        <div id="final" class="conteudo escondeFase">
+          <div class="final">
+            <h2>SEMIFINAL</h2>
+          </div>
         </div>
       </div>
-    </div>
+      <!-- <div class="coluna">
+        <div id="win" class="conteudo escondeFase">
+          <div class="win">
+            <h2>FINAL</h2>
+          </div>
+        </div>
+      </div> -->
 
-    <div class="buttonDiv">
-      <button type="button" class="button">Limpar Campos</button>
-      <button type="button" class="button">Voltar</button>
-      <button type="button" class="button" onclick="avancarFase()">
-        Ir para Oitavas de Final
-      </button>
-    </div>
-  </section>
-
-  <!-- Footer base do site -->
-  <footer>
-    <section>
-      <div class="footer-1">
-        <div class="column">
-          <div>
-            <h4>Copa do Mundo 2022</h4>
-          </div>
-          <div>
-            <ul>
-              <li>
-                <a href="fase-de-grupos.html">
-                  <span>Fase de Grupos</span>
-                </a>
-              </li>
-              <li>
-                <a href="mata-mata.html">
-                  <span>Mata Mata</span>
-                </a>
-              </li>
-              <li>
-                <a href="simulador.html">
-                  <span>Simulador</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="column">
-          <div>
-            <h4>Copa do Mundo 2022</h4>
-          </div>
-          <div>
-            <ul>
-              <li>
-                <a href="sede-da-copa.html">
-                  <span>Sede da Copa</span>
-                </a>
-              </li>
-              <li>
-                <a href="voce-sabia.html">
-                  <span>Você Sabia?</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="column">
-          <div>
-            <h4>Mais informações</h4>
-          </div>
-          <div>
-            <ul>
-              <li>
-                <a href="nossos-autores.html">
-                  <span>Nossos Autores</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <div class="buttonDiv">
+        <button type="button" class="button">Limpar Campos</button>
+        <button type="button" class="button" onclick="voltarFase()">Voltar</button>
+        <button type="button" class="button" onclick="avancarFase()">
+          Próxima fase
+        </button>
       </div>
     </section>
-    <section>
-      <div class="footer-2">
-        <div class="logo-grupo">
-          <img src="src/img/icon/logo-grupo1-white.png" atl="logo do grupo 1" />
+
+    <!-- Footer base do site -->
+    <footer>
+      <section>
+        <div class="footer-1">
+          <div class="column">
+            <div>
+              <h4>Copa do Mundo 2022</h4>
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <a href="fase-de-grupos.html">
+                    <span>Fase de Grupos</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="mata-mata.html">
+                    <span>Mata Mata</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="simulador.html">
+                    <span>Simulador</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="column">
+            <div>
+              <h4>Copa do Mundo 2022</h4>
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <a href="sede-da-copa.html">
+                    <span>Sede da Copa</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="voce-sabia.html">
+                    <span>Você Sabia?</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="column">
+            <div>
+              <h4>Mais informações</h4>
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <a href="nossos-autores.html">
+                    <span>Nossos Autores</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div>
-          <h6>Proz Educação &copy; - Portal Tech</h6>
-        </div>
-        <nav>
-          <ul>
-            <li>
-              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferer">
-                <img src="src/img/icon/logo-facebook-32.png" alt="facebook.com" />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferer">
-                <img src="src/img/icon/logo-instagram-32.png" alt="instagram.com" />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferer">
-                <img src="src/img/icon/logo-linkedin-32.png" alt="linkedin.com" />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferer">
-                <img src="src/img/icon/logo-twitter-32.png" alt="twitter.com" />
-              </a>
-            </li>
-            <!-- <li>
+      </section>
+      <section>
+        <div class="footer-2">
+          <div class="logo-grupo">
+            <img
+              src="src/img/icon/logo-grupo1-white.png"
+              atl="logo do grupo 1"
+            />
+          </div>
+          <div>
+            <h6>Proz Educação &copy; - Portal Tech</h6>
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferer"
+                >
+                  <img
+                    src="src/img/icon/logo-facebook-32.png"
+                    alt="facebook.com"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferer"
+                >
+                  <img
+                    src="src/img/icon/logo-instagram-32.png"
+                    alt="instagram.com"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferer"
+                >
+                  <img
+                    src="src/img/icon/logo-linkedin-32.png"
+                    alt="linkedin.com"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferer"
+                >
+                  <img
+                    src="src/img/icon/logo-twitter-32.png"
+                    alt="twitter.com"
+                  />
+                </a>
+              </li>
+              <!-- <li>
                     <a href="https://github.com/#" target="_blank" rel="noopener noreferer">
                         <img src="src/img/icon/logo-github-32.png" alt="github.com/#">
                     </a>
                 </li> -->
-          </ul>
-        </nav>
-      </div>
-    </section>
-  </footer>
-  <!-- Footer base do site até aqui-->
-</body>
-
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </footer>
+    <!-- Footer base do site até aqui-->
+  </body>
 </html>
