@@ -144,6 +144,7 @@
 
 .itensG label {
   cursor: pointer;
+  user-select:none;
   align-items: center;
   display: flex;
   position: relative;
@@ -183,6 +184,18 @@
   top: 2px;
   left: -1px;
   padding: 2px 5px;
+}
+
+.itensG label span.classificado:before {
+  content: url(../img/icon/check.svg);
+  background-color: #33c914;
+  box-shadow: 2px 2px 5px #3b3b3b;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  height: 27px;
+  width: 27px;
+  position: absolute;
 }
 
 .itensG input {

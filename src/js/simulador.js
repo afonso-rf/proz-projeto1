@@ -313,8 +313,8 @@ function checkSelecao(input, grupo, selecId, p1, p2) {
         document.querySelector(`span#${p1}~label`).style.display = 'none'
         document.getElementById(p1).appendChild(div)
         document.querySelector(`label[for="${selecId}"]>span`).className = 'primeiro'
-        for(let i in oitavasFase){
-          if(oitavasFase[i].jogo[0] === p1){
+        for (let i in oitavasFase) {
+          if (oitavasFase[i].jogo[0] === p1) {
             oitavasFase[i].selecao[0] = selecId
           }
         }
@@ -328,8 +328,8 @@ function checkSelecao(input, grupo, selecId, p1, p2) {
         document.getElementById(p1).innerHTML = ''
         document.querySelector(`.boxWin>span#${p1}~label`).style.display = ''
         document.querySelector(`label[for="${selecId}"]>span`).className = ''
-        for(let i in oitavasFase){
-          if(oitavasFase[i].jogo[0] === p1){
+        for (let i in oitavasFase) {
+          if (oitavasFase[i].jogo[0] === p1) {
             oitavasFase[i].selecao[0] = ''
           }
         }
@@ -347,8 +347,8 @@ function checkSelecao(input, grupo, selecId, p1, p2) {
         document.getElementById(p1).appendChild(div)
         document.querySelector(`#${p1}~label`).style.display = 'none'
         document.querySelector(`label[for="${selecId}"]>span`).className = 'primeiro'
-        for(let i in oitavasFase){
-          if(oitavasFase[i].jogo[0] === p1){
+        for (let i in oitavasFase) {
+          if (oitavasFase[i].jogo[0] === p1) {
             oitavasFase[i].selecao[0] = selecId
           }
         }
@@ -366,8 +366,8 @@ function checkSelecao(input, grupo, selecId, p1, p2) {
         document.getElementById(p2).appendChild(div)
         document.querySelector(`span#${p2}~label`).style.display = 'none'
         document.querySelector(`label[for="${selecId}"]>span`).className = 'segundo'
-        for(let i in oitavasFase){
-          if(oitavasFase[i].jogo[1] === p2){
+        for (let i in oitavasFase) {
+          if (oitavasFase[i].jogo[1] === p2) {
             oitavasFase[i].selecao[1] = selecId
           }
         }
@@ -381,8 +381,8 @@ function checkSelecao(input, grupo, selecId, p1, p2) {
         document.getElementById(p2).innerHTML = ''
         document.querySelector(`.boxWin>span#${p2}~label`).style.display = ''
         document.querySelector(`label[for="${selecId}"]>span`).className = ''
-        for(let i in oitavasFase){
-          if(oitavasFase[i].jogo[1] === p2){
+        for (let i in oitavasFase) {
+          if (oitavasFase[i].jogo[1] === p2) {
             oitavasFase[i].selecao[1] = ''
           }
         }
@@ -397,6 +397,81 @@ function checkSelecao(input, grupo, selecId, p1, p2) {
     input.checked = false;
   }
 }
+
+function onQuartas(input, id, p1) {
+  checkFases(input, quartasFase, id, p1)
+}
+
+function checkFases(input, array, selecId, p1) {
+  let selecao = {}
+  let index = 0
+  let classificado = ''
+
+  for (let i in array) {
+    for (let y in array[i].jogo) {
+      if (array[i].jogo[y] == p1) {
+        index = i
+      }
+    }
+  }
+
+  for (let i in array[index].jogo) {
+    if (array[index].jogo[i] == p1) {
+      classificado = array[index].selecao[i]
+    }
+  }
+
+  for (let i in selecoesFaseDeGrupos) {
+    if (selecoesFaseDeGrupos[i].id == selecId) {
+      selecao.selecao = selecoesFaseDeGrupos[i].selecao
+      selecao.bandeira = selecoesFaseDeGrupos[i].bandeira
+    }
+  }
+
+  const condicoes = [
+    {
+      condicao: () => classificado === "",
+      acao: () => {
+
+        input.checked = true;
+        const div = document.createElement('div')
+        div.className = 'selecao'
+        div.innerHTML = `<img src="${selecao.bandeira}" alt="${selecao.selecao}" class="bandeiras">
+        <span>${selecao.selecao}</span>`
+        document.querySelector(`#${p1}`).appendChild(div)
+        document.querySelector(`span#${p1}~label`).style.display = 'none'
+        document.querySelector(`label[for="${p1[0]+p1[0]}${selecId}"]>span`).className = 'classificado'
+        for (let i in array[index].jogo) {
+          if (array[index].jogo[i] === p1) {
+            array[index].selecao[i] = selecId
+          }
+        }
+      },
+    },
+    {
+      condicao: () => classificado === selecId,
+      acao: () => {
+        input.checked = false;
+        document.getElementById(p1).innerHTML = ''
+        document.querySelector(`.boxWin>span#${p1}~label`).style.display = ''
+        document.querySelector(`label[for="${p1[0]+p1[0]}${selecId}"]>span`).className = ''
+        for (let i in array[index].jogo) {
+          if (array[index].jogo[i] === p1) {
+            array[index].selecao[i] = ''
+          }
+        }
+      },
+    },
+  ];
+
+  const fCondicao = condicoes.find((fCond) => fCond.condicao());
+  if (fCondicao) {
+    fCondicao.acao();
+  } else {
+    input.checked = false;
+  }
+}
+
 function gruposSelec(GRUPO, ARRAY) {
   let selecoesGrupo = []
   let itensG = ''
@@ -455,9 +530,9 @@ function oitavasSelec(OITAVAS, ARRAY) {
     for (let j in selecoesOitavas[i]) {
       itens += `
       <div class="itensG">
-            <label for="o${selecoesOitavas[i][j].id}">
+            <label for="oo${selecoesOitavas[i][j].id}">
                 <span></span>
-                <input type="checkbox" name="${selecoesOitavas[i][j].id}" id="o${selecoesOitavas[i][j].id}">
+                <input type="checkbox" name="oitavas${selecoesOitavas[i][j].id}" id="oo${selecoesOitavas[i][j].id}" onchange="onQuartas(this, ${selecoesOitavas[i][j].id}, 'o${parseInt(i) + 1}')">
                 <img src="${selecoesOitavas[i][j].bandeira}" alt="${selecoesOitavas[i][j].selecao}" class="bandeiras">
                 ${selecoesOitavas[i][j].selecao}</label>
       </div>
@@ -609,5 +684,5 @@ function avancarFase() {
 }
 
 function voltarFase() {
-  
+
 }
